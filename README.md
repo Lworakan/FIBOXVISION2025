@@ -1,7 +1,7 @@
-# GODANGVISION2025
+# FIBOXVISION2025
 
 ## Overview
-The GODANGVISION2025 workspace is designed for finding three-dimensional coordinates using the Intel RealSense D450 depth camera.
+The FIBOXVISION2025 workspace is designed for finding three-dimensional coordinates using the Intel RealSense D450 depth camera.
 
 
 ## Features
