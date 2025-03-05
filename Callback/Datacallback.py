@@ -41,8 +41,8 @@ class DepthSensor:
 
     def _mouse_callback_wrapper(self, event, x, y, flags, param):
         """Wrapper สำหรับเรียกใช้เมธอด callback ของคลาส"""
-        if event == cv2.EVENT_LBUTTONDOWN:
-            self._mouse_callback(x, y)
+        # if event == cv2.EVENT_LBUTTONDOWN:
+        self._mouse_callback(320, 240)
 
     def _mouse_callback(self, x, y):
         """ประมวลผลเหตุการณ์คลิกเมาส์และบันทึกข้อมูล"""
@@ -63,7 +63,9 @@ class DepthSensor:
             gyro_data = gyro_frame.as_motion_frame().get_motion_data()
             accel_data = accel_frame.as_motion_frame().get_motion_data()
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")
-            self.click_data.append((timestamp, x, y, depth))
+            # self.click_data.append((timestamp, 320, 240, depth))
+            x= 320
+            y= 240
             
             # บันทึกข้อมูลทันทีที่คลิก
             self._save_to_file(timestamp, x, y, depth, gyro_data, accel_data)
@@ -99,20 +101,23 @@ class DepthSensor:
         )
         
         # วาดข้อมูลการคลิกล่าสุด
-        if self.click_data:
-            last_click = self.click_data[-1]
-            x, y = last_click[1], last_click[2]
-            cv2.circle(depth_colormap, (x, y), 8, (0, 255, 255), -1)
-            cv2.putText(
-                depth_colormap,
-                f"{last_click[3]:.3f} m",
-                (x + 15, y + 5),
-                cv2.FONT_HERSHEY_SIMPLEX,
-                0.6,
-                (0, 255, 255),
-                2
-            )
-        
+        # if self.click_data:
+        # last_click = self.click_data[-1]
+        # x, y = last_click[1], last_click[2]
+        x =320
+        y =240
+        depth = depth_frame.get_distance(x, y)
+        cv2.circle(depth_colormap, (x, y), 8, (0, 255, 255), -1)
+        cv2.putText(
+            depth_colormap,
+            f"{depth:.3f} m",
+            (x + 15, y + 5),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            0.6,
+            (0, 255, 255),
+            2
+        )
+    
         return color_image, depth_colormap
 
     def run(self):
