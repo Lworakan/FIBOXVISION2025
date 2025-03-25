@@ -16,11 +16,11 @@ class DepthROIRecorder:
         self.is_right_image = False  # เก็บว่า ROI อยู่ในภาพด้านขวา (depth) หรือไม่ (ใช้เพื่อการบันทึกข้อมูลเท่านั้น)
         
         # สร้างโฟลเดอร์สำหรับเก็บข้อมูล
-        self.data_folder = "newEnvironmentTest/Realsense/collected_data"
+        self.data_folder = "newEnvironmentTest\Realsense\collected_data\outdoor1stfloor"
         os.makedirs(self.data_folder, exist_ok=True)
         
         # ตัวแปรสำหรับการบันทึกข้อมูล
-        self.recording = False
+        self.recording = False 
         self.csv_filename = os.path.join(self.data_folder, f"depth_values_9m.csv")  # บันทึกข้อมูลทดสอบที่ระยะ 4m
         self.depth_values = []
         self.last_record_time = 0
@@ -251,7 +251,7 @@ class DepthROIRecorder:
                 cv2.putText(images, "Depth", (self.width + 10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
                 
                 # แสดงข้อมูลการทดสอบที่ระยะ 4 เมตร
-                test_info = "ทดสอบระยะ: 4 เมตร"
+                test_info = "Depth Experiment"
                 cv2.putText(images, test_info, (self.width - 200, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
                 
                 # แสดงสถานะการบันทึก
