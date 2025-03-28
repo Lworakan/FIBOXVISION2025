@@ -1,1 +1,6 @@
 myenv/
+venv_py39/
+.venv
+venv/
+__pycache__/
+venv_pycaret_clean/
