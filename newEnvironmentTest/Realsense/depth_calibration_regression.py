@@ -6,11 +6,12 @@ import numpy as np
 # --- 1. โหลดและเตรียมข้อมูล ---
 print("--- 1. Loading and Preparing Data ---")
 # โหลดข้อมูลของคุณ (แก้ Path ถ้าจำเป็น)
-csv_path = r'/content/combined_depth_data_for_automl.csv'
+csv_path = r'newEnvironmentTest\Realsense\collected_data\combined_depth_data_for_automl.csv'
 df_full = pd.read_csv(csv_path)
 
 # เลือกคอลัมน์สำหรับแนวทาง Calibration (ทำนายระยะจริงจากค่า Sensor) + Location
-# Input Features: average_depth_m, Location
+# Input Features: aver
+# age_depth_m, Location
 # Target Variable: IntendedDistance_m
 data_for_setup = df_full[['average_depth_m', 'IntendedDistance_m', 'Location']]
 
@@ -20,15 +21,15 @@ print("\nData Info:")
 data_for_setup.info() # ดูชนิดข้อมูลและค่า non-null
 
 # (Optional) ลอง Plot ดูการกระจายตัวคร่าวๆ
-# plt.figure(figsize=(10, 6))
-# plt.scatter(data_for_setup['average_depth_m'], data_for_setup['IntendedDistance_m'], alpha=0.1, label='Data points')
-# plt.plot([4, 9], [4, 9], 'r--', label='Ideal Line (y=x)') # เส้นอ้างอิง
-# plt.xlabel("Average Depth Measured (m)")
-# plt.ylabel("Intended Distance (m)")
-# plt.title("Measured Depth vs Intended Distance")
-# plt.legend()
-# plt.grid(True)
-# plt.show()
+plt.figure(figsize=(10, 6))
+plt.scatter(data_for_setup['average_depth_m'], data_for_setup['IntendedDistance_m'], alpha=0.1, label='Data points')
+plt.plot([4, 9], [4, 9], 'r--', label='Ideal Line (y=x)') # เส้นอ้างอิง
+plt.xlabel("Average Depth Measured (m)")
+plt.ylabel("Intended Distance (m)")
+plt.title("Measured Depth vs Intended Distance")
+plt.legend()
+plt.grid(True)
+plt.show()
 
 
 # --- 2. Setup PyCaret Environment ---
@@ -213,30 +214,30 @@ else:
 # Finalize คือการเทรนโมเดลที่ดีที่สุดด้วยข้อมูลทั้งหมด (Train + Test)
 # เหมาะสำหรับเตรียมโมเดลไปใช้งานจริง แต่อย่าใช้ Metric จากขั้นตอนนี้มาวัดประสิทธิภาพ
 
-# print("\n--- 7. Finalizing the Model (Training on ALL data) ---")
-# if final_model is not None:
-#     try:
-#         finalized_model = finalize_model(final_model)
-#         print("\nFinalized Model Configuration:")
-#         print(finalized_model)
+print("\n--- 7. Finalizing the Model (Training on ALL data) ---")
+if final_model is not None:
+    try:
+        finalized_model = finalize_model(final_model)
+        print("\nFinalized Model Configuration:")
+        print(finalized_model)
 
-#         # บันทึกโมเดลที่ Finalize แล้ว
-#         save_model(finalized_model, 'final_calibrated_depth_model')
-#         print("\nFinalized model saved as 'final_calibrated_depth_model.pkl'")
+        # บันทึกโมเดลที่ Finalize แล้ว
+        save_model(finalized_model, 'final_calibrated_depth_model')
+        print("\nFinalized model saved as 'final_calibrated_depth_model.pkl'")
 
-#         # ทดลองโหลดโมเดลกลับมาใช้ (ตัวอย่าง)
-#         # loaded_model = load_model('final_calibrated_depth_model')
-#         # print("\nModel loaded successfully.")
-#         # new_pred = predict_model(loaded_model, data=data_for_setup.iloc[:5]) # ลองทำนาย 5 แถวแรก
-#         # print("\nSample predictions using loaded finalized model:")
-#         # print(new_pred)
+        # ทดลองโหลดโมเดลกลับมาใช้ (ตัวอย่าง)
+        loaded_model = load_model('final_calibrated_depth_model')
+        print("\nModel loaded successfully.")
+        new_pred = predict_model(loaded_model, data=data_for_setup.iloc[:5]) # ลองทำนาย 5 แถวแรก
+        print("\nSample predictions using loaded finalized model:")
+        print(new_pred)
 
-#     except NameError:
-#          print("Error: 'finalize_model' or 'save_model' not defined.")
-#     except Exception as e:
-#          print(f"An error occurred during finalization or saving: {e}")
-# else:
-#      print("\nNo final model to finalize.")
+    except NameError:
+         print("Error: 'finalize_model' or 'save_model' not defined.")
+    except Exception as e:
+         print(f"An error occurred during finalization or saving: {e}")
+else:
+     print("\nNo final model to finalize.")
 
 # --- คำนวณ RMSE/MAE แยกตาม Location บน Test Set ---
 # ใช้ DataFrame predictions_final_test ที่ได้จาก predict_model(final_model)
