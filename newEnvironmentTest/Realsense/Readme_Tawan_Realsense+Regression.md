@@ -1,5 +1,9 @@
 # Readme: RealSense Depth Calibration using Regression (PyCaret) - Tawan
 
+## 0. Code
+
+Code from => depth_calibration_regression.py
+
 ## 1. Objective
 
 To calibrate depth measurements from an Intel RealSense D450 camera using a regression model built with PyCaret (AutoML). The primary goal is to predict the true distance (`IntendedDistance_m`) based on the sensor's measured depth (`average_depth_m`), aiming for a prediction error of less than 2 cm (0.02 m), particularly for determining the 3D coordinates of a basketball hoop.
@@ -75,7 +79,7 @@ This analysis revealed a significant difference in performance between the two l
 ## 6. Recommendations & Next Steps
 
 1.  **Investigate `outdoor1stfloor` Data/Environment:** Analyze the raw data specifically for `outdoor1stfloor`. Are there significant outliers? Plot the raw `average_depth_m` vs `IntendedDistance_m` to visualize the noise level. What environmental factors could be contributing to the higher error and variance (sunlight, surface reflectivity, temperature)?
-2.  **Explore Additional Features (If Possible):** Revisit if *any* other relevant data can be extracted alongside depth from the RealSense SDK for future data collection (e.g., confidence score, standard deviation of depth within the ROI). These could significantly improve model performance, especially outdoors.
-3.  **Model Transferability Test:** Proceed with the planned test to see how the current model (trained on both locations) performs when applied *only* to `thirdfloor` data and *only* to `outdoor1stfloor` data without retraining. This will further quantify the impact of location. The expectation is it will perform well on `thirdfloor` data but poorly on `outdoor1stfloor` data.
+2.  **Explore Additional Features (If Possible):** Revisit if _any_ other relevant data can be extracted alongside depth from the RealSense SDK for future data collection (e.g., confidence score, standard deviation of depth within the ROI). These could significantly improve model performance, especially outdoors.
+3.  **Model Transferability Test:** Proceed with the planned test to see how the current model (trained on both locations) performs when applied _only_ to `thirdfloor` data and _only_ to `outdoor1stfloor` data without retraining. This will further quantify the impact of location. The expectation is it will perform well on `thirdfloor` data but poorly on `outdoor1stfloor` data.
 4.  **Consider LiDAR:** Given the excellent indoor results but poor outdoor results relative to the strict < 2 cm requirement, and the difficulty in obtaining further relevant features for the RealSense model, switching to LiDAR for scenarios requiring high accuracy in diverse or challenging (outdoor) environments remains a strong consideration, as planned.
 5.  **Refine Indoor Model (Optional):** Although the indoor performance is already excellent, minor improvements might be possible by tuning specifically on indoor data or exploring slight variations in polynomial degree or model types (though LightGBM is already very strong).
