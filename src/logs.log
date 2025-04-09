@@ -28542,3 +28542,1886 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
                 ('actual_estimator',
                  KNeighborsRegressor(n_jobs=-1, n_neighbors=2))])
 2025-04-09 10:44:18,320:INFO:save_model() successfully completed......................................
+2025-04-09 11:15:59,089:INFO:Initializing compare_models()
+2025-04-09 11:15:59,089:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, include=None, fold=None, round=4, cross_validation=True, sort=RMSE, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'RMSE', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2025-04-09 11:15:59,089:INFO:Checking exceptions
+2025-04-09 11:15:59,093:INFO:Preparing display monitor
+2025-04-09 11:15:59,129:INFO:Initializing Linear Regression
+2025-04-09 11:15:59,129:INFO:Total runtime is 3.8226445515950525e-06 minutes
+2025-04-09 11:15:59,133:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:15:59,134:INFO:Initializing create_model()
+2025-04-09 11:15:59,134:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=lr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:15:59,134:INFO:Checking exceptions
+2025-04-09 11:15:59,134:INFO:Importing libraries
+2025-04-09 11:15:59,134:INFO:Copying training dataset
+2025-04-09 11:15:59,138:INFO:Defining folds
+2025-04-09 11:15:59,138:INFO:Declaring metric variables
+2025-04-09 11:15:59,141:INFO:Importing untrained model
+2025-04-09 11:15:59,145:INFO:Linear Regression Imported successfully
+2025-04-09 11:15:59,151:INFO:Starting cross validation
+2025-04-09 11:15:59,152:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:15:59,494:INFO:Calculating mean and std
+2025-04-09 11:15:59,494:INFO:Creating metrics dataframe
+2025-04-09 11:15:59,495:INFO:Uploading results into container
+2025-04-09 11:15:59,495:INFO:Uploading model into container now
+2025-04-09 11:15:59,495:INFO:_master_model_container: 59
+2025-04-09 11:15:59,495:INFO:_display_container: 9
+2025-04-09 11:15:59,495:INFO:LinearRegression(n_jobs=-1)
+2025-04-09 11:15:59,495:INFO:create_model() successfully completed......................................
+2025-04-09 11:15:59,547:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:15:59,547:INFO:Creating metrics dataframe
+2025-04-09 11:15:59,550:INFO:Initializing Lasso Regression
+2025-04-09 11:15:59,550:INFO:Total runtime is 0.007022674878438314 minutes
+2025-04-09 11:15:59,552:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:15:59,552:INFO:Initializing create_model()
+2025-04-09 11:15:59,552:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=lasso, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:15:59,552:INFO:Checking exceptions
+2025-04-09 11:15:59,552:INFO:Importing libraries
+2025-04-09 11:15:59,552:INFO:Copying training dataset
+2025-04-09 11:15:59,554:INFO:Defining folds
+2025-04-09 11:15:59,554:INFO:Declaring metric variables
+2025-04-09 11:15:59,555:INFO:Importing untrained model
+2025-04-09 11:15:59,556:INFO:Lasso Regression Imported successfully
+2025-04-09 11:15:59,559:INFO:Starting cross validation
+2025-04-09 11:15:59,559:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:15:59,578:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.379e-01, tolerance: 1.706e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:15:59,603:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.364e-01, tolerance: 1.665e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:15:59,628:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.336e-01, tolerance: 1.655e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:15:59,653:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.437e-01, tolerance: 1.714e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:15:59,678:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.444e-01, tolerance: 1.690e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:15:59,703:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.381e-01, tolerance: 1.692e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:15:59,727:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.436e-01, tolerance: 1.801e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:15:59,751:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.371e-01, tolerance: 1.658e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:15:59,776:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.337e-01, tolerance: 1.687e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:15:59,799:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.321e-01, tolerance: 1.792e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:15:59,809:INFO:Calculating mean and std
+2025-04-09 11:15:59,809:INFO:Creating metrics dataframe
+2025-04-09 11:15:59,810:INFO:Uploading results into container
+2025-04-09 11:15:59,810:INFO:Uploading model into container now
+2025-04-09 11:15:59,810:INFO:_master_model_container: 60
+2025-04-09 11:15:59,810:INFO:_display_container: 9
+2025-04-09 11:15:59,810:INFO:Lasso(random_state=123)
+2025-04-09 11:15:59,810:INFO:create_model() successfully completed......................................
+2025-04-09 11:15:59,858:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:15:59,858:INFO:Creating metrics dataframe
+2025-04-09 11:15:59,861:INFO:Initializing Ridge Regression
+2025-04-09 11:15:59,861:INFO:Total runtime is 0.01220557689666748 minutes
+2025-04-09 11:15:59,863:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:15:59,863:INFO:Initializing create_model()
+2025-04-09 11:15:59,863:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=ridge, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:15:59,863:INFO:Checking exceptions
+2025-04-09 11:15:59,863:INFO:Importing libraries
+2025-04-09 11:15:59,863:INFO:Copying training dataset
+2025-04-09 11:15:59,865:INFO:Defining folds
+2025-04-09 11:15:59,865:INFO:Declaring metric variables
+2025-04-09 11:15:59,866:INFO:Importing untrained model
+2025-04-09 11:15:59,868:INFO:Ridge Regression Imported successfully
+2025-04-09 11:15:59,870:INFO:Starting cross validation
+2025-04-09 11:15:59,871:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:15:59,887:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.5654e-19): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2025-04-09 11:15:59,910:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.81945e-19): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2025-04-09 11:15:59,931:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.57492e-19): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2025-04-09 11:15:59,954:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.61294e-19): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2025-04-09 11:16:00,000:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.6252e-19): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2025-04-09 11:16:00,093:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.57721e-19): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2025-04-09 11:16:00,129:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.57265e-19): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2025-04-09 11:16:00,149:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.56553e-19): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2025-04-09 11:16:00,169:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.51317e-19): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2025-04-09 11:16:00,190:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_ridge.py:204: LinAlgWarning: Ill-conditioned matrix (rcond=1.53625e-19): result may not be accurate.
+  return linalg.solve(A, Xy, assume_a="pos", overwrite_a=True).T
+
+2025-04-09 11:16:00,199:INFO:Calculating mean and std
+2025-04-09 11:16:00,199:INFO:Creating metrics dataframe
+2025-04-09 11:16:00,200:INFO:Uploading results into container
+2025-04-09 11:16:00,200:INFO:Uploading model into container now
+2025-04-09 11:16:00,201:INFO:_master_model_container: 61
+2025-04-09 11:16:00,201:INFO:_display_container: 9
+2025-04-09 11:16:00,201:INFO:Ridge(random_state=123)
+2025-04-09 11:16:00,201:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:00,252:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:00,252:INFO:Creating metrics dataframe
+2025-04-09 11:16:00,255:INFO:Initializing Elastic Net
+2025-04-09 11:16:00,255:INFO:Total runtime is 0.01877379814783732 minutes
+2025-04-09 11:16:00,257:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:00,257:INFO:Initializing create_model()
+2025-04-09 11:16:00,257:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=en, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:00,257:INFO:Checking exceptions
+2025-04-09 11:16:00,257:INFO:Importing libraries
+2025-04-09 11:16:00,257:INFO:Copying training dataset
+2025-04-09 11:16:00,259:INFO:Defining folds
+2025-04-09 11:16:00,259:INFO:Declaring metric variables
+2025-04-09 11:16:00,260:INFO:Importing untrained model
+2025-04-09 11:16:00,261:INFO:Elastic Net Imported successfully
+2025-04-09 11:16:00,264:INFO:Starting cross validation
+2025-04-09 11:16:00,264:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:00,289:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.064e-01, tolerance: 1.706e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:16:00,380:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.070e-01, tolerance: 1.665e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:16:00,483:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.052e-01, tolerance: 1.655e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:16:00,586:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.115e-01, tolerance: 1.714e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:16:00,637:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.122e-01, tolerance: 1.690e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:16:00,659:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.092e-01, tolerance: 1.692e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:16:00,681:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.111e-01, tolerance: 1.801e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:16:00,704:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.080e-01, tolerance: 1.658e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:16:00,727:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.055e-01, tolerance: 1.687e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:16:00,750:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 8.995e-02, tolerance: 1.792e-02
+  model = cd_fast.enet_coordinate_descent(
+
+2025-04-09 11:16:00,759:INFO:Calculating mean and std
+2025-04-09 11:16:00,759:INFO:Creating metrics dataframe
+2025-04-09 11:16:00,760:INFO:Uploading results into container
+2025-04-09 11:16:00,760:INFO:Uploading model into container now
+2025-04-09 11:16:00,761:INFO:_master_model_container: 62
+2025-04-09 11:16:00,761:INFO:_display_container: 9
+2025-04-09 11:16:00,761:INFO:ElasticNet(random_state=123)
+2025-04-09 11:16:00,761:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:00,811:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:00,812:INFO:Creating metrics dataframe
+2025-04-09 11:16:00,815:INFO:Initializing Least Angle Regression
+2025-04-09 11:16:00,815:INFO:Total runtime is 0.028098928928375243 minutes
+2025-04-09 11:16:00,816:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:00,816:INFO:Initializing create_model()
+2025-04-09 11:16:00,816:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=lar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:00,816:INFO:Checking exceptions
+2025-04-09 11:16:00,816:INFO:Importing libraries
+2025-04-09 11:16:00,816:INFO:Copying training dataset
+2025-04-09 11:16:00,818:INFO:Defining folds
+2025-04-09 11:16:00,818:INFO:Declaring metric variables
+2025-04-09 11:16:00,819:INFO:Importing untrained model
+2025-04-09 11:16:00,821:INFO:Least Angle Regression Imported successfully
+2025-04-09 11:16:00,823:INFO:Starting cross validation
+2025-04-09 11:16:00,823:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:00,858:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:688: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 101 iterations, i.e. alpha=5.030e+07, with an active set of 53 regressors, and the smallest cholesky pivot element being 1.613e-09. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+
+2025-04-09 11:16:00,962:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:688: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 103 iterations, i.e. alpha=8.736e+01, with an active set of 53 regressors, and the smallest cholesky pivot element being 2.715e-09. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+
+2025-04-09 11:16:00,996:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:688: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 90 iterations, i.e. alpha=2.082e-01, with an active set of 53 regressors, and the smallest cholesky pivot element being 1.317e-09. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+
+2025-04-09 11:16:01,021:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:688: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 98 iterations, i.e. alpha=9.092e-02, with an active set of 53 regressors, and the smallest cholesky pivot element being 1.742e-09. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+
+2025-04-09 11:16:01,047:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:688: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 100 iterations, i.e. alpha=2.505e-02, with an active set of 53 regressors, and the smallest cholesky pivot element being 9.313e-10. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+
+2025-04-09 11:16:01,072:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:688: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 89 iterations, i.e. alpha=8.994e-02, with an active set of 53 regressors, and the smallest cholesky pivot element being 3.158e-09. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+
+2025-04-09 11:16:01,098:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:688: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 100 iterations, i.e. alpha=1.148e+02, with an active set of 53 regressors, and the smallest cholesky pivot element being 1.473e-09. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+
+2025-04-09 11:16:01,124:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:688: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 104 iterations, i.e. alpha=2.313e+00, with an active set of 53 regressors, and the smallest cholesky pivot element being 9.313e-10. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+
+2025-04-09 11:16:01,150:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:688: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 102 iterations, i.e. alpha=1.654e+00, with an active set of 53 regressors, and the smallest cholesky pivot element being 3.485e-09. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+
+2025-04-09 11:16:01,176:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_least_angle.py:688: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 102 iterations, i.e. alpha=6.212e+01, with an active set of 53 regressors, and the smallest cholesky pivot element being 3.667e-09. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+
+2025-04-09 11:16:01,186:INFO:Calculating mean and std
+2025-04-09 11:16:01,186:INFO:Creating metrics dataframe
+2025-04-09 11:16:01,187:INFO:Uploading results into container
+2025-04-09 11:16:01,187:INFO:Uploading model into container now
+2025-04-09 11:16:01,187:INFO:_master_model_container: 63
+2025-04-09 11:16:01,187:INFO:_display_container: 9
+2025-04-09 11:16:01,188:INFO:Lars(random_state=123)
+2025-04-09 11:16:01,188:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:01,238:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:01,238:INFO:Creating metrics dataframe
+2025-04-09 11:16:01,241:INFO:Initializing Lasso Least Angle Regression
+2025-04-09 11:16:01,241:INFO:Total runtime is 0.035204561551411946 minutes
+2025-04-09 11:16:01,243:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:01,243:INFO:Initializing create_model()
+2025-04-09 11:16:01,243:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=llar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:01,243:INFO:Checking exceptions
+2025-04-09 11:16:01,243:INFO:Importing libraries
+2025-04-09 11:16:01,243:INFO:Copying training dataset
+2025-04-09 11:16:01,245:INFO:Defining folds
+2025-04-09 11:16:01,245:INFO:Declaring metric variables
+2025-04-09 11:16:01,246:INFO:Importing untrained model
+2025-04-09 11:16:01,247:INFO:Lasso Least Angle Regression Imported successfully
+2025-04-09 11:16:01,250:INFO:Starting cross validation
+2025-04-09 11:16:01,250:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:01,497:INFO:Calculating mean and std
+2025-04-09 11:16:01,498:INFO:Creating metrics dataframe
+2025-04-09 11:16:01,499:INFO:Uploading results into container
+2025-04-09 11:16:01,499:INFO:Uploading model into container now
+2025-04-09 11:16:01,499:INFO:_master_model_container: 64
+2025-04-09 11:16:01,499:INFO:_display_container: 9
+2025-04-09 11:16:01,499:INFO:LassoLars(random_state=123)
+2025-04-09 11:16:01,499:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:01,550:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:01,550:INFO:Creating metrics dataframe
+2025-04-09 11:16:01,554:INFO:Initializing Orthogonal Matching Pursuit
+2025-04-09 11:16:01,554:INFO:Total runtime is 0.04041591882705688 minutes
+2025-04-09 11:16:01,555:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:01,556:INFO:Initializing create_model()
+2025-04-09 11:16:01,556:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=omp, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:01,556:INFO:Checking exceptions
+2025-04-09 11:16:01,556:INFO:Importing libraries
+2025-04-09 11:16:01,556:INFO:Copying training dataset
+2025-04-09 11:16:01,557:INFO:Defining folds
+2025-04-09 11:16:01,557:INFO:Declaring metric variables
+2025-04-09 11:16:01,559:INFO:Importing untrained model
+2025-04-09 11:16:01,560:INFO:Orthogonal Matching Pursuit Imported successfully
+2025-04-09 11:16:01,563:INFO:Starting cross validation
+2025-04-09 11:16:01,564:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:01,789:INFO:Calculating mean and std
+2025-04-09 11:16:01,789:INFO:Creating metrics dataframe
+2025-04-09 11:16:01,790:INFO:Uploading results into container
+2025-04-09 11:16:01,791:INFO:Uploading model into container now
+2025-04-09 11:16:01,791:INFO:_master_model_container: 65
+2025-04-09 11:16:01,791:INFO:_display_container: 9
+2025-04-09 11:16:01,791:INFO:OrthogonalMatchingPursuit()
+2025-04-09 11:16:01,791:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:01,843:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:01,843:INFO:Creating metrics dataframe
+2025-04-09 11:16:01,850:INFO:Initializing Bayesian Ridge
+2025-04-09 11:16:01,850:INFO:Total runtime is 0.04534622430801392 minutes
+2025-04-09 11:16:01,853:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:01,854:INFO:Initializing create_model()
+2025-04-09 11:16:01,854:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=br, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:01,854:INFO:Checking exceptions
+2025-04-09 11:16:01,854:INFO:Importing libraries
+2025-04-09 11:16:01,854:INFO:Copying training dataset
+2025-04-09 11:16:01,858:INFO:Defining folds
+2025-04-09 11:16:01,858:INFO:Declaring metric variables
+2025-04-09 11:16:01,861:INFO:Importing untrained model
+2025-04-09 11:16:01,865:INFO:Bayesian Ridge Imported successfully
+2025-04-09 11:16:01,872:INFO:Starting cross validation
+2025-04-09 11:16:01,873:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:02,460:INFO:Calculating mean and std
+2025-04-09 11:16:02,461:INFO:Creating metrics dataframe
+2025-04-09 11:16:02,463:INFO:Uploading results into container
+2025-04-09 11:16:02,464:INFO:Uploading model into container now
+2025-04-09 11:16:02,464:INFO:_master_model_container: 66
+2025-04-09 11:16:02,464:INFO:_display_container: 9
+2025-04-09 11:16:02,464:INFO:BayesianRidge()
+2025-04-09 11:16:02,464:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:02,540:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:02,540:INFO:Creating metrics dataframe
+2025-04-09 11:16:02,551:INFO:Initializing Passive Aggressive Regressor
+2025-04-09 11:16:02,551:INFO:Total runtime is 0.057030538717905685 minutes
+2025-04-09 11:16:02,554:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:02,554:INFO:Initializing create_model()
+2025-04-09 11:16:02,554:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=par, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:02,554:INFO:Checking exceptions
+2025-04-09 11:16:02,554:INFO:Importing libraries
+2025-04-09 11:16:02,554:INFO:Copying training dataset
+2025-04-09 11:16:02,557:INFO:Defining folds
+2025-04-09 11:16:02,557:INFO:Declaring metric variables
+2025-04-09 11:16:02,560:INFO:Importing untrained model
+2025-04-09 11:16:02,563:INFO:Passive Aggressive Regressor Imported successfully
+2025-04-09 11:16:02,568:INFO:Starting cross validation
+2025-04-09 11:16:02,569:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:02,904:INFO:Calculating mean and std
+2025-04-09 11:16:02,904:INFO:Creating metrics dataframe
+2025-04-09 11:16:02,905:INFO:Uploading results into container
+2025-04-09 11:16:02,906:INFO:Uploading model into container now
+2025-04-09 11:16:02,906:INFO:_master_model_container: 67
+2025-04-09 11:16:02,906:INFO:_display_container: 9
+2025-04-09 11:16:02,906:INFO:PassiveAggressiveRegressor(random_state=123)
+2025-04-09 11:16:02,906:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:02,955:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:02,956:INFO:Creating metrics dataframe
+2025-04-09 11:16:02,959:INFO:Initializing Huber Regressor
+2025-04-09 11:16:02,959:INFO:Total runtime is 0.06384056011835734 minutes
+2025-04-09 11:16:02,961:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:02,961:INFO:Initializing create_model()
+2025-04-09 11:16:02,961:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=huber, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:02,961:INFO:Checking exceptions
+2025-04-09 11:16:02,961:INFO:Importing libraries
+2025-04-09 11:16:02,961:INFO:Copying training dataset
+2025-04-09 11:16:02,963:INFO:Defining folds
+2025-04-09 11:16:02,963:INFO:Declaring metric variables
+2025-04-09 11:16:02,964:INFO:Importing untrained model
+2025-04-09 11:16:02,966:INFO:Huber Regressor Imported successfully
+2025-04-09 11:16:02,970:INFO:Starting cross validation
+2025-04-09 11:16:02,971:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:03,036:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2025-04-09 11:16:03,160:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2025-04-09 11:16:03,227:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2025-04-09 11:16:03,256:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2025-04-09 11:16:03,284:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2025-04-09 11:16:03,313:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2025-04-09 11:16:03,344:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2025-04-09 11:16:03,373:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2025-04-09 11:16:03,402:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/sklearn/linear_model/_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2025-04-09 11:16:03,412:INFO:Calculating mean and std
+2025-04-09 11:16:03,412:INFO:Creating metrics dataframe
+2025-04-09 11:16:03,413:INFO:Uploading results into container
+2025-04-09 11:16:03,414:INFO:Uploading model into container now
+2025-04-09 11:16:03,414:INFO:_master_model_container: 68
+2025-04-09 11:16:03,414:INFO:_display_container: 9
+2025-04-09 11:16:03,414:INFO:HuberRegressor()
+2025-04-09 11:16:03,414:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:03,465:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:03,465:INFO:Creating metrics dataframe
+2025-04-09 11:16:03,469:INFO:Initializing K Neighbors Regressor
+2025-04-09 11:16:03,469:INFO:Total runtime is 0.07233580350875854 minutes
+2025-04-09 11:16:03,471:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:03,471:INFO:Initializing create_model()
+2025-04-09 11:16:03,471:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=knn, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:03,471:INFO:Checking exceptions
+2025-04-09 11:16:03,471:INFO:Importing libraries
+2025-04-09 11:16:03,471:INFO:Copying training dataset
+2025-04-09 11:16:03,473:INFO:Defining folds
+2025-04-09 11:16:03,473:INFO:Declaring metric variables
+2025-04-09 11:16:03,474:INFO:Importing untrained model
+2025-04-09 11:16:03,476:INFO:K Neighbors Regressor Imported successfully
+2025-04-09 11:16:03,478:INFO:Starting cross validation
+2025-04-09 11:16:03,479:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:04,175:INFO:Calculating mean and std
+2025-04-09 11:16:04,176:INFO:Creating metrics dataframe
+2025-04-09 11:16:04,177:INFO:Uploading results into container
+2025-04-09 11:16:04,177:INFO:Uploading model into container now
+2025-04-09 11:16:04,177:INFO:_master_model_container: 69
+2025-04-09 11:16:04,177:INFO:_display_container: 9
+2025-04-09 11:16:04,177:INFO:KNeighborsRegressor(n_jobs=-1)
+2025-04-09 11:16:04,178:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:04,229:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:04,229:INFO:Creating metrics dataframe
+2025-04-09 11:16:04,234:INFO:Initializing Decision Tree Regressor
+2025-04-09 11:16:04,234:INFO:Total runtime is 0.08507678111394246 minutes
+2025-04-09 11:16:04,235:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:04,235:INFO:Initializing create_model()
+2025-04-09 11:16:04,235:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=dt, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:04,236:INFO:Checking exceptions
+2025-04-09 11:16:04,236:INFO:Importing libraries
+2025-04-09 11:16:04,236:INFO:Copying training dataset
+2025-04-09 11:16:04,237:INFO:Defining folds
+2025-04-09 11:16:04,237:INFO:Declaring metric variables
+2025-04-09 11:16:04,239:INFO:Importing untrained model
+2025-04-09 11:16:04,240:INFO:Decision Tree Regressor Imported successfully
+2025-04-09 11:16:04,243:INFO:Starting cross validation
+2025-04-09 11:16:04,244:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:04,666:INFO:Calculating mean and std
+2025-04-09 11:16:04,666:INFO:Creating metrics dataframe
+2025-04-09 11:16:04,667:INFO:Uploading results into container
+2025-04-09 11:16:04,667:INFO:Uploading model into container now
+2025-04-09 11:16:04,667:INFO:_master_model_container: 70
+2025-04-09 11:16:04,667:INFO:_display_container: 9
+2025-04-09 11:16:04,668:INFO:DecisionTreeRegressor(random_state=123)
+2025-04-09 11:16:04,668:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:04,718:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:04,718:INFO:Creating metrics dataframe
+2025-04-09 11:16:04,722:INFO:Initializing Random Forest Regressor
+2025-04-09 11:16:04,722:INFO:Total runtime is 0.09321995178858439 minutes
+2025-04-09 11:16:04,724:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:04,724:INFO:Initializing create_model()
+2025-04-09 11:16:04,724:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=rf, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:04,724:INFO:Checking exceptions
+2025-04-09 11:16:04,724:INFO:Importing libraries
+2025-04-09 11:16:04,724:INFO:Copying training dataset
+2025-04-09 11:16:04,725:INFO:Defining folds
+2025-04-09 11:16:04,726:INFO:Declaring metric variables
+2025-04-09 11:16:04,727:INFO:Importing untrained model
+2025-04-09 11:16:04,728:INFO:Random Forest Regressor Imported successfully
+2025-04-09 11:16:04,731:INFO:Starting cross validation
+2025-04-09 11:16:04,731:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:08,715:INFO:Calculating mean and std
+2025-04-09 11:16:08,717:INFO:Creating metrics dataframe
+2025-04-09 11:16:08,721:INFO:Uploading results into container
+2025-04-09 11:16:08,722:INFO:Uploading model into container now
+2025-04-09 11:16:08,723:INFO:_master_model_container: 71
+2025-04-09 11:16:08,723:INFO:_display_container: 9
+2025-04-09 11:16:08,724:INFO:RandomForestRegressor(n_jobs=-1, random_state=123)
+2025-04-09 11:16:08,724:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:08,825:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:08,826:INFO:Creating metrics dataframe
+2025-04-09 11:16:08,846:INFO:Initializing Extra Trees Regressor
+2025-04-09 11:16:08,847:INFO:Total runtime is 0.16196155150731406 minutes
+2025-04-09 11:16:08,853:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:08,854:INFO:Initializing create_model()
+2025-04-09 11:16:08,854:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=et, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:08,854:INFO:Checking exceptions
+2025-04-09 11:16:08,854:INFO:Importing libraries
+2025-04-09 11:16:08,855:INFO:Copying training dataset
+2025-04-09 11:16:08,863:INFO:Defining folds
+2025-04-09 11:16:08,863:INFO:Declaring metric variables
+2025-04-09 11:16:08,870:INFO:Importing untrained model
+2025-04-09 11:16:08,878:INFO:Extra Trees Regressor Imported successfully
+2025-04-09 11:16:08,891:INFO:Starting cross validation
+2025-04-09 11:16:08,893:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:11,879:INFO:Calculating mean and std
+2025-04-09 11:16:11,881:INFO:Creating metrics dataframe
+2025-04-09 11:16:11,885:INFO:Uploading results into container
+2025-04-09 11:16:11,886:INFO:Uploading model into container now
+2025-04-09 11:16:11,887:INFO:_master_model_container: 72
+2025-04-09 11:16:11,887:INFO:_display_container: 9
+2025-04-09 11:16:11,888:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=123)
+2025-04-09 11:16:11,888:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:11,992:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:11,992:INFO:Creating metrics dataframe
+2025-04-09 11:16:12,009:INFO:Initializing AdaBoost Regressor
+2025-04-09 11:16:12,010:INFO:Total runtime is 0.2146777391433716 minutes
+2025-04-09 11:16:12,016:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:12,016:INFO:Initializing create_model()
+2025-04-09 11:16:12,016:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=ada, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:12,016:INFO:Checking exceptions
+2025-04-09 11:16:12,016:INFO:Importing libraries
+2025-04-09 11:16:12,016:INFO:Copying training dataset
+2025-04-09 11:16:12,024:INFO:Defining folds
+2025-04-09 11:16:12,025:INFO:Declaring metric variables
+2025-04-09 11:16:12,030:INFO:Importing untrained model
+2025-04-09 11:16:12,037:INFO:AdaBoost Regressor Imported successfully
+2025-04-09 11:16:12,049:INFO:Starting cross validation
+2025-04-09 11:16:12,051:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:12,806:INFO:Calculating mean and std
+2025-04-09 11:16:12,806:INFO:Creating metrics dataframe
+2025-04-09 11:16:12,807:INFO:Uploading results into container
+2025-04-09 11:16:12,808:INFO:Uploading model into container now
+2025-04-09 11:16:12,808:INFO:_master_model_container: 73
+2025-04-09 11:16:12,808:INFO:_display_container: 9
+2025-04-09 11:16:12,808:INFO:AdaBoostRegressor(random_state=123)
+2025-04-09 11:16:12,808:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:12,857:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:12,857:INFO:Creating metrics dataframe
+2025-04-09 11:16:12,862:INFO:Initializing Gradient Boosting Regressor
+2025-04-09 11:16:12,862:INFO:Total runtime is 0.2288796067237854 minutes
+2025-04-09 11:16:12,863:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:12,863:INFO:Initializing create_model()
+2025-04-09 11:16:12,863:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=gbr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:12,863:INFO:Checking exceptions
+2025-04-09 11:16:12,863:INFO:Importing libraries
+2025-04-09 11:16:12,863:INFO:Copying training dataset
+2025-04-09 11:16:12,865:INFO:Defining folds
+2025-04-09 11:16:12,865:INFO:Declaring metric variables
+2025-04-09 11:16:12,867:INFO:Importing untrained model
+2025-04-09 11:16:12,868:INFO:Gradient Boosting Regressor Imported successfully
+2025-04-09 11:16:12,871:INFO:Starting cross validation
+2025-04-09 11:16:12,871:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:14,080:INFO:Calculating mean and std
+2025-04-09 11:16:14,081:INFO:Creating metrics dataframe
+2025-04-09 11:16:14,082:INFO:Uploading results into container
+2025-04-09 11:16:14,082:INFO:Uploading model into container now
+2025-04-09 11:16:14,082:INFO:_master_model_container: 74
+2025-04-09 11:16:14,082:INFO:_display_container: 9
+2025-04-09 11:16:14,083:INFO:GradientBoostingRegressor(random_state=123)
+2025-04-09 11:16:14,083:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:14,132:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:14,132:INFO:Creating metrics dataframe
+2025-04-09 11:16:14,137:INFO:Initializing Light Gradient Boosting Machine
+2025-04-09 11:16:14,137:INFO:Total runtime is 0.25013571977615356 minutes
+2025-04-09 11:16:14,139:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:14,139:INFO:Initializing create_model()
+2025-04-09 11:16:14,139:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=lightgbm, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:14,139:INFO:Checking exceptions
+2025-04-09 11:16:14,139:INFO:Importing libraries
+2025-04-09 11:16:14,139:INFO:Copying training dataset
+2025-04-09 11:16:14,141:INFO:Defining folds
+2025-04-09 11:16:14,141:INFO:Declaring metric variables
+2025-04-09 11:16:14,142:INFO:Importing untrained model
+2025-04-09 11:16:14,144:INFO:Light Gradient Boosting Machine Imported successfully
+2025-04-09 11:16:14,146:INFO:Starting cross validation
+2025-04-09 11:16:14,147:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:14,178:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2025-04-09 11:16:14,179:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.000171 seconds.
+2025-04-09 11:16:14,179:INFO:You can set `force_col_wise=true` to remove the overhead.
+2025-04-09 11:16:14,179:INFO:[LightGBM] [Info] Total Bins 1122
+2025-04-09 11:16:14,179:INFO:[LightGBM] [Info] Number of data points in the train set: 97, number of used features: 54
+2025-04-09 11:16:14,180:INFO:[LightGBM] [Info] Start training from score 5.149485
+2025-04-09 11:16:14,181:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,181:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,181:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,181:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,182:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,182:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,182:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,182:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,182:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,182:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,182:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,182:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,182:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,182:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,183:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,183:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,183:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,183:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,183:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,184:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,184:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,184:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,184:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,184:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,184:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,184:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,184:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,184:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,186:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,186:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,186:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,186:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,186:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,186:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,186:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,186:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,186:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,187:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,187:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,187:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,187:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,187:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,188:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,188:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,188:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,188:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,188:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,188:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,189:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,189:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,189:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,189:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,189:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,190:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,190:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,190:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,190:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,190:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,190:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,191:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,191:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,191:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,191:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,191:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,191:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,191:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,191:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,191:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,191:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,191:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,192:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,192:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,192:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,193:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,193:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,193:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,193:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,193:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,193:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,193:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,194:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,194:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,194:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,194:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,194:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,194:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,194:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,194:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,194:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,194:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,194:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,195:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,195:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,195:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,195:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,195:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,195:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,195:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,196:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,196:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,260:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2025-04-09 11:16:14,295:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.034245 seconds.
+2025-04-09 11:16:14,295:INFO:You can set `force_col_wise=true` to remove the overhead.
+2025-04-09 11:16:14,296:INFO:[LightGBM] [Info] Total Bins 1146
+2025-04-09 11:16:14,302:INFO:[LightGBM] [Info] Number of data points in the train set: 97, number of used features: 54
+2025-04-09 11:16:14,309:INFO:[LightGBM] [Info] Start training from score 5.144330
+2025-04-09 11:16:14,343:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,343:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,343:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,343:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,343:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,344:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,344:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,344:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,344:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,344:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,345:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,345:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,345:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,345:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,346:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,346:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,346:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,346:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,346:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,346:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,347:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,347:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,347:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,347:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,348:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,348:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,348:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,348:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,348:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,349:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,349:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,349:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,349:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,349:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,349:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,349:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,349:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,349:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,349:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,350:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,350:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,350:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,350:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,350:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,350:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,350:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,350:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,350:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,350:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,350:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,350:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,350:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,351:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,351:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,351:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,351:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,351:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,352:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,352:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,352:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,352:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,352:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,352:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,352:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,352:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,352:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,353:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,353:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,353:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,353:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,353:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,353:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,353:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,353:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,353:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,353:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,354:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,354:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,354:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,354:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,354:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+
+2025-04-09 11:16:14,355:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,356:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,356:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,357:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,357:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,357:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,357:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,357:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,358:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,358:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,358:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,358:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,359:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,359:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,359:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,360:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,360:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,360:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,360:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,360:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,399:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2025-04-09 11:16:14,399:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.000159 seconds.
+2025-04-09 11:16:14,399:INFO:You can set `force_col_wise=true` to remove the overhead.
+2025-04-09 11:16:14,399:INFO:[LightGBM] [Info] Total Bins 1152
+2025-04-09 11:16:14,400:INFO:[LightGBM] [Info] Number of data points in the train set: 97, number of used features: 54
+2025-04-09 11:16:14,400:INFO:[LightGBM] [Info] Start training from score 5.103093
+2025-04-09 11:16:14,400:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,400:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,400:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,400:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,400:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,400:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,400:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,401:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,401:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,401:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,401:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,401:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,401:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,402:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,402:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,402:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,402:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,402:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,402:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,402:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,402:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,402:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,403:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,403:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,403:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,403:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,403:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,403:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,403:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,403:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,403:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,404:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,404:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,404:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,404:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,404:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,404:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,404:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,404:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,404:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,404:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,404:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,404:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,405:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,406:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,406:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,406:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,406:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,406:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,406:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,406:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,406:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,406:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,407:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,407:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,407:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,408:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,408:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,408:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,408:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,408:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,409:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,409:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,409:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,410:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,410:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,410:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,411:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,411:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,411:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,411:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,411:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,411:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,412:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,412:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,412:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,412:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,412:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,412:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,412:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,412:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,412:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,412:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,413:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,413:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,413:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,413:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,413:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,414:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,415:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,415:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,415:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,415:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,415:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,415:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,415:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,415:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,416:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,416:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,416:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,480:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2025-04-09 11:16:14,481:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.000553 seconds.
+2025-04-09 11:16:14,481:INFO:You can set `force_col_wise=true` to remove the overhead.
+2025-04-09 11:16:14,482:INFO:[LightGBM] [Info] Total Bins 1130
+2025-04-09 11:16:14,483:INFO:[LightGBM] [Info] Number of data points in the train set: 97, number of used features: 54
+2025-04-09 11:16:14,483:INFO:[LightGBM] [Info] Start training from score 5.211340
+2025-04-09 11:16:14,483:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,483:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,484:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,485:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,490:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,491:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,491:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,493:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,494:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,494:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,495:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,498:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,498:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,498:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,499:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,499:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,499:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,499:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,500:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,500:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,500:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,501:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,501:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,502:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,502:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,507:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,507:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,507:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,507:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,507:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,508:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,508:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,508:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,508:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,508:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,508:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,508:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,508:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,509:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,509:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,509:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,510:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,510:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,510:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,511:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,511:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,511:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,511:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,511:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,511:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,511:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,511:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,512:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,512:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,512:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,512:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,512:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,512:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,513:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,513:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,513:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,514:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,514:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,514:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,515:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,515:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,515:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,515:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,516:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,516:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,516:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,516:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,516:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,516:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,516:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,517:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,517:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,517:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,517:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,517:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,517:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,517:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,518:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,518:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,518:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,518:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,518:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,518:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,519:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,520:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,520:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,520:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,520:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,520:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,520:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,520:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,521:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,521:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,521:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,521:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,558:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2025-04-09 11:16:14,559:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.000164 seconds.
+2025-04-09 11:16:14,559:INFO:You can set `force_col_wise=true` to remove the overhead.
+2025-04-09 11:16:14,559:INFO:[LightGBM] [Info] Total Bins 1145
+2025-04-09 11:16:14,559:INFO:[LightGBM] [Info] Number of data points in the train set: 97, number of used features: 54
+2025-04-09 11:16:14,559:INFO:[LightGBM] [Info] Start training from score 5.231959
+2025-04-09 11:16:14,559:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,560:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,560:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,560:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,560:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,560:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,560:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,560:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,560:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,560:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,561:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,561:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,561:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,561:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,561:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,561:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,561:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,561:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,561:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,562:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,562:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,562:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,562:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,562:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,562:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,562:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,562:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,562:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,562:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,563:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,563:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,563:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,563:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,563:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,563:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,563:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,563:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,563:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,564:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,564:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,564:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,564:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,564:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,564:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,564:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,564:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,564:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,564:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,564:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,565:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,565:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,565:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,565:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,566:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,566:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,566:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,566:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,566:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,566:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,566:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,566:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,566:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,566:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,566:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,567:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,567:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,567:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,567:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,567:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,567:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,567:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,567:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,567:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,567:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,567:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,567:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,568:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,568:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,568:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,568:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,568:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,568:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,568:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,568:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,568:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,568:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,568:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,569:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,569:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,569:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,570:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,570:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,570:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,570:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,570:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,570:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,570:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,570:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,571:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,571:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,617:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2025-04-09 11:16:14,618:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.000297 seconds.
+2025-04-09 11:16:14,618:INFO:You can set `force_col_wise=true` to remove the overhead.
+2025-04-09 11:16:14,619:INFO:[LightGBM] [Info] Total Bins 1129
+2025-04-09 11:16:14,619:INFO:[LightGBM] [Info] Number of data points in the train set: 97, number of used features: 54
+2025-04-09 11:16:14,619:INFO:[LightGBM] [Info] Start training from score 5.154639
+2025-04-09 11:16:14,619:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,620:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,620:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,620:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,621:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,621:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,621:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,622:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,622:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,622:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,622:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,622:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,623:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,623:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,623:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,623:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,623:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,623:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,624:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,624:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,626:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,626:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,626:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,626:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,626:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,627:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,627:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,627:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,627:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,627:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,627:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,628:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,628:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,630:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,630:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,630:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,630:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,631:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,631:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,632:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,632:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,632:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,632:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,632:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,632:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,632:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,632:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,633:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,633:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,633:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,634:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,634:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,634:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,640:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,640:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,640:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,640:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,641:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,641:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,641:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,641:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,642:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,642:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,642:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,642:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,642:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,643:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,643:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,643:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,643:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,643:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,644:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,644:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,644:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,644:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,644:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,644:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,644:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,644:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,645:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,645:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,645:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,649:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,650:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,650:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,650:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,651:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,651:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,651:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,651:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,651:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,651:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,651:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,652:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,652:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,652:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,652:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,652:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,652:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,652:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,708:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2025-04-09 11:16:14,740:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.031109 seconds.
+2025-04-09 11:16:14,740:INFO:You can set `force_col_wise=true` to remove the overhead.
+2025-04-09 11:16:14,740:INFO:[LightGBM] [Info] Total Bins 1134
+2025-04-09 11:16:14,746:INFO:[LightGBM] [Info] Number of data points in the train set: 97, number of used features: 54
+2025-04-09 11:16:14,746:INFO:[LightGBM] [Info] Start training from score 5.180412
+2025-04-09 11:16:14,746:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,747:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,747:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,748:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,748:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,748:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,748:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,748:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,748:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,748:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,748:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,749:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,749:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,749:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,749:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,749:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,749:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,749:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,749:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,750:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,750:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,750:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,750:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,750:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,750:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,751:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,751:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,751:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,751:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,751:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,751:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,751:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,751:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,752:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,753:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,753:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,753:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,753:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,753:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,753:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,753:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,753:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,753:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,754:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,754:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,754:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,754:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,754:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,754:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,754:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,754:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,754:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,755:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,755:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,755:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,755:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,755:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,755:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,755:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,755:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,755:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,756:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,756:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,756:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,756:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,756:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,756:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,756:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,756:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,757:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,757:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,757:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,757:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,757:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,757:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,757:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,757:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,757:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,757:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,758:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,758:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,758:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,760:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,760:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,760:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,760:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,760:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,761:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,761:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,761:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,761:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,761:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,761:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,761:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,761:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,761:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,761:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,762:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,762:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,762:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,807:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2025-04-09 11:16:14,808:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.000175 seconds.
+2025-04-09 11:16:14,808:INFO:You can set `force_col_wise=true` to remove the overhead.
+2025-04-09 11:16:14,808:INFO:[LightGBM] [Info] Total Bins 1126
+2025-04-09 11:16:14,808:INFO:[LightGBM] [Info] Number of data points in the train set: 97, number of used features: 54
+2025-04-09 11:16:14,808:INFO:[LightGBM] [Info] Start training from score 5.134021
+2025-04-09 11:16:14,808:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,809:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,809:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,809:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,809:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,809:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,809:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,809:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,809:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,809:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,810:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,810:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,810:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,811:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,811:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,811:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,811:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,811:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,811:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,811:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,811:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,811:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,812:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,812:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,812:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,812:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,812:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,812:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,812:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,812:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,812:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,813:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,813:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,813:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,813:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,813:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,813:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,813:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,813:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,813:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,813:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,814:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,814:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,814:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,818:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,818:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,818:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,818:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,819:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,819:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,819:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,819:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,819:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,819:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,819:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,819:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,820:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,820:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,820:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,820:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,820:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,820:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,820:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,820:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,820:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,820:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,820:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,820:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,821:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,821:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,821:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,821:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,821:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,821:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,821:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,821:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,821:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,822:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,822:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,822:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,822:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,822:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,822:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,823:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,823:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,823:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,826:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,826:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,826:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,826:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,826:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,826:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,826:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,827:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,827:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,827:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,827:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,827:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,827:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,827:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,870:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2025-04-09 11:16:14,870:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.000161 seconds.
+2025-04-09 11:16:14,870:INFO:You can set `force_col_wise=true` to remove the overhead.
+2025-04-09 11:16:14,871:INFO:[LightGBM] [Info] Total Bins 1123
+2025-04-09 11:16:14,871:INFO:[LightGBM] [Info] Number of data points in the train set: 98, number of used features: 54
+2025-04-09 11:16:14,871:INFO:[LightGBM] [Info] Start training from score 5.091837
+2025-04-09 11:16:14,871:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,871:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,871:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,871:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,871:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,871:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,872:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,872:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,872:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,872:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,872:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,872:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,872:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,872:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,873:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,873:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,874:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,874:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,874:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,874:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,874:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,875:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,875:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,875:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,875:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,875:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,875:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,875:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,875:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,875:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,875:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,875:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,876:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,876:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,876:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,876:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,876:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,876:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,877:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,877:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,877:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,877:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,877:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,877:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,877:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,877:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,877:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,878:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,878:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,879:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,879:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,879:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,879:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,879:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,879:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,879:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,879:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,879:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,879:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,880:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,880:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,880:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,880:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,880:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,880:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,880:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,880:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,880:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,881:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,881:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,881:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,881:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,881:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,881:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,882:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,882:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,882:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,882:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,883:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,883:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,883:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,883:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,883:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,883:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,883:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,884:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,884:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,884:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,884:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,884:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,884:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,884:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,884:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,884:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,885:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,885:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,885:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,885:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,885:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,885:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,935:INFO:[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+2025-04-09 11:16:14,936:INFO:[LightGBM] [Info] Auto-choosing col-wise multi-threading, the overhead of testing was 0.000216 seconds.
+2025-04-09 11:16:14,936:INFO:You can set `force_col_wise=true` to remove the overhead.
+2025-04-09 11:16:14,936:INFO:[LightGBM] [Info] Total Bins 1132
+2025-04-09 11:16:14,936:INFO:[LightGBM] [Info] Number of data points in the train set: 98, number of used features: 54
+2025-04-09 11:16:14,936:INFO:[LightGBM] [Info] Start training from score 5.127551
+2025-04-09 11:16:14,937:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,937:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,937:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,937:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,937:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,937:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,937:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,938:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,938:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,938:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,939:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,939:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,939:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,940:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,940:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,940:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,940:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,940:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,940:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,940:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,940:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,941:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,941:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,941:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,942:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,946:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,946:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,946:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,946:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,946:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,947:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,947:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,948:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,948:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,949:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,949:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,949:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,949:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,949:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,949:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,949:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,949:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,953:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,953:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,953:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,953:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,954:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,954:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,954:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,954:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,954:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,955:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,955:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,955:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,955:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,956:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,956:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,956:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,956:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,957:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,957:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,957:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,957:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,957:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,957:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,957:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,957:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,957:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,958:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,958:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,958:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,958:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,958:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,958:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,958:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,958:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,959:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,959:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,959:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,959:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,959:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,959:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,959:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,959:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,959:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,959:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,960:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,960:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,960:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,960:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,960:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,960:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,960:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,961:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,961:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,961:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,961:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,962:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,962:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,962:INFO:[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+2025-04-09 11:16:14,980:INFO:Calculating mean and std
+2025-04-09 11:16:14,981:INFO:Creating metrics dataframe
+2025-04-09 11:16:14,982:INFO:Uploading results into container
+2025-04-09 11:16:14,983:INFO:Uploading model into container now
+2025-04-09 11:16:14,983:INFO:_master_model_container: 75
+2025-04-09 11:16:14,983:INFO:_display_container: 9
+2025-04-09 11:16:14,983:INFO:LGBMRegressor(n_jobs=-1, random_state=123)
+2025-04-09 11:16:14,983:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:15,036:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:15,036:INFO:Creating metrics dataframe
+2025-04-09 11:16:15,041:INFO:Initializing Dummy Regressor
+2025-04-09 11:16:15,041:INFO:Total runtime is 0.26520188252131144 minutes
+2025-04-09 11:16:15,043:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:15,043:INFO:Initializing create_model()
+2025-04-09 11:16:15,043:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=dummy, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468714820>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:15,043:INFO:Checking exceptions
+2025-04-09 11:16:15,043:INFO:Importing libraries
+2025-04-09 11:16:15,043:INFO:Copying training dataset
+2025-04-09 11:16:15,045:INFO:Defining folds
+2025-04-09 11:16:15,045:INFO:Declaring metric variables
+2025-04-09 11:16:15,046:INFO:Importing untrained model
+2025-04-09 11:16:15,047:INFO:Dummy Regressor Imported successfully
+2025-04-09 11:16:15,050:INFO:Starting cross validation
+2025-04-09 11:16:15,051:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:15,355:INFO:Calculating mean and std
+2025-04-09 11:16:15,356:INFO:Creating metrics dataframe
+2025-04-09 11:16:15,357:INFO:Uploading results into container
+2025-04-09 11:16:15,357:INFO:Uploading model into container now
+2025-04-09 11:16:15,357:INFO:_master_model_container: 76
+2025-04-09 11:16:15,357:INFO:_display_container: 9
+2025-04-09 11:16:15,357:INFO:DummyRegressor()
+2025-04-09 11:16:15,357:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:15,407:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:15,407:INFO:Creating metrics dataframe
+2025-04-09 11:16:15,412:WARNING:/home/lworakan/miniconda3/envs/pycaret3_9/lib/python3.9/site-packages/pycaret/internal/pycaret_experiment/supervised_experiment.py:323: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+  master_display_.apply(
+
+2025-04-09 11:16:15,416:INFO:Initializing create_model()
+2025-04-09 11:16:15,416:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=KNeighborsRegressor(n_jobs=-1), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:15,416:INFO:Checking exceptions
+2025-04-09 11:16:15,417:INFO:Importing libraries
+2025-04-09 11:16:15,417:INFO:Copying training dataset
+2025-04-09 11:16:15,418:INFO:Defining folds
+2025-04-09 11:16:15,418:INFO:Declaring metric variables
+2025-04-09 11:16:15,418:INFO:Importing untrained model
+2025-04-09 11:16:15,418:INFO:Declaring custom model
+2025-04-09 11:16:15,419:INFO:K Neighbors Regressor Imported successfully
+2025-04-09 11:16:15,419:INFO:Cross validation set to False
+2025-04-09 11:16:15,419:INFO:Fitting Model
+2025-04-09 11:16:15,433:INFO:KNeighborsRegressor(n_jobs=-1)
+2025-04-09 11:16:15,433:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:15,494:INFO:_master_model_container: 76
+2025-04-09 11:16:15,494:INFO:_display_container: 9
+2025-04-09 11:16:15,494:INFO:KNeighborsRegressor(n_jobs=-1)
+2025-04-09 11:16:15,494:INFO:compare_models() successfully completed......................................
+2025-04-09 11:16:15,495:INFO:Initializing tune_model()
+2025-04-09 11:16:15,495:INFO:tune_model(estimator=KNeighborsRegressor(n_jobs=-1), fold=None, round=4, n_iter=50, custom_grid=None, optimize=RMSE, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>)
+2025-04-09 11:16:15,495:INFO:Checking exceptions
+2025-04-09 11:16:15,501:INFO:Copying training dataset
+2025-04-09 11:16:15,502:INFO:Checking base model
+2025-04-09 11:16:15,503:INFO:Base model : K Neighbors Regressor
+2025-04-09 11:16:15,504:INFO:Declaring metric variables
+2025-04-09 11:16:15,506:INFO:Defining Hyperparameters
+2025-04-09 11:16:15,558:INFO:Tuning with n_jobs=-1
+2025-04-09 11:16:15,558:INFO:Initializing RandomizedSearchCV
+2025-04-09 11:16:19,464:INFO:best_params: {'actual_estimator__weights': 'uniform', 'actual_estimator__n_neighbors': 2, 'actual_estimator__metric': 'minkowski'}
+2025-04-09 11:16:19,466:INFO:Hyperparameter search completed
+2025-04-09 11:16:19,466:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:19,467:INFO:Initializing create_model()
+2025-04-09 11:16:19,467:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=KNeighborsRegressor(n_jobs=-1), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x740468838be0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'weights': 'uniform', 'n_neighbors': 2, 'metric': 'minkowski'})
+2025-04-09 11:16:19,468:INFO:Checking exceptions
+2025-04-09 11:16:19,468:INFO:Importing libraries
+2025-04-09 11:16:19,468:INFO:Copying training dataset
+2025-04-09 11:16:19,477:INFO:Defining folds
+2025-04-09 11:16:19,477:INFO:Declaring metric variables
+2025-04-09 11:16:19,485:INFO:Importing untrained model
+2025-04-09 11:16:19,485:INFO:Declaring custom model
+2025-04-09 11:16:19,492:INFO:K Neighbors Regressor Imported successfully
+2025-04-09 11:16:19,506:INFO:Starting cross validation
+2025-04-09 11:16:19,508:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:19,997:INFO:Calculating mean and std
+2025-04-09 11:16:19,997:INFO:Creating metrics dataframe
+2025-04-09 11:16:20,000:INFO:Finalizing model
+2025-04-09 11:16:20,019:INFO:Uploading results into container
+2025-04-09 11:16:20,019:INFO:Uploading model into container now
+2025-04-09 11:16:20,020:INFO:_master_model_container: 77
+2025-04-09 11:16:20,020:INFO:_display_container: 10
+2025-04-09 11:16:20,020:INFO:KNeighborsRegressor(n_jobs=-1, n_neighbors=2)
+2025-04-09 11:16:20,020:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:20,106:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:20,106:INFO:choose_better activated
+2025-04-09 11:16:20,109:INFO:SubProcess create_model() called ==================================
+2025-04-09 11:16:20,109:INFO:Initializing create_model()
+2025-04-09 11:16:20,109:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=KNeighborsRegressor(n_jobs=-1), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:20,109:INFO:Checking exceptions
+2025-04-09 11:16:20,110:INFO:Importing libraries
+2025-04-09 11:16:20,110:INFO:Copying training dataset
+2025-04-09 11:16:20,112:INFO:Defining folds
+2025-04-09 11:16:20,112:INFO:Declaring metric variables
+2025-04-09 11:16:20,112:INFO:Importing untrained model
+2025-04-09 11:16:20,112:INFO:Declaring custom model
+2025-04-09 11:16:20,112:INFO:K Neighbors Regressor Imported successfully
+2025-04-09 11:16:20,112:INFO:Starting cross validation
+2025-04-09 11:16:20,113:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=1
+2025-04-09 11:16:20,350:INFO:Calculating mean and std
+2025-04-09 11:16:20,351:INFO:Creating metrics dataframe
+2025-04-09 11:16:20,352:INFO:Finalizing model
+2025-04-09 11:16:20,367:INFO:Uploading results into container
+2025-04-09 11:16:20,368:INFO:Uploading model into container now
+2025-04-09 11:16:20,368:INFO:_master_model_container: 78
+2025-04-09 11:16:20,368:INFO:_display_container: 11
+2025-04-09 11:16:20,368:INFO:KNeighborsRegressor(n_jobs=-1)
+2025-04-09 11:16:20,368:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:20,418:INFO:SubProcess create_model() end ==================================
+2025-04-09 11:16:20,418:INFO:KNeighborsRegressor(n_jobs=-1) result for RMSE is 0.0209
+2025-04-09 11:16:20,419:INFO:KNeighborsRegressor(n_jobs=-1, n_neighbors=2) result for RMSE is 0.0158
+2025-04-09 11:16:20,419:INFO:KNeighborsRegressor(n_jobs=-1, n_neighbors=2) is best model
+2025-04-09 11:16:20,419:INFO:choose_better completed
+2025-04-09 11:16:20,423:INFO:_master_model_container: 78
+2025-04-09 11:16:20,423:INFO:_display_container: 10
+2025-04-09 11:16:20,423:INFO:KNeighborsRegressor(n_jobs=-1, n_neighbors=2)
+2025-04-09 11:16:20,423:INFO:tune_model() successfully completed......................................
+2025-04-09 11:16:20,478:INFO:Initializing finalize_model()
+2025-04-09 11:16:20,478:INFO:finalize_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=KNeighborsRegressor(n_jobs=-1, n_neighbors=2), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2025-04-09 11:16:20,479:INFO:Finalizing KNeighborsRegressor(n_jobs=-1, n_neighbors=2)
+2025-04-09 11:16:20,480:INFO:Initializing create_model()
+2025-04-09 11:16:20,480:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=KNeighborsRegressor(n_jobs=-1, n_neighbors=2), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2025-04-09 11:16:20,480:INFO:Checking exceptions
+2025-04-09 11:16:20,481:INFO:Importing libraries
+2025-04-09 11:16:20,481:INFO:Copying training dataset
+2025-04-09 11:16:20,481:INFO:Defining folds
+2025-04-09 11:16:20,481:INFO:Declaring metric variables
+2025-04-09 11:16:20,481:INFO:Importing untrained model
+2025-04-09 11:16:20,481:INFO:Declaring custom model
+2025-04-09 11:16:20,481:INFO:K Neighbors Regressor Imported successfully
+2025-04-09 11:16:20,482:INFO:Cross validation set to False
+2025-04-09 11:16:20,482:INFO:Fitting Model
+2025-04-09 11:16:20,499:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Frame', 'X_min', 'Y_min', 'X_max',
+                                             'Y_max', 'Confidence',
+                                             'Average_Depth_m', 'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Timestamp'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Timestamp'],
+                                    transformer=TargetEncoder(cols=['Timestamp'],
+                                                              handle_missing='return_nan'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 KNeighborsRegressor(n_jobs=-1, n_neighbors=2))])
+2025-04-09 11:16:20,499:INFO:create_model() successfully completed......................................
+2025-04-09 11:16:20,547:INFO:_master_model_container: 78
+2025-04-09 11:16:20,547:INFO:_display_container: 10
+2025-04-09 11:16:20,551:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Frame', 'X_min', 'Y_min', 'X_max',
+                                             'Y_max', 'Confidence',
+                                             'Average_Depth_m', 'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Timestamp'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Timestamp'],
+                                    transformer=TargetEncoder(cols=['Timestamp'],
+                                                              handle_missing='return_nan'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 KNeighborsRegressor(n_jobs=-1, n_neighbors=2))])
+2025-04-09 11:16:20,551:INFO:finalize_model() successfully completed......................................
+2025-04-09 11:16:20,606:INFO:Initializing save_model()
+2025-04-09 11:16:20,606:INFO:save_model(model=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Frame', 'X_min', 'Y_min', 'X_max',
+                                             'Y_max', 'Confidence',
+                                             'Average_Depth_m', 'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Timestamp'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Timestamp'],
+                                    transformer=TargetEncoder(cols=['Timestamp'],
+                                                              handle_missing='return_nan'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 KNeighborsRegressor(n_jobs=-1, n_neighbors=2))]), model_name=final_calibrated_depth_model_outdoor, prep_pipe_=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Frame', 'X_min', 'Y_min', 'X_max',
+                                             'Y_max', 'Confidence',
+                                             'Average_Depth_m', 'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Timestamp'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Timestamp'],
+                                    transformer=TargetEncoder(cols=['Timestamp'],
+                                                              handle_missing='return_nan'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False)))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2025-04-09 11:16:20,606:INFO:Adding model into prep_pipe
+2025-04-09 11:16:20,606:WARNING:Only Model saved as it was a pipeline.
+2025-04-09 11:16:20,608:INFO:final_calibrated_depth_model_outdoor.pkl saved in current working directory
+2025-04-09 11:16:20,611:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Frame', 'X_min', 'Y_min', 'X_max',
+                                             'Y_max', 'Confidence',
+                                             'Average_Depth_m', 'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Timestamp'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Timestamp'],
+                                    transformer=TargetEncoder(cols=['Timestamp'],
+                                                              handle_missing='return_nan'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 KNeighborsRegressor(n_jobs=-1, n_neighbors=2))])
+2025-04-09 11:16:20,611:INFO:save_model() successfully completed......................................
+2025-04-09 11:16:20,692:INFO:Initializing load_model()
+2025-04-09 11:16:20,693:INFO:load_model(model_name=final_calibrated_depth_model_outdoor, platform=None, authentication=None, verbose=True)
+2025-04-09 11:18:43,236:INFO:Initializing predict_model()
+2025-04-09 11:18:43,236:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x74046898e6a0>, estimator=ElasticNet(random_state=123), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x740468b479d0>)
+2025-04-09 11:18:43,236:INFO:Checking exceptions
+2025-04-09 11:18:43,236:INFO:Preloading libraries
+2025-04-09 11:18:43,240:INFO:Set up data.
+2025-04-09 11:18:43,246:INFO:Set up index.
