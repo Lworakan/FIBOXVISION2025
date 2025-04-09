@@ -1,0 +1,806 @@
+2025-04-09 11:12:18,796:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:12:18,796:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:12:18,796:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:12:18,796:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:12:59,592:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:12:59,627:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:12:59,627:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:12:59,627:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:14:07,384:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:14:07,384:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:14:07,384:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:14:07,384:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:14:11,120:INFO:Initializing load_model()
+2025-04-09 11:14:11,120:INFO:load_model(model_name=.\model\final_calibrated_depth_model_outdoor.pkl, platform=None, authentication=None, verbose=True)
+2025-04-09 11:14:25,916:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:14:25,916:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:14:25,916:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:14:25,916:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:14:29,194:INFO:Initializing load_model()
+2025-04-09 11:14:29,194:INFO:load_model(model_name=.\model\final_calibrated_depth_model_outdoor, platform=None, authentication=None, verbose=True)
+2025-04-09 11:14:29,241:WARNING:C:\Users\User\miniconda3\envs\abu2\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.2', 'IPython': '9.1.0', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.61.2', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.11', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.1', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.5', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-09 11:14:44,160:INFO:Initializing predict_model()
+2025-04-09 11:14:44,160:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001E9713F9590>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Frame', 'X_min', 'Y_min', 'X_max',
+                                             'Y_max', 'Confidence',
+                                             'Average_Depth_m', 'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Timestamp'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Timestamp'],
+                                    transformer=TargetEncoder(cols=['Timestamp'],
+                                                              handle_missing='return_nan'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 KNeighborsRegressor(n_jobs=-1, n_neighbors=2))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001E96F55B100>)
+2025-04-09 11:14:44,160:INFO:Checking exceptions
+2025-04-09 11:14:44,160:INFO:Preloading libraries
+2025-04-09 11:36:27,402:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:36:27,402:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:36:27,402:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:36:27,402:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:36:31,420:INFO:Initializing load_model()
+2025-04-09 11:36:31,420:INFO:load_model(model_name=.\model\final_calibrated_depth_model_outdoor, platform=None, authentication=None, verbose=True)
+2025-04-09 11:36:31,467:WARNING:C:\Users\User\miniconda3\envs\abu2\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.2', 'IPython': '9.1.0', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.61.2', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.11', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.1', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.5', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-09 11:39:32,379:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:39:32,379:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:39:32,379:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:39:32,379:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:39:36,685:INFO:Initializing load_model()
+2025-04-09 11:39:36,685:INFO:load_model(model_name=.\model\final_calibrated_depth_model_outdoor_v2, platform=None, authentication=None, verbose=True)
+2025-04-09 11:39:36,764:WARNING:C:\Users\User\miniconda3\envs\abu2\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.2', 'IPython': '9.1.0', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.61.2', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.11', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.1', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.5', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-09 11:39:49,296:INFO:Initializing predict_model()
+2025-04-09 11:39:49,296:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000267F775D050>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000267F7B43CE0>)
+2025-04-09 11:39:49,296:INFO:Checking exceptions
+2025-04-09 11:39:49,296:INFO:Preloading libraries
+2025-04-09 11:42:36,690:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:42:36,690:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:42:36,690:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:42:36,690:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:42:45,369:INFO:Initializing load_model()
+2025-04-09 11:42:45,369:INFO:load_model(model_name=.\model\final_calibrated_depth_model_outdoor_v2, platform=None, authentication=None, verbose=True)
+2025-04-09 11:42:45,431:WARNING:C:\Users\User\miniconda3\envs\abu2\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.2', 'IPython': '9.1.0', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.61.2', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.11', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.1', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.5', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-09 11:42:50,199:INFO:Initializing predict_model()
+2025-04-09 11:42:50,199:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001F88EE9B610>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001F88A1E4180>)
+2025-04-09 11:42:50,199:INFO:Checking exceptions
+2025-04-09 11:42:50,199:INFO:Preloading libraries
+2025-04-09 11:42:50,203:INFO:Set up data.
+2025-04-09 11:42:50,218:INFO:Set up index.
+2025-04-09 11:44:04,488:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:44:04,489:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:44:04,489:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:44:04,489:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:44:10,001:INFO:Initializing load_model()
+2025-04-09 11:44:10,001:INFO:load_model(model_name=.\model\final_calibrated_depth_model_outdoor_v2, platform=None, authentication=None, verbose=True)
+2025-04-09 11:44:10,063:WARNING:C:\Users\User\miniconda3\envs\abu2\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.2', 'IPython': '9.1.0', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.61.2', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.11', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.1', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.5', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-09 11:44:17,449:INFO:Initializing predict_model()
+2025-04-09 11:44:17,449:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000020388802C90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000203FE688B80>)
+2025-04-09 11:44:17,449:INFO:Checking exceptions
+2025-04-09 11:44:17,449:INFO:Preloading libraries
+2025-04-09 11:44:17,449:INFO:Set up data.
+2025-04-09 11:44:17,465:INFO:Set up index.
+2025-04-09 11:45:36,331:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:45:36,331:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:45:36,331:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:45:36,331:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:45:41,741:INFO:Initializing load_model()
+2025-04-09 11:45:41,741:INFO:load_model(model_name=.\model\final_calibrated_depth_model_outdoor_v2, platform=None, authentication=None, verbose=True)
+2025-04-09 11:45:41,819:WARNING:C:\Users\User\miniconda3\envs\abu2\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.2', 'IPython': '9.1.0', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.61.2', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.11', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.1', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.5', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-09 11:47:33,201:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:47:33,202:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:47:33,202:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:47:33,202:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:47:38,029:INFO:Initializing load_model()
+2025-04-09 11:47:38,029:INFO:load_model(model_name=.\model\final_calibrated_depth_model_outdoor_v2, platform=None, authentication=None, verbose=True)
+2025-04-09 11:47:38,076:WARNING:C:\Users\User\miniconda3\envs\abu2\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.2', 'IPython': '9.1.0', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.61.2', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.11', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.1', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.5', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-09 11:47:43,047:INFO:Initializing predict_model()
+2025-04-09 11:47:43,047:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000189F3999890>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000189F3C87CE0>)
+2025-04-09 11:47:43,047:INFO:Checking exceptions
+2025-04-09 11:47:43,047:INFO:Preloading libraries
+2025-04-09 11:47:43,047:INFO:Set up data.
+2025-04-09 11:47:43,047:INFO:Set up index.
+2025-04-09 11:49:12,343:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:49:12,343:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:49:12,343:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:49:12,343:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:49:16,609:INFO:Initializing load_model()
+2025-04-09 11:49:16,609:INFO:load_model(model_name=.\model\final_calibrated_depth_model_outdoor_v2, platform=None, authentication=None, verbose=True)
+2025-04-09 11:49:16,671:WARNING:C:\Users\User\miniconda3\envs\abu2\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.2', 'IPython': '9.1.0', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.61.2', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.11', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.1', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.5', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-09 11:51:18,028:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:51:18,028:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:51:18,028:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:51:18,028:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:51:23,051:INFO:Initializing load_model()
+2025-04-09 11:51:23,051:INFO:load_model(model_name=.\model\final_calibrated_depth_model_outdoor_v2, platform=None, authentication=None, verbose=True)
+2025-04-09 11:51:23,138:WARNING:C:\Users\User\miniconda3\envs\abu2\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.2', 'IPython': '9.1.0', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.61.2', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.11', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.1', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.5', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-09 11:51:34,285:INFO:Initializing predict_model()
+2025-04-09 11:51:34,285:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001D8AA29C790>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001D89FE27CE0>)
+2025-04-09 11:51:34,285:INFO:Checking exceptions
+2025-04-09 11:51:34,285:INFO:Preloading libraries
+2025-04-09 11:51:34,285:INFO:Set up data.
+2025-04-09 11:51:34,295:INFO:Set up index.
+2025-04-09 11:52:43,049:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:52:43,049:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:52:43,049:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:52:43,049:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-04-09 11:52:47,183:INFO:Initializing load_model()
+2025-04-09 11:52:47,183:INFO:load_model(model_name=.\model\final_calibrated_depth_model_outdoor_v2, platform=None, authentication=None, verbose=True)
+2025-04-09 11:52:47,246:WARNING:C:\Users\User\miniconda3\envs\abu2\Lib\site-packages\pycaret\internal\pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.2', 'IPython': '9.1.0', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.6', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.4', 'imblearn': '0.13.0', 'category_encoders': '2.7.0', 'lightgbm': '4.6.0', 'numba': '0.61.2', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': 'Not installed'}, 'python': {'version': '3.11.11', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '25.0', 'setuptools': '75.8.0', 'pycaret': '3.3.1', 'IPython': '8.18.1', 'ipywidgets': '8.1.5', 'tqdm': '4.67.1', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.5', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.3', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.6.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '7.0.0', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.9.21', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2025-04-09 11:53:19,400:INFO:Initializing predict_model()
+2025-04-09 11:53:19,400:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB7B3710>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DF0347D80>)
+2025-04-09 11:53:19,400:INFO:Checking exceptions
+2025-04-09 11:53:19,400:INFO:Preloading libraries
+2025-04-09 11:53:19,401:INFO:Set up data.
+2025-04-09 11:53:19,407:INFO:Set up index.
+2025-04-09 11:53:20,337:INFO:Initializing predict_model()
+2025-04-09 11:53:20,337:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DEFFC92D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DF0347D80>)
+2025-04-09 11:53:20,337:INFO:Checking exceptions
+2025-04-09 11:53:20,337:INFO:Preloading libraries
+2025-04-09 11:53:20,337:INFO:Set up data.
+2025-04-09 11:53:20,337:INFO:Set up index.
+2025-04-09 11:53:21,295:INFO:Initializing predict_model()
+2025-04-09 11:53:21,295:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DF007DC10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DF0347D80>)
+2025-04-09 11:53:21,295:INFO:Checking exceptions
+2025-04-09 11:53:21,295:INFO:Preloading libraries
+2025-04-09 11:53:21,295:INFO:Set up data.
+2025-04-09 11:53:21,295:INFO:Set up index.
+2025-04-09 11:53:22,331:INFO:Initializing predict_model()
+2025-04-09 11:53:22,331:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DEFF4E550>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:22,331:INFO:Checking exceptions
+2025-04-09 11:53:22,331:INFO:Preloading libraries
+2025-04-09 11:53:22,331:INFO:Set up data.
+2025-04-09 11:53:22,331:INFO:Set up index.
+2025-04-09 11:53:23,288:INFO:Initializing predict_model()
+2025-04-09 11:53:23,288:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB5A0210>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:23,288:INFO:Checking exceptions
+2025-04-09 11:53:23,288:INFO:Preloading libraries
+2025-04-09 11:53:23,288:INFO:Set up data.
+2025-04-09 11:53:23,288:INFO:Set up index.
+2025-04-09 11:53:24,308:INFO:Initializing predict_model()
+2025-04-09 11:53:24,308:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DF007DC10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:24,308:INFO:Checking exceptions
+2025-04-09 11:53:24,308:INFO:Preloading libraries
+2025-04-09 11:53:24,309:INFO:Set up data.
+2025-04-09 11:53:24,316:INFO:Set up index.
+2025-04-09 11:53:25,249:INFO:Initializing predict_model()
+2025-04-09 11:53:25,264:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB5D7E10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:25,264:INFO:Checking exceptions
+2025-04-09 11:53:25,264:INFO:Preloading libraries
+2025-04-09 11:53:25,264:INFO:Set up data.
+2025-04-09 11:53:25,268:INFO:Set up index.
+2025-04-09 11:53:26,175:INFO:Initializing predict_model()
+2025-04-09 11:53:26,175:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB5D0410>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:26,175:INFO:Checking exceptions
+2025-04-09 11:53:26,175:INFO:Preloading libraries
+2025-04-09 11:53:26,191:INFO:Set up data.
+2025-04-09 11:53:26,191:INFO:Set up index.
+2025-04-09 11:53:27,192:INFO:Initializing predict_model()
+2025-04-09 11:53:27,192:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB5A0210>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:27,192:INFO:Checking exceptions
+2025-04-09 11:53:27,192:INFO:Preloading libraries
+2025-04-09 11:53:27,192:INFO:Set up data.
+2025-04-09 11:53:27,192:INFO:Set up index.
+2025-04-09 11:53:28,134:INFO:Initializing predict_model()
+2025-04-09 11:53:28,134:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DF007DC10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:28,134:INFO:Checking exceptions
+2025-04-09 11:53:28,134:INFO:Preloading libraries
+2025-04-09 11:53:28,134:INFO:Set up data.
+2025-04-09 11:53:28,134:INFO:Set up index.
+2025-04-09 11:53:29,120:INFO:Initializing predict_model()
+2025-04-09 11:53:29,120:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB7CC310>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:29,120:INFO:Checking exceptions
+2025-04-09 11:53:29,120:INFO:Preloading libraries
+2025-04-09 11:53:29,121:INFO:Set up data.
+2025-04-09 11:53:29,130:INFO:Set up index.
+2025-04-09 11:53:30,227:INFO:Initializing predict_model()
+2025-04-09 11:53:30,227:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB7CC2D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:30,227:INFO:Checking exceptions
+2025-04-09 11:53:30,227:INFO:Preloading libraries
+2025-04-09 11:53:30,227:INFO:Set up data.
+2025-04-09 11:53:30,234:INFO:Set up index.
+2025-04-09 11:53:31,282:INFO:Initializing predict_model()
+2025-04-09 11:53:31,288:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB5A0210>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:31,289:INFO:Checking exceptions
+2025-04-09 11:53:31,289:INFO:Preloading libraries
+2025-04-09 11:53:31,289:INFO:Set up data.
+2025-04-09 11:53:31,289:INFO:Set up index.
+2025-04-09 11:53:32,328:INFO:Initializing predict_model()
+2025-04-09 11:53:32,328:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB7CF510>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:32,328:INFO:Checking exceptions
+2025-04-09 11:53:32,328:INFO:Preloading libraries
+2025-04-09 11:53:32,328:INFO:Set up data.
+2025-04-09 11:53:32,328:INFO:Set up index.
+2025-04-09 11:53:33,270:INFO:Initializing predict_model()
+2025-04-09 11:53:33,270:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DEFF48750>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:33,270:INFO:Checking exceptions
+2025-04-09 11:53:33,270:INFO:Preloading libraries
+2025-04-09 11:53:33,270:INFO:Set up data.
+2025-04-09 11:53:33,282:INFO:Set up index.
+2025-04-09 11:53:34,298:INFO:Initializing predict_model()
+2025-04-09 11:53:34,298:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DEFF58F50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:34,298:INFO:Checking exceptions
+2025-04-09 11:53:34,298:INFO:Preloading libraries
+2025-04-09 11:53:34,298:INFO:Set up data.
+2025-04-09 11:53:34,307:INFO:Set up index.
+2025-04-09 11:53:35,249:INFO:Initializing predict_model()
+2025-04-09 11:53:35,249:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB7CF5D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:35,249:INFO:Checking exceptions
+2025-04-09 11:53:35,249:INFO:Preloading libraries
+2025-04-09 11:53:35,249:INFO:Set up data.
+2025-04-09 11:53:35,249:INFO:Set up index.
+2025-04-09 11:53:36,192:INFO:Initializing predict_model()
+2025-04-09 11:53:36,192:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB7CE550>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:36,192:INFO:Checking exceptions
+2025-04-09 11:53:36,192:INFO:Preloading libraries
+2025-04-09 11:53:36,192:INFO:Set up data.
+2025-04-09 11:53:36,208:INFO:Set up index.
+2025-04-09 11:53:37,205:INFO:Initializing predict_model()
+2025-04-09 11:53:37,212:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB5B3710>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:37,212:INFO:Checking exceptions
+2025-04-09 11:53:37,212:INFO:Preloading libraries
+2025-04-09 11:53:37,212:INFO:Set up data.
+2025-04-09 11:53:37,212:INFO:Set up index.
+2025-04-09 11:53:38,153:INFO:Initializing predict_model()
+2025-04-09 11:53:38,153:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB5D9C90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:38,153:INFO:Checking exceptions
+2025-04-09 11:53:38,153:INFO:Preloading libraries
+2025-04-09 11:53:38,153:INFO:Set up data.
+2025-04-09 11:53:38,153:INFO:Set up index.
+2025-04-09 11:53:39,173:INFO:Initializing predict_model()
+2025-04-09 11:53:39,173:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB7C1BD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:39,174:INFO:Checking exceptions
+2025-04-09 11:53:39,174:INFO:Preloading libraries
+2025-04-09 11:53:39,174:INFO:Set up data.
+2025-04-09 11:53:39,178:INFO:Set up index.
+2025-04-09 11:53:40,147:INFO:Initializing predict_model()
+2025-04-09 11:53:40,147:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB7B24D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:40,147:INFO:Checking exceptions
+2025-04-09 11:53:40,147:INFO:Preloading libraries
+2025-04-09 11:53:40,147:INFO:Set up data.
+2025-04-09 11:53:40,147:INFO:Set up index.
+2025-04-09 11:53:41,096:INFO:Initializing predict_model()
+2025-04-09 11:53:41,096:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB7D1910>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:41,096:INFO:Checking exceptions
+2025-04-09 11:53:41,096:INFO:Preloading libraries
+2025-04-09 11:53:41,096:INFO:Set up data.
+2025-04-09 11:53:41,096:INFO:Set up index.
+2025-04-09 11:53:42,097:INFO:Initializing predict_model()
+2025-04-09 11:53:42,097:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB7D2650>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:42,097:INFO:Checking exceptions
+2025-04-09 11:53:42,097:INFO:Preloading libraries
+2025-04-09 11:53:42,097:INFO:Set up data.
+2025-04-09 11:53:42,108:INFO:Set up index.
+2025-04-09 11:53:43,050:INFO:Initializing predict_model()
+2025-04-09 11:53:43,050:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB7C2DD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:43,050:INFO:Checking exceptions
+2025-04-09 11:53:43,050:INFO:Preloading libraries
+2025-04-09 11:53:43,050:INFO:Set up data.
+2025-04-09 11:53:43,050:INFO:Set up index.
+2025-04-09 11:53:44,080:INFO:Initializing predict_model()
+2025-04-09 11:53:44,080:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB7B2410>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:44,080:INFO:Checking exceptions
+2025-04-09 11:53:44,080:INFO:Preloading libraries
+2025-04-09 11:53:44,080:INFO:Set up data.
+2025-04-09 11:53:44,090:INFO:Set up index.
+2025-04-09 11:53:45,041:INFO:Initializing predict_model()
+2025-04-09 11:53:45,041:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB7C2D50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:45,041:INFO:Checking exceptions
+2025-04-09 11:53:45,041:INFO:Preloading libraries
+2025-04-09 11:53:45,041:INFO:Set up data.
+2025-04-09 11:53:45,041:INFO:Set up index.
+2025-04-09 11:53:52,196:INFO:Initializing predict_model()
+2025-04-09 11:53:52,196:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB7DE390>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB76DB20>)
+2025-04-09 11:53:52,196:INFO:Checking exceptions
+2025-04-09 11:53:52,196:INFO:Preloading libraries
+2025-04-09 11:53:52,197:INFO:Set up data.
+2025-04-09 11:53:52,203:INFO:Set up index.
+2025-04-09 11:53:53,246:INFO:Initializing predict_model()
+2025-04-09 11:53:53,246:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000024DFB7B2850>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['X_min', 'Y_min', 'X_max', 'Y_max',
+                                             'Confidence', 'Average_Depth_m',
+                                             'area'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 GradientBoostingRegressor(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024DFB78F240>)
+2025-04-09 11:53:53,246:INFO:Checking exceptions
+2025-04-09 11:53:53,246:INFO:Preloading libraries
+2025-04-09 11:53:53,246:INFO:Set up data.
+2025-04-09 11:53:53,262:INFO:Set up index.

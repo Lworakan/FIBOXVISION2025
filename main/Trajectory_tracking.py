@@ -7,6 +7,8 @@ import datetime
 import csv
 import os
 import math
+from pycaret.classification import *
+import pandas as pd
 
 # Try to import RealSense library, but continue if not available
 try:
@@ -18,7 +20,8 @@ except ImportError:
     print("RealSense SDK not found")
 
 # --- Configuration ---
-MODEL_PATH = r"./Callback/yolo11l.pt"  # model path
+# MODEL_PATH = r".\\Callback\\yolo11l.pt"  # model path
+MODEL_PATH = r".\\Callback\\best(1).pt"  # model path
 OUTPUT_CSV_FILE = 'camera_tracking.csv'  # output csv file
 # -----------------------------
 
@@ -95,6 +98,8 @@ def main():
     print(f"Loading model from {MODEL_PATH}...")
     try:
         model = YOLO(MODEL_PATH)
+        # knn_model = create_model('knn')
+        loaded_model = load_model('.\\model\\final_calibrated_depth_model_outdoor_v2')
         target_class_id = -1
         if hasattr(model, 'names'):
             class_names = model.names
@@ -184,6 +189,9 @@ def main():
         z_from_width = (REFERENCE_OBJECT_WIDTH * FOCAL_LENGTH) / bbox_width
         z_from_height = (REFERENCE_OBJECT_HEIGHT * FOCAL_LENGTH) / bbox_height
         z_est = (z_from_width + z_from_height) / 2.0
+        # # using k neighbor to estimate using the average of the two values (pycaret)
+        # z_est = predict_model(loaded_model, data=z_est)
+
         return z_est
 
     def calculate_3d_distance(x, y, z):
@@ -406,6 +414,14 @@ def main():
                     if USE_REALSENSE and depth_frame:
                         realsense_depth = get_realsense_depth(depth_frame, x1, y1, bbox_width, bbox_height)
                         current_z = realsense_depth if realsense_depth > 0 else z_est
+
+                        # z est regression
+                        current_frame_data.append([
+                        x1, y1, x2, y2, conf, current_z,
+                        (x2 - x1) * (y2 - y1)
+                    ])
+                        hope = pd.DataFrame(current_frame_data, columns=['X_min', 'Y_min', 'X_max', 'Y_max', 'Confidence', 'Average_Depth_m', 'area'])
+                        current_z = predict_model(loaded_model, data=hope)['Average_Depth_m'][0]
                     else:
                         realsense_depth = 0.0
                         current_z = z_est
@@ -473,6 +489,14 @@ def main():
                     
                     # Add to current frame data with relative positions and fixed angle
                     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
+
+                    # current_frame_data.append([
+                    #     timestamp, frame_count, x1, y1, x2, y2, f"{conf:.2f}", f"{realsense_depth:.3f}",
+                    #     (x2 - x1) * (y2 - y1)
+                    # ])
+
+                    # realsense_depth = predict_model(loaded_model, data=current_frame_data)
+
                     current_frame_data.append([
                         timestamp, frame_count, x1, y1, x2, y2, f"{conf:.2f}", 
                         (x2 - x1) * (y2 - y1), display_rel_x, display_rel_y, f"{current_z:.2f}", 
