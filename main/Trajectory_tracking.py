@@ -20,14 +20,15 @@ except ImportError:
     print("RealSense SDK not found")
 
 # --- Configuration ---
-# MODEL_PATH = r".\\Callback\\yolo11l.pt"  # model path
-MODEL_PATH = r".\\Callback\\best(1).pt"  # model path
-OUTPUT_CSV_FILE = 'camera_tracking.csv'  # output csv file
+MODEL_PATH = r".\\Callback\\yolo11l.pt"  # model path
+# MODEL_PATH = r"best(1).pt"  # model path
+OUTPUT_CSV_FILE = 'camera_trackingHuman.csv'  # output csv file
 # -----------------------------
 
 # YOLO Model Configuration
-CONF_THRESHOLD = 0.60  # Confidence threshold
-TARGET_CLASS_NAME = 'basketball_hoop'  # Change this to your target class
+CONF_THRESHOLD = 0.15  # Confidence threshold
+# TARGET_CLASS_NAME = 'basketball_hoop'  # Change this to your target class
+TARGET_CLASS_NAME = 'person'  # Change this to your target class
 
 # Camera Configuration
 CAMERA_ID = 0  # Default webcam (change if you have multiple cameras)
@@ -258,15 +259,15 @@ def main():
         cv2.putText(image, "Z", (orig_x - 20, orig_y + 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 1)
         
         if is_ref:
-            cv2.putText(image, "Reference (0,0,0)", (orig_x - 60, orig_y - 20), 
+            cv2.putText(image, "Reference (255,255,255)", (orig_x - 60, orig_y - 20), 
                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 0), 1)
         else:
             if rotation_angle != 0:
                 cv2.putText(image, f"Origin (rotated {rotation_angle:.1f}°)", (orig_x - 50, orig_y - 20), 
-                          cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+                          cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
             else:
                 cv2.putText(image, "Origin", (orig_x - 20, orig_y - 20), 
-                          cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+                          cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
 
     def draw_trajectory(image, positions, color=(255, 0, 255), thickness=2):
         """Draw the trajectory line based on previous positions"""
@@ -525,8 +526,8 @@ def main():
                     cv2.rectangle(display_image, (x1, y1), (x2, y2), color, 2)
                     cv2.putText(display_image, label, (x1, y1 - 10), 
                                cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
-                    cv2.putText(display_image, vector_label, (x1, y2 + 20), 
-                               cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
+                    cv2.putText(display_image, vector_label, (200, 200), 
+                               cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 2)
                     
                     # Mark center of the detection
                     cv2.circle(display_image, (center_box_x, center_box_y), 4, (255, 0, 0), -1)
@@ -556,15 +557,15 @@ def main():
                         # Add vector information to side panel
                         cv2.putText(display_image, f"Vector Information:", 
                                    (info_box_x + 10, info_box_y + 20), 
-                                   cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+                                   cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
                         
                         # Show both absolute and relative coordinates
                         cv2.putText(display_image, f"Abs X: {display_rel_x:+.2f} px", 
                                    (info_box_x + 10, info_box_y + 60), 
-                                   cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+                                   cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
                         cv2.putText(display_image, f"Abs Y: {display_rel_y:+.2f} px", 
                                    (info_box_x + 10, info_box_y + 80), 
-                                   cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+                                   cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
                         
                         # Show reference point if set
                         if reference_set:
@@ -583,7 +584,7 @@ def main():
                         if USE_REALSENSE and realsense_depth > 0:
                             cv2.putText(display_image, f"Abs Z: {realsense_depth:.3f} m", 
                                        (info_box_x + 10, info_box_y + 100), 
-                                       cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+                                       cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
                             if reference_set:
                                 cv2.putText(display_image, f"Rel Z: {rel_z_to_ref:+.3f} m", 
                                            (info_box_x + 150, info_box_y + 100), 
@@ -591,7 +592,7 @@ def main():
                         else:
                             cv2.putText(display_image, f"Abs Z: {z_est:.2f} m", 
                                        (info_box_x + 10, info_box_y + 100), 
-                                       cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+                                       cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
                             if reference_set:
                                 cv2.putText(display_image, f"Rel Z: {rel_z_to_ref:+.2f} m", 
                                            (info_box_x + 150, info_box_y + 100), 
@@ -599,23 +600,23 @@ def main():
                                        
                         cv2.putText(display_image, f"3D Distance (from {reference_set and 'ref' or 'origin'}): {distance_3d:.2f} m", 
                                    (info_box_x + 10, info_box_y + 120), 
-                                   cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+                                   cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
                         
                         # Display angles
                         cv2.putText(display_image, f"Fixed angle from origin: {fixed_angle:.1f}°", 
                                    (info_box_x + 10, info_box_y + 140), 
-                                   cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+                                   cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
                         
                         cv2.putText(display_image, f"Current tracking angle: {tracking_angle:.1f}°", 
                                    (info_box_x + 10, info_box_y + 160), 
-                                   cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+                                   cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
                         
                         # Display axis reset status
                         axis_status = f"Axis Reset: {'ON' if axis_reset else 'OFF'}"
                         cv2.putText(display_image, axis_status, 
                                    (info_box_x + 10, info_box_y + 180), 
                                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, 
-                                   (0, 255, 0) if axis_reset else (255, 255, 255), 1)
+                                   (0, 255, 0) if axis_reset else (255,255,255), 1)
 
             if current_frame_data:
                 data_to_save.extend(current_frame_data)
@@ -632,7 +633,7 @@ def main():
             
             # Display mode (RealSense or Webcam)
             mode_text = "RealSense" if USE_REALSENSE else "Notebook Camera"
-            cv2.putText(display_image, f"Mode: {mode_text}", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
+            cv2.putText(display_image, f"Mode: {mode_text}", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255,255,255), 2)
             cv2.putText(display_image, f"FPS: {fps:.2f}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
             
             # Display reference mode status
@@ -658,7 +659,7 @@ def main():
                 axis_color = (0, 255, 0)
             else:
                 axis_status = "NORMAL AXIS"
-                axis_color = (255, 255, 255)
+                axis_color = (255,255,255)
             
             cv2.putText(display_image, f"Axis: {axis_status}", 
                       (width - 240, 90), cv2.FONT_HERSHEY_SIMPLEX, 0.6, axis_color, 2)
@@ -666,7 +667,7 @@ def main():
             # Add instructions
             instruction_y = height - 10
             cv2.putText(display_image, "Press 'k': Set Ref & Track | 'r': Reset Ref | 'd': Reset Axis | 's': Save | 'q': Quit", 
-                       (10, instruction_y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+                       (10, instruction_y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
 
             # Display the frame
             window_title = f"XYZ Tracking - {mode_text}"
@@ -680,7 +681,7 @@ def main():
                 draw_trajectories = True
                 reference_set = False  # Will be set true on next detection
                 previous_positions = []
-                print("\nWaiting for next detection to set as reference position (0,0,0)...")
+                print("\nWaiting for next detection to set as reference position (255,255,255)...")
                 
             elif key == ord('r'):
                 # Reset reference position
