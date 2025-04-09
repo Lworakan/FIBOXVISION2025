@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Real-time depth prediction with RealSense camera using a Region of Interest (ROI)
-for more accurate depth measurements.
+for more accurate depth measurements with aligned color frames.
 """
 
 import os
@@ -11,13 +11,33 @@ import cv2
 import time
 import pyrealsense2 as rs
 from pycaret.regression import load_model, predict_model
+from collections import deque
 
-# Use the exact path that works
-MODEL_PATH = '/home/lworakan/Documents/GitHub/FIBOXVISION2025/newEnvironmentTest/Realsense/model/final_calibrated_depth_model'
+MODEL_PATH = '/home/lworakan/Documents/GitHub/FIBOXVISION2025/newEnvironmentTest/Realsense/model/final_calibrated_depth_model_outdoor'
+
+class RunningAverage:
+    def __init__(self, window_size=30):
+        self.values = deque(maxlen=window_size)
+        
+    def update(self, new_value):
+        if new_value is not None and not np.isnan(new_value):
+            self.values.append(new_value)
+            
+    def get_average(self):
+        if not self.values:
+            return None
+        return np.mean(self.values)
+    
+    def get_std(self):
+        if len(self.values) < 2:
+            return 0
+        return np.std(self.values)
+    
+    def clear(self):
+        self.values.clear()
 
 def main():
     try:
-        # Load the model (without adding .pkl)
         print(f"Loading model from {MODEL_PATH}...")
         model = load_model(MODEL_PATH)
         print("Model loaded successfully!")
@@ -29,33 +49,41 @@ def main():
         config.enable_stream(rs.stream.depth, 640, 480, rs.format.z16, 30)
         config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30)
         
+        # Create alignment object
+        align = rs.align(rs.stream.color)
+        
         # Start streaming
-        pipeline.start(config)
+        profile = pipeline.start(config)
         print("Camera started. Warming up for 2 seconds...")
         time.sleep(2)
         
-        # Get stream profile and camera intrinsics
-        profile = pipeline.get_active_profile()
-        depth_profile = rs.video_stream_profile(profile.get_stream(rs.stream.depth))
-        depth_intrinsics = depth_profile.get_intrinsics()
+        # Get depth sensor and set options if needed
+        depth_sensor = profile.get_device().first_depth_sensor()
+        
+        # Enable auto-exposure for depth
+        if depth_sensor.supports(rs.option.enable_auto_exposure):
+            depth_sensor.set_option(rs.option.enable_auto_exposure, 1)
         
         # Variables for tracking
         location = "Lab"  # Default location
         intended_distance = None
         saved_predictions = []
         
-        # ROI parameters (initially center of the frame)
-        roi_size = 20  # Size of the ROI square in pixels
+        raw_depth_avg = RunningAverage(30)  
+        calibrated_depth_avg = RunningAverage(15)  
+        roi_size = 20
         roi_x = (640 - roi_size) // 2  # Center X
         roi_y = (480 - roi_size) // 2  # Center Y
         roi_dragging = False
         
-        # Display instructions
+        # Display options
+        show_color = True  
         print("\nControls:")
         print("  'q' - Quit the application")
         print("  's' - Save current prediction to results")
         print("  'd' - Set intended/actual distance")
         print("  'l' - Change location")
+        print("  'v' - Toggle between color and depth view")
         print("  Mouse - Click and drag to move the ROI")
         
         # Mouse callback function for ROI selection
@@ -69,127 +97,135 @@ def main():
             
             elif event == cv2.EVENT_MOUSEMOVE:
                 if roi_dragging:
-                    # Update ROI position, ensuring it stays within frame
                     roi_x = max(0, min(x - roi_size//2, 640 - roi_size))
                     roi_y = max(0, min(y - roi_size//2, 480 - roi_size))
             
             elif event == cv2.EVENT_LBUTTONUP:
                 roi_dragging = False
         
-        # Create named window and set mouse callback
-        cv2.namedWindow('Depth Prediction')
-        cv2.setMouseCallback('Depth Prediction', mouse_callback)
+        cv2.namedWindow('RealSense Camera')
+        cv2.setMouseCallback('RealSense Camera', mouse_callback)
         
         while True:
             # Wait for frames
             frames = pipeline.wait_for_frames()
-            depth_frame = frames.get_depth_frame()
-            color_frame = frames.get_color_frame()
+            aligned_frames = align.process(frames)
+            depth_frame = aligned_frames.get_depth_frame()
+            color_frame = aligned_frames.get_color_frame()
             
             if not depth_frame or not color_frame:
                 continue
             
-            # Convert frames to numpy arrays
             depth_image = np.asanyarray(depth_frame.get_data())
             color_image = np.asanyarray(color_frame.get_data())
             
-            # Create ROI mask
-            roi = depth_image[roi_y:roi_y + roi_size, roi_x:roi_x + roi_size]
-            
-            # Calculate average depth in ROI (ignoring zeros)
-            roi_depth_values = roi[roi > 0].astype(float) / 1000.0  # convert to meters
-            
-            if len(roi_depth_values) == 0:
-                average_depth = 0
-            else:
-                average_depth = np.mean(roi_depth_values)
-            
-            # Apply colormap to the depth image
             depth_colormap = cv2.applyColorMap(
                 cv2.convertScaleAbs(depth_image, alpha=0.03), 
                 cv2.COLORMAP_JET
             )
             
-            # Draw ROI on the depth colormap
-            cv2.rectangle(
-                depth_colormap,
-                (roi_x, roi_y),
-                (roi_x + roi_size, roi_y + roi_size),
-                (255, 255, 255),
-                2
-            )
+            color_display = color_image.copy()
+            depth_display = depth_colormap.copy()
             
-            if average_depth > 0:
-                ## mean average_depth 100 data
-                sample_size = 100
+            roi = depth_image[roi_y:roi_y + roi_size, roi_x:roi_x + roi_size]
+            
+            roi_depth_values = roi[roi > 0].astype(float) / 1000.0  # convert to meters
+            
+            if len(roi_depth_values) == 0:
+                average_depth = 0
+            else:
+                sample_size = 20
                 if len(roi_depth_values) > sample_size:
                     roi_depth_values = roi_depth_values[-sample_size:]
+                
                 average_depth = np.mean(roi_depth_values)
-                data = pd.DataFrame({
-                    'average_depth_m': [average_depth],
-                    'Location': [location]
-                })
                 
-                # Make prediction
-                prediction = predict_model(model, data=data)
-                predicted_distance = prediction['prediction_label'].iloc[0]
+                raw_depth_avg.update(average_depth)
                 
-                # Calculate error if intended distance is set
-                error_text = ""
-                if intended_distance is not None:
-                    error = abs(predicted_distance - intended_distance)
-                    error_percent = (error / intended_distance) * 100 if intended_distance > 0 else 0
-                    error_text = f"Error: {error:.3f}m ({error_percent:.1f}%)"
+                stabilized_depth = raw_depth_avg.get_average()
                 
-                # Add text to image
-                info_text = [
-                    f"Location: {location}",
-                    f"ROI Avg Depth: {average_depth:.3f}m",
-                    f"Predicted Distance: {predicted_distance:.3f}m",
-                ]
-                
-                if intended_distance is not None:
-                    info_text.append(f"Actual Distance: {intended_distance:.3f}m")
-                    info_text.append(error_text)
-                
-                # Add text to the image
-                for i, text in enumerate(info_text):
-                    cv2.putText(
-                        depth_colormap, 
-                        text, 
-                        (20, 30 + 30*i), 
-                        cv2.FONT_HERSHEY_SIMPLEX, 
-                        0.7, 
-                        (255, 255, 255), 
-                        2
-                    )
-                
-                # Print to console as well
-                os.system('cls' if os.name == 'nt' else 'clear')
-                print(f"Location: {location}")
-                print(f"ROI Average Depth: {average_depth:.4f}m")
-                print(f"Predicted Distance: {predicted_distance:.4f}m ({predicted_distance*100:.1f}cm)")
-                
-                if intended_distance is not None:
-                    print(f"Actual Distance: {intended_distance:.4f}m")
-                    print(f"Absolute Error: {error:.4f}m ({error*100:.1f}cm)")
-                    print(f"Percentage Error: {error_percent:.2f}%")
-            else:
-                # No valid depth data in ROI
-                cv2.putText(
-                    depth_colormap,
-                    "No valid depth data in ROI",
-                    (20, 30),
-                    cv2.FONT_HERSHEY_SIMPLEX,
-                    0.7,
-                    (255, 255, 255),
-                    2
-                )
+                if stabilized_depth is not None and stabilized_depth > 0:
+                    data = pd.DataFrame({
+                        'average_depth_m': [stabilized_depth],
+                        'Location': [location]
+                    })
+                    
+                    prediction = predict_model(model, data=data)
+                    predicted_distance = prediction['prediction_label'].iloc[0]
+                    
+                    calibrated_depth_avg.update(predicted_distance)
+                    calibrated_distance = calibrated_depth_avg.get_average()
+                    
+                    error_text = ""
+                    if intended_distance is not None:
+                        error = abs(calibrated_distance - intended_distance)
+                        error_percent = (error / intended_distance) * 100 if intended_distance > 0 else 0
+                        error_text = f"Error: {error:.3f}m ({error_percent:.1f}%)"
+                    
+                    for display in [color_display, depth_display]:
+                        cv2.rectangle(
+                            display,
+                            (roi_x, roi_y),
+                            (roi_x + roi_size, roi_y + roi_size),
+                            (255, 255, 255) if display is depth_display else (255, 255, 255),
+                            2
+                        )
+                        
+                        info_text = [
+                            f"Location: {location}",
+                            f"Raw Depth: {stabilized_depth:.3f}m",
+                            f"Calibrated: {calibrated_distance:.3f}m",
+                        ]
+                        
+                        if intended_distance is not None:
+                            info_text.append(f"Actual: {intended_distance:.3f}m")
+                            info_text.append(error_text)
+                        
+                        for i, text in enumerate(info_text):
+                            cv2.putText(
+                                display, 
+                                text, 
+                                (20, 30 + 30*i), 
+                                cv2.FONT_HERSHEY_SIMPLEX, 
+                                0.7, 
+                                (255, 255, 255) if display is depth_display else (255, 255, 255), 
+                                2
+                            )
+                    
+                    # Print to console
+                    os.system('cls' if os.name == 'nt' else 'clear')
+                    print(f"Location: {location}")
+                    print(f"Raw Depth (stabilized): {stabilized_depth:.4f}m")
+                    print(f"Calibrated Distance: {calibrated_distance:.4f}m ({calibrated_distance*100:.1f}cm)")
+                    
+                    if intended_distance is not None:
+                        print(f"Actual Distance: {intended_distance:.4f}m")
+                        print(f"Absolute Error: {error:.4f}m ({error*100:.1f}cm)")
+                        print(f"Percentage Error: {error_percent:.2f}%")
+                    else:
+                        for display in [color_display, depth_display]:
+                            # Draw ROI rectangle (red to indicate no valid data)
+                            cv2.rectangle(
+                                display,
+                                (roi_x, roi_y),
+                                (roi_x + roi_size, roi_y + roi_size),
+                                (255, 255, 255) if display is depth_display else (255, 255, 255),
+                                2
+                            )
+                   
+                    # cv2.putText(
+                    #     display,
+                    #     "No valid depth data in ROI",
+                    #     (20, 30),
+                    #     cv2.FONT_HERSHEY_SIMPLEX,
+                    #     0.7,
+                    #     (0, 0, 255) if display is depth_display else (255, 255, 255),
+                    #     2
+                    # )
             
-            # Display the colormap and ROI
-            cv2.imshow('Depth Prediction', depth_colormap)
+            display_image = depth_display if show_color else color_display
+            cv2.imshow('RealSense Camera', display_image)
             
-            # Handle keyboard input
             key = cv2.waitKey(1)
             
             # Quit on 'q'
@@ -197,14 +233,19 @@ def main():
                 print("Quitting...")
                 break
             
+            # Toggle view on 'v'
+            elif key & 0xFF == ord('v'):
+                show_color = not show_color
+                print(f"\nSwitched to {'color' if show_color else 'depth'} view")
+            
             # Save prediction on 's'
-            elif key & 0xFF == ord('s') and average_depth > 0:
+            elif key & 0xFF == ord('s') and 'calibrated_distance' in locals():
                 timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
                 
                 data = {
                     'timestamp': timestamp,
-                    'depth_m': average_depth,
-                    'predicted_distance_m': predicted_distance,
+                    'raw_depth_m': stabilized_depth,
+                    'calibrated_distance_m': calibrated_distance,
                     'location': location,
                 }
                 
@@ -218,7 +259,6 @@ def main():
                 print(f"Total saved: {len(saved_predictions)}")
                 time.sleep(0.5)  # Brief pause to show confirmation
             
-            # Set intended distance on 'd'
             elif key & 0xFF == ord('d'):
                 try:
                     input_value = input("\nEnter actual/intended distance in meters: ")
@@ -231,6 +271,8 @@ def main():
             elif key & 0xFF == ord('l'):
                 location = input("\nEnter location name: ")
                 print(f"Location set to: {location}")
+                raw_depth_avg.clear()  # Clear running averages when location changes
+                calibrated_depth_avg.clear()
             
             # Change ROI size with + and -
             elif key & 0xFF == ord('+') or key & 0xFF == ord('='):
@@ -245,7 +287,7 @@ def main():
                 print(f"ROI size decreased to {roi_size}x{roi_size} pixels")
             
             # Limit update rate
-            time.sleep(0.05)
+            time.sleep(0.03)
         
         # Clean up
         pipeline.stop()
