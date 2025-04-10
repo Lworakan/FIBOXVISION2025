@@ -453,10 +453,11 @@ def main():
                         'Average_Depth_m': [raw_depth],
                         'area': [(x2 - x1) * (y2 - y1)]
                     })
-                    prediction_result = predict_model(loaded_model, data=predictData)
-                    print(f"Prediction result: {prediction_result.astpye(float)}")
-                    current_z = prediction_result['prediction_label'][0]
-                    print(f"Predicted Z: {current_z} m")
+                    # prediction_result = predict_model(loaded_model, data=predictData)
+                    prediction_result = loaded_model.predict(predictData)
+                    print(f"Prediction result: {prediction_result}")
+                    current_z = prediction_result[0]
+                    print(f"Predicted Z: {current_z} m")                  
 
                     if frame_count % 10 == 0:
                         print(f"Estimated Z: {z_est:.3f} m, Predicted Z: {current_z:.3f} m")
