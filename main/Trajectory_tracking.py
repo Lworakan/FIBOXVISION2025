@@ -22,7 +22,7 @@ except ImportError:
 # --- Configuration ---
 MODEL_PATH = r"./Callback/yolo11l.pt"  # model path
 # MODEL_PATH = r"best(1).pt"  # model path
-OUTPUT_CSV_FILE = 'camera_trackingHuman.csv'  # output csv file
+OUTPUT_CSV_FILE = 'camera_trackingHuman_75M.csv'  # output csv file
 # -----------------------------
 
 # YOLO Model Configuration
@@ -54,23 +54,32 @@ def main():
     print("\n===== Camera Selection =====")
     print("A: Use RealSense camera" if REALSENSE_AVAILABLE else "A: RealSense not available")
     print("B: Use notebook webcam")
+    print("C: Use video file")
     print("=========================")
     
     while True:
-        choice = input("Enter your choice (A/B): ").strip().upper()
+        choice = input("Enter your choice (A/B/C): ").strip().upper()
         if choice == 'A' and REALSENSE_AVAILABLE:
             USE_REALSENSE = True
+            USING_VIDEO = False
             print("Selected: RealSense camera")
             break
         elif choice == 'B':
             USE_REALSENSE = False
+            USING_VIDEO = False
             print("Selected: Notebook webcam")
+            break
+        elif choice == 'C':
+            USE_REALSENSE = False
+            USING_VIDEO = True
+            print("Selected: Video file")
+            video_path = "./src/video/Screen Recording 2025-01-24 085343.mp4"
             break
         else:
             if choice == 'A' and not REALSENSE_AVAILABLE:
-                print("RealSense is not available on this system. Please select B.")
+                print("RealSense is not available on this system. Please select B or C.")
             else:
-                print("Invalid choice. Please enter A or B.")
+                print("Invalid choice. Please enter A, B, or C.")
     
     # --- Initialization ---
     frame_count = 0
@@ -100,7 +109,7 @@ def main():
     try:
         model = YOLO(MODEL_PATH)
         # knn_model = create_model('knn')
-        loaded_model = load_model('./model/final_calibrated_depth_model_outdoor_v2_linear')
+        loaded_model = load_model('./model/final_calibrated_depth_model_outdoor_v2')
         target_class_id = -1
         if hasattr(model, 'names'):
             class_names = model.names
@@ -118,7 +127,7 @@ def main():
         print(f"Error loading model: {e}")
         exit()
 
-    # Initialize camera - either RealSense or webcam
+    # Initialize camera - either RealSense, webcam, or video file
     if USE_REALSENSE:
         print("Initializing RealSense camera...")
         try:
@@ -127,7 +136,8 @@ def main():
             
             config.enable_stream(rs.stream.depth, FRAME_WIDTH, FRAME_HEIGHT, rs.format.z16, FPS)
             config.enable_stream(rs.stream.color, FRAME_WIDTH, FRAME_HEIGHT, rs.format.bgr8, FPS)
-            
+
+            # Start the pipeline by video stream
             print("Starting RealSense pipeline...")
             profile = pipeline.start(config)
             
@@ -146,11 +156,14 @@ def main():
             print("Falling back to regular webcam...")
             realsense_initialized = False
             USE_REALSENSE = False
+    elif USING_VIDEO:
+        print(f"Opening video file: {video_path}...")
+        cap = cv2.VideoCapture(video_path)
+        
+        if not cap.isOpened():
+            print(f"Error: Could not open video file {video_path}")
+            exit()
     else:
-        realsense_initialized = False
-    
-    # Initialize webcam if not using RealSense or if RealSense initialization failed
-    if not USE_REALSENSE:
         print(f"Opening webcam (ID: {CAMERA_ID})...")
         cap = cv2.VideoCapture(CAMERA_ID)
         
@@ -309,6 +322,8 @@ def main():
     print("Press 'd' to reset coordinate system to angle 0")
     if USE_REALSENSE:
         print("Using RealSense for depth data")
+    elif USING_VIDEO:
+        print("Using video file for input")
     else:
         print("Using webcam with estimated depth")
     
@@ -319,7 +334,7 @@ def main():
         while True:
             start_time = time.time()
             
-            # Get frame from camera (RealSense or webcam)
+            # Get frame from camera (RealSense, webcam, or video file)
             if USE_REALSENSE:
                 frames = pipeline.wait_for_frames()
                 aligned_frames = align.process(frames)
@@ -333,6 +348,13 @@ def main():
                 
                 color_image = np.asanyarray(color_frame.get_data())
                 frame = color_image
+            elif USING_VIDEO:
+                ret, frame = cap.read()
+                depth_frame = None
+                
+                if not ret:
+                    print("End of video file reached.")
+                    break
             else:
                 ret, frame = cap.read()
                 depth_frame = None
@@ -374,7 +396,7 @@ def main():
 
                     # Calculate center of bounding box
                     center_box_x = (x1 + x2) // 2
-                    center_box_y = (y1 + y2) // 2
+                    center_box_y = (x1 + x2) // 2
                     
                     # Calculate coordinates relative to origin (center of frame)
                     rel_x = center_box_x - origin_x
@@ -414,32 +436,32 @@ def main():
                     # Get RealSense depth if available
                     if USE_REALSENSE and depth_frame:
                         realsense_depth = get_realsense_depth(depth_frame, x1, y1, bbox_width, bbox_height)
-                        # current_z = realsense_depth if realsense_depth > 0 else z_est
                         raw_depth = realsense_depth if realsense_depth > 0 else z_est
-                        predictData = pd.DataFrame({
-                            'X_min': [x1],
-                            'Y_min': [y1],
-                            'X_max': [x2],
-                            'Y_max': [y2],
-                            'Confidence': [conf],
-                            'Average_Depth_m': [raw_depth],
-                            'area': [(x2 - x1) * (y2 - y1)]
-                        })
-                        # Use the model to predict the depth
-                        prediction_result = predict_model(loaded_model, data=predictData)
-                        print(f"Prediction result: {prediction_result}")
-                        current_z = prediction_result['prediction_label'][0]
-                        print(f"Predicted Z: {current_z} m")
+                    elif USING_VIDEO:
+                        raw_depth = z_est
+                    else:
+                        realsense_depth = 0.0
+                        raw_depth = z_est
 
-                        # z est regression
-                    #     current_frame_data.append([
-                    #     x1, y1, x2, y2, conf, current_z,
-                    #     (x2 - x1) * (y2 - y1)
-                    # ])
-                    #     hope = pd.DataFrame(current_frame_data, columns=['X_min', 'Y_min', 'X_max', 'Y_max', 'Confidence', 'Average_Depth_m', 'area'])
-                        # current_z = predict_model(loaded_model, data=hope)['Average_Depth_m'][0]
-                        if frame_count % 10 == 0:
-                            print(f"RealSense Depth: {realsense_depth:.3f} m, Estimated Z: {z_est:.3f} m, current_z: {current_z:.3f} m")
+                    # Predict depth using the loaded model
+                    predictData = pd.DataFrame({
+                        'X_min': [x1],
+                        'Y_min': [y1],
+                        'X_max': [x2],
+                        'Y_max': [y2],
+                        'Confidence': [conf],
+                        'Average_Depth_m': [raw_depth],
+                        'area': [(x2 - x1) * (y2 - y1)]
+                    })
+                    prediction_result = predict_model(loaded_model, data=predictData)
+                    print(f"Prediction result: {prediction_result.astpye(float)}")
+                    current_z = prediction_result['prediction_label'][0]
+                    print(f"Predicted Z: {current_z} m")
+
+                    if frame_count % 10 == 0:
+                        print(f"Estimated Z: {z_est:.3f} m, Predicted Z: {current_z:.3f} m")
+
+
                     else:
                         realsense_depth = 0.0
                         current_z = z_est
@@ -526,7 +548,7 @@ def main():
                     current_frame_data.append([
                         timestamp, frame_count, x1, y1, x2, y2, f"{conf:.2f}", 
                         (x2 - x1) * (y2 - y1), display_rel_x, display_rel_y, f"{current_z:.2f}", 
-                        f"{distance_3d:.2f}", f"{realsense_depth:.3f}",  # Keep raw RealSense depth for comparison
+                        f"{distance_3d:.2f}", f"{raw_depth:.3f}",  # Keep raw RealSense depth for comparison
                         f"{rel_x_to_ref:.2f}", f"{rel_y_to_ref:.2f}", f"{rel_z_to_ref:.2f}",
                         f"{fixed_angle:.2f}"
                     ])
@@ -656,8 +678,13 @@ def main():
             avg_frame_time = sum(frame_times) / len(frame_times)
             fps = 1.0 / avg_frame_time if avg_frame_time > 0 else 0
             
-            # Display mode (RealSense or Webcam)
-            mode_text = "RealSense" if USE_REALSENSE else "Notebook Camera"
+            # Display mode (RealSense, Webcam, or Video File)
+            if USE_REALSENSE:
+                mode_text = "RealSense"
+            elif USING_VIDEO:
+                mode_text = "Video File"
+            else:
+                mode_text = "Notebook Camera"
             cv2.putText(display_image, f"Mode: {mode_text}", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255,255,255), 2)
             cv2.putText(display_image, f"FPS: {fps:.2f}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
             
@@ -751,7 +778,7 @@ def main():
             print("Stopping RealSense pipeline...")
             pipeline.stop()
         else:
-            print("Releasing webcam...")
+            print("Releasing webcam or video file...")
             cap.release()
 
         print("Closing OpenCV windows...")
