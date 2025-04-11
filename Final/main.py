@@ -13,7 +13,7 @@ from object_detector import ObjectDetector
 from depth_estimator import DepthEstimator
 from tracker import Tracker
 import visualization as vis # ตั้งชื่อย่อให้เรียกใช้ง่าย
-
+import numpy as np
 def main_app():
     """ ฟังก์ชันหลักในการรัน Application """
 

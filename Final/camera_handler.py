@@ -4,6 +4,7 @@
 import cv2
 import config # Import การตั้งค่า เช่น Camera ID, Frame Size, FPS, Video Path
 import time
+import numpy as np
 
 # ตรวจสอบว่ามี RealSense SDK หรือไม่
 try:

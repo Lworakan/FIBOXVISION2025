@@ -2,7 +2,8 @@
 # คำอธิบาย: เก็บค่าตั้งค่าต่างๆ สำหรับโปรแกรมติดตามวัตถุ XYZ
 
 # --- การตั้งค่าโมเดล ---
-YOLO_MODEL_PATH = r"yolo11l.pt"  # ตำแหน่งไฟล์โมเดล YOLO -> สำหรับ Development (ให้เปลี่ยนเป็น best.pt ตอนใช้งานจริง)
+# YOLO_MODEL_PATH = r"yolo11l.pt"  # ตำแหน่งไฟล์โมเดล YOLO -> สำหรับ Development (ให้เปลี่ยนเป็น best.pt ตอนใช้งานจริง)
+YOLO_MODEL_PATH = r"best(1).pt"  # ตำแหน่งไฟล์โมเดล YOLO -> สำหรับ Production (ให้เปลี่ยนเป็น yolo11l.pt ตอนใช้งานจริง)
 DEPTH_MODEL_PATH = './model/final_calibrated_depth_model_outdoor_v2' # ตำแหน่งไฟล์โมเดล Regression สำหรับ Depth
 
 # --- การตั้งค่า YOLO ---
