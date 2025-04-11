@@ -1,0 +1,33 @@
+# Core dependencies
+numpy==1.22.4         # Array processing for images
+opencv-python==4.7.0  # Computer vision library
+torch==1.13.1         # Deep learning framework
+torchvision==0.14.1   # Vision utilities for PyTorch
+ultralytics==8.0.145  # YOLOv8 implementation
+pandas==1.5.3         # Data manipulation
+matplotlib==3.7.1     # Plotting and visualization
+
+# ROS dependencies
+# rospy==1.15.15        # Python client for ROS
+# rospkg==1.4.0         # ROS package utilities
+# cv_bridge==1.13.0     # Bridge between OpenCV and ROS
+# tf2_ros==0.7.6        # ROS Transform library
+# message_filters==1.15.15  # Synchronize multiple ROS topics
+
+# Depth Camera Support
+pyrealsense2==2.53.1.4265  # Intel RealSense SDK
+
+# Machine Learning
+pycaret[full]==2.3.10  # ML library with regression models
+scikit-learn==1.0.2   # Required by PyCaret
+imbalanced-learn==0.8.1  # Required by PyCaret
+mlflow==1.30.0        # Required by PyCaret
+optuna==2.10.1        # Required by PyCaret
+catboost==1.0.6       # For gradient boosting models
+xgboost==1.6.2        # For gradient boosting models
+lightgbm==3.3.3       # For gradient boosting models
+
+# Utilities
+tqdm==4.65.0          # Progress bars
+pillow==9.4.0         # Image processing
+pyyaml==6.0           # YAML file parsing for configurations
