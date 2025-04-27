@@ -8,7 +8,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 def load_yolov11_model():
     try:
-        model = YOLO('./Callback/best.pt')
+        model = YOLO('./best_12.pt')
         print(f"Model loaded successfully: {type(model).__name__}")
         return model
     except Exception as e:
@@ -20,7 +20,7 @@ def calculate_depth_from_mask(mask, intrinsic_matrix):
                                   cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     
     if not contours:
-        return None, None, None, None
+        return None, None, None, Noneq
     
     largest_contour = max(contours, key=cv2.contourArea)
     
@@ -271,7 +271,7 @@ def process_video(video_path, output_path=None):
         print(f"Detection only: {detection_count - segmentation_count}")
 
 def main():
-    input_video = "./src/video/WIN_20250124_09_01_44_Pro.mp4"
+    input_video = "color_output.mp4"
     output_video = "output_basketball_detection.mp4"
     
     print("Basketball Hoop Detection and 3D Position Measurement")

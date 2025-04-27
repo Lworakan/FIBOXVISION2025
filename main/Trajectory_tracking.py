@@ -20,15 +20,15 @@ except ImportError:
     print("RealSense SDK not found")
 
 # --- Configuration ---
-MODEL_PATH = r"./Callback/yolo11l.pt"  # model path
-# MODEL_PATH = r"best(1).pt"  # model path
+# MODEL_PATH = r"./Callback/yolo11l.pt"  # model path
+MODEL_PATH = r"best(1).pt"  # model path
 OUTPUT_CSV_FILE = 'camera_trackingHuman_75M.csv'  # output csv file
 # -----------------------------
 
 # YOLO Model Configuration
-CONF_THRESHOLD = 0.15  # Confidence threshold
+CONF_THRESHOLD = 0.001  # Confidence threshold
 # TARGET_CLASS_NAME = 'basketball_hoop'  # Change this to your target class
-TARGET_CLASS_NAME = 'person'  # Change this to your target class
+TARGET_CLASS_NAME = 'basketball_hoop'  # Change this to your target class
 
 # Camera Configuration
 CAMERA_ID = 0  # Default webcam (change if you have multiple cameras)
