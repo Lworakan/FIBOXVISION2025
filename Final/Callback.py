@@ -13,7 +13,7 @@ class VisionPipeline:
     """
     Class to handle the vision pipeline, using all components to process inputs and return coordinates
     """
-    def __init__(self, camera_type='realsense', target_class='person', enable_visualization=False):
+    def __init__(self, camera_type='realsense', target_class='person', enable_visualization=False, enable_save_video=False):
         """
         Initialize the vision pipeline
         
@@ -43,6 +43,7 @@ class VisionPipeline:
         self.camera_type = camera_type
         self.target_class = target_class
         self.enable_visualization = enable_visualization
+        self.enable_save_video = enable_save_video
         self.is_running = True
         
         # For FPS calculation
@@ -53,23 +54,48 @@ class VisionPipeline:
         print(f"- Frame dimensions: {self.width}x{self.height}")
         print(f"- Target class: {target_class}")
         print(f"- Visualization: {'enabled' if enable_visualization else 'disabled'}")
+        print(f"- Save video: {'enabled' if enable_save_video else 'disabled'}")
 
-   def save_video(self, frames, filename, fps=30, codec='XVID', fourcc=None, switch=True):
-    if switch:
-        if fourcc is None:
-            fourcc = cv2.VideoWriter_fourcc(*codec)
+    def save_video(self, frames, filename, fps=30, codec='XVID', fourcc=None):
+        """
+        Save a list of frames as a video file.
         
-        # Get the dimensions of the first frame
-        height, width, _ = frames[0].shape
-        
-        # Create a VideoWriter object
-        out = cv2.VideoWriter(filename, fourcc, fps, (width, height))
-        
-        for frame in frames:
-            out.write(frame)
-        
-        out.release()
-        print(f"Video saved as {filename}")
+        Args:
+            frames (list): List of frames (numpy arrays) to save.
+            filename (str): Output video file name.
+            fps (int): Frames per second for the video.
+            codec (str): Codec to use for video encoding (default: 'mp4v').
+            fourcc (int): Optional precomputed fourcc code.
+        """
+        if self.enable_save_video:
+            # if not frames:
+            #     print("No frames to save.")
+            #     return
+            
+            if fourcc is None:
+                fourcc = cv2.VideoWriter_fourcc(*codec)
+            
+            # Ensure the filename has the correct extension
+            if not filename.endswith('.mp4'):
+                filename += '.mp4'
+            
+            # Get the dimensions of the first frame
+            height, width = frames[0].shape[:2]
+            
+            # Create a VideoWriter object
+            out = cv2.VideoWriter(filename, fourcc, fps, (width, height))
+            
+            for frame in frames:
+                # Ensure frame dimensions match the first frame
+                if frame.shape[:2] != (height, width):
+                    print("Error: Frame dimensions do not match. Skipping frame.")
+                    continue
+                out.write(frame)
+            
+            out.release()
+            print(f"Video saved as {filename}")
+        else:
+            print("Video saving is disabled.")
 
     def process_single_frame(self):
         """
@@ -266,7 +292,6 @@ if __name__ == "__main__":
         while True:
             # Process a single frame
             tracking_data, vis_img = pipeline.process_single_frame()
-            pipeline.save_video(vis_img, "output.mp4", fps=30, codec='XVID', switch=True)
             # Display results
             if tracking_data and tracking_data['detected']:
                 print(f"Target: X={tracking_data['rel_x']:.1f}, Y={tracking_data['rel_y']:.1f}, "
