@@ -53,7 +53,24 @@ class VisionPipeline:
         print(f"- Frame dimensions: {self.width}x{self.height}")
         print(f"- Target class: {target_class}")
         print(f"- Visualization: {'enabled' if enable_visualization else 'disabled'}")
+
+   def save_video(self, frames, filename, fps=30, codec='XVID', fourcc=None, switch=True):
+    if switch:
+        if fourcc is None:
+            fourcc = cv2.VideoWriter_fourcc(*codec)
         
+        # Get the dimensions of the first frame
+        height, width, _ = frames[0].shape
+        
+        # Create a VideoWriter object
+        out = cv2.VideoWriter(filename, fourcc, fps, (width, height))
+        
+        for frame in frames:
+            out.write(frame)
+        
+        out.release()
+        print(f"Video saved as {filename}")
+
     def process_single_frame(self):
         """
         Process a single frame and return the results.
@@ -249,7 +266,7 @@ if __name__ == "__main__":
         while True:
             # Process a single frame
             tracking_data, vis_img = pipeline.process_single_frame()
-            
+            pipeline.save_video(vis_img, "output.mp4", fps=30, codec='XVID', switch=True)
             # Display results
             if tracking_data and tracking_data['detected']:
                 print(f"Target: X={tracking_data['rel_x']:.1f}, Y={tracking_data['rel_y']:.1f}, "
