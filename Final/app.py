@@ -59,6 +59,13 @@ while True:
             y = tracking_data['rel_y']
             z = tracking_data['z']
             angle = tracking_data['angle']
+            # if angle > 0.0:
+            #     cond = 1
+            # elif angle < 0.0:
+            #     cond = -1
+            # elif angle == 0.0:
+            #     cond = 0
+            
             # confidence = tracking_data['confidence']
 
             print(f"Tracking Data: x={x}, y={y}, z={z}, angle={angle}")

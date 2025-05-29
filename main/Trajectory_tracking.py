@@ -18,11 +18,12 @@ try:
 except ImportError:
     REALSENSE_AVAILABLE = False
     print("RealSense SDK not found")
-
+ArithmeticError
 # --- Configuration ---
 # MODEL_PATH = r"./Callback/yolo11l.pt"  # model path
-MODEL_PATH = r"best(1).pt"  # model path
-OUTPUT_CSV_FILE = 'camera_trackingHuman_75M.csv'  # output csv file
+MODEL_PATH = "C:\\Users\\User\\FIBOXVISION2025\\best_plc.pt"  # model path
+# OUTPUT_CSV_FILE = 'camera_trackingHuman_75M.csv'  # output csv file
+OUTPUT_CSV_FILE = 'PLC_tracking_60.csv'  # output csv file
 # -----------------------------
 
 # YOLO Model Configuration
@@ -109,7 +110,7 @@ def main():
     try:
         model = YOLO(MODEL_PATH)
         # knn_model = create_model('knn')
-        loaded_model = load_model('./model/final_calibrated_depth_model_outdoor_v2')
+        loaded_model = load_model('./model/final_PLC')
         target_class_id = -1
         if hasattr(model, 'names'):
             class_names = model.names
