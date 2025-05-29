@@ -111,7 +111,7 @@ class VisionPipeline:
             
         # Get frame from camera
         ret, color_frame, depth_frame = self.camera.get_frame()
-        color_frame = cv2.flip(color_frame, 0)
+        # color_frame = cv2.flip(color_frame, 0)
         if not ret or color_frame is None:
             print("Failed to get frame from camera")
             return None, None
@@ -228,8 +228,8 @@ class VisionPipeline:
         tracking_data['raw_depth'] = raw_depth
         
         # Calculate relative coordinates
-        rel_x = float(tracking_data['center_x'] - self.origin_x)
-        rel_y = float(tracking_data['center_y'] - self.origin_y)
+        rel_x = float(tracking_data['center_x'] - self.origin_x) * z_value / 716
+        rel_y = float(tracking_data['center_y'] - self.origin_y) * z_value / 716
         tracking_data['rel_x'] = rel_x
         tracking_data['rel_y'] = rel_y
         

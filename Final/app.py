@@ -19,9 +19,7 @@ import os
 #             confidence = tracking_data['confidence']
 
 #             print(f"Tracking Data: x={x}, y={y}, z={z}, angle={angle}, confidence={confidence}")
-
-
-            
+ 
 # except KeyboardInterrupt:
 #     print("Exiting...")
 # finally:
