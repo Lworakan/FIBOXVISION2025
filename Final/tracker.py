@@ -2,8 +2,9 @@
 # คำอธิบาย: คลาสสำหรับคำนวณค่า Tracking หลัก (พิกัดสัมพัทธ์, มุม, ระยะทาง)
 
 import math
-import config # ไม่ได้ใช้โดยตรง แต่เผื่ออนาคต
+import config  # ไม่ได้ใช้โดยตรง แต่เผื่ออนาคต
 import utils  # ใช้ calculate_3d_distance
+
 
 class Tracker:
     """
@@ -11,8 +12,9 @@ class Tracker:
     เช่น พิกัดสัมพัทธ์, มุมที่ต้องหมุน, ระยะทาง
     (ปัจจุบันยังไม่มี State หรือ Filter แต่สร้างเป็นคลาสเผื่อการขยายในอนาคต)
     """
+
     def __init__(self):
-        """ khởi tạo คลาส Tracker """
+        """khởi tạo คลาส Tracker"""
         self.config = config
         # สามารถเพิ่มการ khởi tạo ค่า หรือ Filter ต่างๆ ที่นี่ได้ในอนาคต
         # เช่น Kalman Filter สำหรับ Smoothing ตำแหน่ง
@@ -35,49 +37,61 @@ class Tracker:
                   โดยค่าต่างๆ จะเป็น 0 หรือ None หาก 'detected' เป็น False
         """
         tracking_data = {
-            'detected': False, 'rel_x': 0.0, 'rel_y': 0.0, 'z': 0.0,
-            'dist': 0.0, 'angle': 0.0, 'raw_depth': 0.0,
-            'center_x': None, 'center_y': None, 'box': None, 'conf': 0.0, 'class_id': -1
+            "detected": False,
+            "rel_x": 0.0,
+            "rel_y": 0.0,
+            "z": 0.0,
+            "dist": 0.0,
+            "angle": 0.0,
+            "raw_depth": 0.0,
+            "center_x": None,
+            "center_y": None,
+            "box": None,
+            "conf": 0.0,
+            "class_id": -1,
         }
 
         if detection_info is None:
-            return tracking_data # ไม่เจอวัตถุ
+            return tracking_data  # ไม่เจอวัตถุ
 
         try:
             # ดึงข้อมูลจาก detection และ depth
-            tracking_data['detected'] = True
-            tracking_data['center_x'] = detection_info['center_x']
-            tracking_data['center_y'] = detection_info['center_y']
-            tracking_data['box'] = detection_info['box']
-            tracking_data['conf'] = detection_info['conf']
-            tracking_data['class_id'] = detection_info['class_id']
+            tracking_data["detected"] = True
+            tracking_data["center_x"] = detection_info["center_x"]
+            tracking_data["center_y"] = detection_info["center_y"]
+            tracking_data["box"] = detection_info["box"]
+            tracking_data["conf"] = detection_info["conf"]
+            tracking_data["class_id"] = detection_info["class_id"]
 
             current_z, realsense_depth_raw = depth_result
-            tracking_data['z'] = current_z
-            tracking_data['raw_depth'] = realsense_depth_raw
+            tracking_data["z"] = current_z
+            tracking_data["raw_depth"] = realsense_depth_raw
 
             # คำนวณพิกัดสัมพัทธ์กับ Origin (X ขวาเป็นบวก, Y ลงเป็นบวก ตาม pixel coord)
-            rel_x = float(tracking_data['center_x'] - origin_x)
-            rel_y = float(tracking_data['center_y'] - origin_y)
-            tracking_data['rel_x'] = rel_x
-            tracking_data['rel_y'] = rel_y
+            rel_x = float(tracking_data["center_x"] - origin_x)
+            rel_y = float(tracking_data["center_y"] - origin_y)
+            tracking_data["rel_x"] = rel_x
+            tracking_data["rel_y"] = rel_y
 
-            # คำนวณมุม Robot Rotation Angle (X-Z Plane)
-            # มุม 0 คือตรงหน้า, บวกคือขวา, ลบคือซ้าย
+            # --- ปรับปรุงการคำนวณมุมให้ถูกต้องตามหลักฟิสิกส์ ---
+            # แปลง rel_x (pixel) เป็นเมตรบนระนาบกล้อง
+            focal_length = getattr(config, "ESTIMATED_FOCAL_LENGTH", 500)
+            real_x = (rel_x * current_z) / focal_length if focal_length > 0 else rel_x
+            # มุมที่กล้องต้องหมุน (degree): atan2(real_x, current_z)
             robot_angle_xz = 0.0
             if current_z > 0:
-                angle_rad_xz = math.atan2(rel_x, current_z) # atan2(x, z)
+                angle_rad_xz = math.atan2(real_x, current_z)
                 robot_angle_xz = math.degrees(angle_rad_xz)
-            tracking_data['angle'] = robot_angle_xz
+            tracking_data["angle"] = robot_angle_xz
 
             # คำนวณระยะทาง 3D จาก Origin
             # หมายเหตุ: x, y เป็น pixel, z เป็นเมตร -> ระยะทางมีหน่วยผสม
             # หากต้องการระยะทางเป็นเมตรล้วน ต้องแปลง x, y เป็นเมตรก่อน
             distance_origin = utils.calculate_3d_distance(rel_x, rel_y, current_z)
-            tracking_data['dist'] = distance_origin
+            tracking_data["dist"] = distance_origin
 
         except (KeyError, TypeError, ValueError) as e:
             print(f"[Error] Processing tracking data: {e}")
-            tracking_data['detected'] = False # ถ้ามีปัญหา ให้ถือว่าตรวจไม่เจอ
+            tracking_data["detected"] = False  # ถ้ามีปัญหา ให้ถือว่าตรวจไม่เจอ
 
         return tracking_data
