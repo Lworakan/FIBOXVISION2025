@@ -1304,3 +1304,245 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
                 ('actual_estimator',
                  ExtraTreesRegressor(n_jobs=-1, random_state=123))])
 2025-05-30 22:12:22,683:INFO:save_model() successfully completed......................................
+2025-05-31 01:47:29,696:INFO:Initializing finalize_model()
+2025-05-31 01:47:29,696:INFO:finalize_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x77f0cb4a8dc0>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=123), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2025-05-31 01:47:29,696:INFO:Finalizing ExtraTreesRegressor(n_jobs=-1, random_state=123)
+2025-05-31 01:47:29,702:INFO:Initializing create_model()
+2025-05-31 01:47:29,702:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x77f0cb4a8dc0>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=123), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2025-05-31 01:47:29,702:INFO:Checking exceptions
+2025-05-31 01:47:29,703:INFO:Importing libraries
+2025-05-31 01:47:29,703:INFO:Copying training dataset
+2025-05-31 01:47:29,704:INFO:Defining folds
+2025-05-31 01:47:29,704:INFO:Declaring metric variables
+2025-05-31 01:47:29,704:INFO:Importing untrained model
+2025-05-31 01:47:29,704:INFO:Declaring custom model
+2025-05-31 01:47:29,705:INFO:Extra Trees Regressor Imported successfully
+2025-05-31 01:47:29,705:INFO:Cross validation set to False
+2025-05-31 01:47:29,705:INFO:Fitting Model
+2025-05-31 01:47:30,639:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['confidence', 'bbox_x1', 'bbox_y1',
+                                             'bbox_x2', 'bbox_y2',
+                                             'bbox_center_x', 'bbox_center_y',
+                                             'bbox_width', 'bbox_height',
+                                             'rel_x', 'rel_y', 'mean_depth',
+                                             'median_depth', 'min_depth',
+                                             'max_depth', 'std_depth',
+                                             'valid_pixels', 'total_pixels',
+                                             'fill_ratio', 'center_depth_raw',
+                                             'center_depth_meters'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))])
+2025-05-31 01:47:30,639:INFO:create_model() successfully completed......................................
+2025-05-31 01:47:30,719:INFO:_master_model_container: 18
+2025-05-31 01:47:30,719:INFO:_display_container: 4
+2025-05-31 01:47:30,723:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['confidence', 'bbox_x1', 'bbox_y1',
+                                             'bbox_x2', 'bbox_y2',
+                                             'bbox_center_x', 'bbox_center_y',
+                                             'bbox_width', 'bbox_height',
+                                             'rel_x', 'rel_y', 'mean_depth',
+                                             'median_depth', 'min_depth',
+                                             'max_depth', 'std_depth',
+                                             'valid_pixels', 'total_pixels',
+                                             'fill_ratio', 'center_depth_raw',
+                                             'center_depth_meters'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))])
+2025-05-31 01:47:30,723:INFO:finalize_model() successfully completed......................................
+2025-05-31 01:47:30,796:INFO:Initializing save_model()
+2025-05-31 01:47:30,796:INFO:save_model(model=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['confidence', 'bbox_x1', 'bbox_y1',
+                                             'bbox_x2', 'bbox_y2',
+                                             'bbox_center_x', 'bbox_center_y',
+                                             'bbox_width', 'bbox_height',
+                                             'rel_x', 'rel_y', 'mean_depth',
+                                             'median_depth', 'min_depth',
+                                             'max_depth', 'std_depth',
+                                             'valid_pixels', 'total_pixels',
+                                             'fill_ratio', 'center_depth_raw',
+                                             'center_depth_meters'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), model_name=PLC_tracking_model, prep_pipe_=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['confidence', 'bbox_x1', 'bbox_y1',
+                                             'bbox_x2', 'bbox_y2',
+                                             'bbox_center_x', 'bbox_center_y',
+                                             'bbox_width', 'bbox_height',
+                                             'rel_x', 'rel_y', 'mean_depth',
+                                             'median_depth', 'min_depth',
+                                             'max_depth', 'std_depth',
+                                             'valid_pixels', 'total_pixels',
+                                             'fill_ratio', 'center_depth_raw',
+                                             'center_depth_meters'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False)))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2025-05-31 01:47:30,796:INFO:Adding model into prep_pipe
+2025-05-31 01:47:30,796:WARNING:Only Model saved as it was a pipeline.
+2025-05-31 01:47:30,813:INFO:PLC_tracking_model.pkl saved in current working directory
+2025-05-31 01:47:30,816:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['confidence', 'bbox_x1', 'bbox_y1',
+                                             'bbox_x2', 'bbox_y2',
+                                             'bbox_center_x', 'bbox_center_y',
+                                             'bbox_width', 'bbox_height',
+                                             'rel_x', 'rel_y', 'mean_depth',
+                                             'median_depth', 'min_depth',
+                                             'max_depth', 'std_depth',
+                                             'valid_pixels', 'total_pixels',
+                                             'fill_ratio', 'center_depth_raw',
+                                             'center_depth_meters'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))])
+2025-05-31 01:47:30,816:INFO:save_model() successfully completed......................................
+2025-05-31 01:55:18,598:INFO:Initializing finalize_model()
+2025-05-31 01:55:18,598:INFO:finalize_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x77f0cb4a8dc0>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=123), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2025-05-31 01:55:18,599:INFO:Finalizing ExtraTreesRegressor(n_jobs=-1, random_state=123)
+2025-05-31 01:55:18,603:INFO:Initializing create_model()
+2025-05-31 01:55:18,603:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x77f0cb4a8dc0>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=123), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2025-05-31 01:55:18,603:INFO:Checking exceptions
+2025-05-31 01:55:18,604:INFO:Importing libraries
+2025-05-31 01:55:18,604:INFO:Copying training dataset
+2025-05-31 01:55:18,605:INFO:Defining folds
+2025-05-31 01:55:18,605:INFO:Declaring metric variables
+2025-05-31 01:55:18,605:INFO:Importing untrained model
+2025-05-31 01:55:18,605:INFO:Declaring custom model
+2025-05-31 01:55:18,606:INFO:Extra Trees Regressor Imported successfully
+2025-05-31 01:55:18,606:INFO:Cross validation set to False
+2025-05-31 01:55:18,606:INFO:Fitting Model
+2025-05-31 01:55:19,537:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['confidence', 'bbox_x1', 'bbox_y1',
+                                             'bbox_x2', 'bbox_y2',
+                                             'bbox_center_x', 'bbox_center_y',
+                                             'bbox_width', 'bbox_height',
+                                             'rel_x', 'rel_y', 'mean_depth',
+                                             'median_depth', 'min_depth',
+                                             'max_depth', 'std_depth',
+                                             'valid_pixels', 'total_pixels',
+                                             'fill_ratio', 'center_depth_raw',
+                                             'center_depth_meters'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))])
+2025-05-31 01:55:19,537:INFO:create_model() successfully completed......................................
+2025-05-31 01:55:19,609:INFO:_master_model_container: 18
+2025-05-31 01:55:19,609:INFO:_display_container: 4
+2025-05-31 01:55:19,612:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['confidence', 'bbox_x1', 'bbox_y1',
+                                             'bbox_x2', 'bbox_y2',
+                                             'bbox_center_x', 'bbox_center_y',
+                                             'bbox_width', 'bbox_height',
+                                             'rel_x', 'rel_y', 'mean_depth',
+                                             'median_depth', 'min_depth',
+                                             'max_depth', 'std_depth',
+                                             'valid_pixels', 'total_pixels',
+                                             'fill_ratio', 'center_depth_raw',
+                                             'center_depth_meters'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))])
+2025-05-31 01:55:19,612:INFO:finalize_model() successfully completed......................................
+2025-05-31 01:55:19,683:INFO:Initializing save_model()
+2025-05-31 01:55:19,684:INFO:save_model(model=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['confidence', 'bbox_x1', 'bbox_y1',
+                                             'bbox_x2', 'bbox_y2',
+                                             'bbox_center_x', 'bbox_center_y',
+                                             'bbox_width', 'bbox_height',
+                                             'rel_x', 'rel_y', 'mean_depth',
+                                             'median_depth', 'min_depth',
+                                             'max_depth', 'std_depth',
+                                             'valid_pixels', 'total_pixels',
+                                             'fill_ratio', 'center_depth_raw',
+                                             'center_depth_meters'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), model_name=PLC_tracking_model, prep_pipe_=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['confidence', 'bbox_x1', 'bbox_y1',
+                                             'bbox_x2', 'bbox_y2',
+                                             'bbox_center_x', 'bbox_center_y',
+                                             'bbox_width', 'bbox_height',
+                                             'rel_x', 'rel_y', 'mean_depth',
+                                             'median_depth', 'min_depth',
+                                             'max_depth', 'std_depth',
+                                             'valid_pixels', 'total_pixels',
+                                             'fill_ratio', 'center_depth_raw',
+                                             'center_depth_meters'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False)))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2025-05-31 01:55:19,684:INFO:Adding model into prep_pipe
+2025-05-31 01:55:19,684:WARNING:Only Model saved as it was a pipeline.
+2025-05-31 01:55:19,699:INFO:PLC_tracking_model.pkl saved in current working directory
+2025-05-31 01:55:19,702:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['confidence', 'bbox_x1', 'bbox_y1',
+                                             'bbox_x2', 'bbox_y2',
+                                             'bbox_center_x', 'bbox_center_y',
+                                             'bbox_width', 'bbox_height',
+                                             'rel_x', 'rel_y', 'mean_depth',
+                                             'median_depth', 'min_depth',
+                                             'max_depth', 'std_depth',
+                                             'valid_pixels', 'total_pixels',
+                                             'fill_ratio', 'center_depth_raw',
+                                             'center_depth_meters'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('polynomial_features',
+                 TransformerWrapper(transformer=PolynomialFeatures(include_bias=False))),
+                ('actual_estimator',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))])
+2025-05-31 01:55:19,702:INFO:save_model() successfully completed......................................
