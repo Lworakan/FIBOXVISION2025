@@ -59,9 +59,9 @@ while True:
         if cv2.waitKey(1) & 0xFF == ord('q'):
             pipeline.save_video(frames, "output7.mp4", fps=15)
             break
-        
+        object_count = {}
         for i, obj in enumerate(all_objects):
-            if obj['detected']:
+            # if obj['detected']:
                 # print(obj)
                 # #  label = f"{class_names[class_id]} {conf:.2f}"
                 # # print(f"Detected Object {i+1}: {obj['class_name']}")
@@ -72,22 +72,32 @@ while True:
                 # print(f"  Z: {obj['z']:.2f}m")
                 # print(f"  Angle: {obj['angle']:.2f}°")
                 # print(f"  Confidence: {obj['conf']:.2f}")
-                
 
-                if obj['detected'] and obj['class_name'] == 'white ball':
-                    Out_depth = obj['z']
-                    angle_Out = obj['angle']
-                    print(f"Out Depth: {Out_depth}, Angle: {angle_Out}")
+            class_name = obj['class_name']
+            if class_name in object_count:
+                object_count[class_name] += 1
+            else:
+                object_count[class_name] = 1
 
-                else:
-                    # get min depth
-                    min_depth = min(obj['z'] for obj in all_objects if obj['detected'])
-                    Out_depth = min_depth
-                    angle_Out = obj['angle']
-                    print(f"Out Depth: {Out_depth}, Angle: {angle_Out}")
-            
+            top_objects = sorted(object_count.items(), key=lambda x: x[1], reverse=True)[:10]
 
-    
+            if cv2.waitKey(1) &0xFF == ord('s'):
+                for class_name, count in top_objects:
+                    if obj['detected'] and obj['class_name'] == 'white ball':
+                        Out_depth = obj['z']
+                        angle_Out = obj['angle']
+                        print(f"Out Depth: {Out_depth}, Angle: {angle_Out}")
+
+                    else:
+                        # get min depth
+                        min_depth = min(obj['z'] for obj in all_objects if obj['detected'])
+                        Out_depth = min_depth
+                        angle_Out = obj['angle']
+                        print(f"Out Depth: {Out_depth}, Angle: {angle_Out}")
+            else:
+                pass
+
+  
 pipeline.stop()
 cv2.destroyAllWindows()
 
