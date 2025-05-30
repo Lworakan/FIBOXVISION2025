@@ -30,7 +30,7 @@ import os
 
 # for debugging
 # realsense
-pipeline = VisionPipeline(camera_type='realsense', enable_visualization=True, enable_save_video=True)
+pipeline = VisionPipeline(camera_type='video', enable_visualization=True, enable_save_video=True)
 
 # Create a folder to save frames if it doesn't exist
 output_folder = f"output_frames_{time.strftime('%Y%m%d_%H%M%S')}"  # Use current timestamp in folder name
@@ -81,7 +81,7 @@ while True:
             
             # confidence = tracking_data['confidence']
 
-            print(f"Tracking Data: x={x}, y={y}, z={z}, angle={angle}")
+            # print(f"Tracking Data: x={x}, y={y}, z={z}, angle={angle}")
 
 pipeline.stop()
 cv2.destroyAllWindows()

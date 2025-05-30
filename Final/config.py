@@ -3,9 +3,9 @@
 
 # --- การตั้งค่าโมเดล ---
 YOLO_MODEL_PATH = (
-    r"C:\\Users\\User\\FIBOXVISION2025\\best_plc.pt"  # ตำแหน่งไฟล์โมเดล YOLO -> สำหรับ Production (แก้ path ให้ชี้ไปที่ root)
+    "best_plc.pt"  # ตำแหน่งไฟล์โมเดล YOLO -> สำหรับ Production (แก้ path ให้ชี้ไปที่ root)
 )
-DEPTH_MODEL_PATH = "./model/final_PLC"  # ตำแหน่งไฟล์โมเดล Regression สำหรับ Depth
+DEPTH_MODEL_PATH = "./model/final_PLC.pkl"  # ตำแหน่งไฟล์โมเดล Regression สำหรับ Depth
 
 # --- การตั้งค่า YOLO ---
 CONF_THRESHOLD = 0.15  # ค่าความมั่นใจขั้นต่ำในการยอมรับผลการตรวจจับ
