@@ -126,6 +126,9 @@ class VisionPipeline:
         # Detect objects and find target
         detections = self.detector.detect(color_frame)
         target_detection = detections[0] if detections else None
+
+        detection = []
+
         
         # Get depth information
         z_value = 0.0
@@ -182,6 +185,68 @@ class VisionPipeline:
             vis.draw_instructions(vis_img)
             
         return tracking_data, vis_img
+    
+
+    def process_single_frame_multiple(self):
+        """
+        Process a single frame and return results for ALL detected objects.
+        
+        Returns:
+            list: List of tracking data for each detected object
+            numpy.ndarray: Visualization image (or None if visualization is disabled)
+        """
+        if not self.is_running:
+            print("Pipeline is stopped.")
+            return [], None
+            
+        # Get frame from camera
+        ret, color_frame, depth_frame = self.camera.get_frame()
+        if not ret or color_frame is None:
+            print("Failed to get frame from camera")
+            return [], None
+            
+        # Process the frame to get coordinates
+        depth_scale = self.camera.get_depth_scale() if self.camera_type == 'realsense' else 1.0
+        
+        # Detect ALL objects
+        detections = self.detector.detect(color_frame)
+        
+        # Process each detection
+        all_tracking_data = []
+        for detection in detections:  # Loop through ALL detections
+            z_value, raw_depth = self.depth_estimator.get_depth(
+                detection, depth_frame, depth_scale
+            )
+            tracking_data = self.calculate_tracking_data(detection, (z_value, raw_depth))
+            all_tracking_data.append(tracking_data)
+        
+        # Generate visualization for all objects if enabled
+        vis_img = None
+        if self.enable_visualization and color_frame is not None:
+            vis_img = color_frame.copy()
+            vis.draw_coordinate_system(vis_img, self.origin_x, self.origin_y)
+            
+            # Draw all detected objects
+            for tracking_data in all_tracking_data:
+                if tracking_data['detected']:
+                    detection_vis_data = {
+                        'box': tracking_data['box'],
+                        'conf': tracking_data['conf'],
+                        'class_id': tracking_data['class_id'],
+                        'center_x': tracking_data['center_x'],
+                        'center_y': tracking_data['center_y']
+                    }
+                    
+                    class_names = self.detector.get_class_names()
+                    vis.draw_detection_results(vis_img, detection_vis_data, class_names)
+                    vis.draw_origin_to_target_line(vis_img, self.origin_x, self.origin_y,
+                                            tracking_data['center_x'], tracking_data['center_y'])
+            
+            # Draw info panel for first object (or modify to show all)
+            if all_tracking_data:
+                vis.draw_info_panel(vis_img, all_tracking_data[0])
+        
+        return all_tracking_data, vis_img
     
     def calculate_tracking_data(self, target_detection, depth_result):
         """

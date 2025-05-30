@@ -37,9 +37,12 @@ output_folder = f"output_frames_{time.strftime('%Y%m%d_%H%M%S')}"  # Use current
 os.makedirs(output_folder, exist_ok=True)
 frames = []
 while True:
-    tracking_data, vis_img = pipeline.process_single_frame()
+    # tracking_data, vis_img = pipeline.process_single_frame_multiple()
     # Process tracking_data
     # ...
+
+    all_objects, vis_img = pipeline.process_single_frame_multiple()
+
     
     # Show visualization
     if vis_img is not None:
@@ -54,11 +57,21 @@ while True:
             pipeline.save_video(frames, "output7.mp4", fps=15)
             break
         
-        if tracking_data['detected']:
-            x = tracking_data['rel_x']
-            y = tracking_data['rel_y']
-            z = tracking_data['z']
-            angle = tracking_data['angle']
+        for i, obj in enumerate(all_objects):
+            if obj['detected']:
+                print(f"Object {i+1}:")
+                print(f"  X: {obj['rel_x']:.2f}")
+                print(f"  Y: {obj['rel_y']:.2f}")
+                print(f"  Z: {obj['z']:.2f}m")
+                print(f"  Angle: {obj['angle']:.2f}°")
+                print(f"  Confidence: {obj['conf']:.2f}")
+            
+
+        # if tracking_data['detected']:
+        #     x = tracking_data['rel_x']
+        #     y = tracking_data['rel_y']
+        #     z = tracking_data['z']
+        #     angle = tracking_data['angle']
             # if angle > 0.0:
             #     cond = 1
             # elif angle < 0.0:
@@ -72,3 +85,4 @@ while True:
 
 pipeline.stop()
 cv2.destroyAllWindows()
+
