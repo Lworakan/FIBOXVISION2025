@@ -30,7 +30,10 @@ import os
 
 # for debugging
 # realsense
-pipeline = VisionPipeline(camera_type='video', enable_visualization=True, enable_save_video=True)
+pipeline = VisionPipeline(camera_type='webcam', enable_visualization=True, enable_save_video=True)
+
+Out_depth = 0
+angle_Out = 0
 
 # Create a folder to save frames if it doesn't exist
 output_folder = f"output_frames_{time.strftime('%Y%m%d_%H%M%S')}"  # Use current timestamp in folder name
@@ -59,30 +62,32 @@ while True:
         
         for i, obj in enumerate(all_objects):
             if obj['detected']:
-                print(f"Object {i+1}:")
-                print(f"  X: {obj['rel_x']:.2f}")
-                print(f"  Y: {obj['rel_y']:.2f}")
-                print(f"  Z: {obj['z']:.2f}m")
-                print(f"  Angle: {obj['angle']:.2f}°")
-                print(f"  Confidence: {obj['conf']:.2f}")
+                # print(obj)
+                # #  label = f"{class_names[class_id]} {conf:.2f}"
+                # # print(f"Detected Object {i+1}: {obj['class_name']}")
+                # print(f"Detected Object {i+1}: {obj['class_id']}")
+                # print(f"Object {i+1}:")
+                # print(f"  X: {obj['rel_x']:.2f}")
+                # print(f"  Y: {obj['rel_y']:.2f}")
+                # print(f"  Z: {obj['z']:.2f}m")
+                # print(f"  Angle: {obj['angle']:.2f}°")
+                # print(f"  Confidence: {obj['conf']:.2f}")
+                
+
+                if obj['detected'] and obj['class_name'] == 'white ball':
+                    Out_depth = obj['z']
+                    angle_Out = obj['angle']
+                    print(f"Out Depth: {Out_depth}, Angle: {angle_Out}")
+
+                else:
+                    # get min depth
+                    min_depth = min(obj['z'] for obj in all_objects if obj['detected'])
+                    Out_depth = min_depth
+                    angle_Out = obj['angle']
+                    print(f"Out Depth: {Out_depth}, Angle: {angle_Out}")
             
 
-        # if tracking_data['detected']:
-        #     x = tracking_data['rel_x']
-        #     y = tracking_data['rel_y']
-        #     z = tracking_data['z']
-        #     angle = tracking_data['angle']
-            # if angle > 0.0:
-            #     cond = 1
-            # elif angle < 0.0:
-            #     cond = -1
-            # elif angle == 0.0:
-            #     cond = 0
-            
-            # confidence = tracking_data['confidence']
-
-            # print(f"Tracking Data: x={x}, y={y}, z={z}, angle={angle}")
-
+    
 pipeline.stop()
 cv2.destroyAllWindows()
 

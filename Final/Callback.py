@@ -219,7 +219,10 @@ class VisionPipeline:
             )
             tracking_data = self.calculate_tracking_data(detection, (z_value, raw_depth))
             all_tracking_data.append(tracking_data)
-        
+
+            class_names = self.detector.get_class_names()
+            if class_names:
+                tracking_data['class_name'] = class_names.get(tracking_data['class_id'], 'Unknown')
         # Generate visualization for all objects if enabled
         vis_img = None
         if self.enable_visualization and color_frame is not None:
@@ -234,10 +237,13 @@ class VisionPipeline:
                         'conf': tracking_data['conf'],
                         'class_id': tracking_data['class_id'],
                         'center_x': tracking_data['center_x'],
-                        'center_y': tracking_data['center_y']
+                        'center_y': tracking_data['center_y'],
+                        'class_name': tracking_data.get('class_name', 'Unknown')
+                    
                     }
                     
                     class_names = self.detector.get_class_names()
+                    # all_tracking_data.append(class_names)
                     vis.draw_detection_results(vis_img, detection_vis_data, class_names)
                     vis.draw_origin_to_target_line(vis_img, self.origin_x, self.origin_y,
                                             tracking_data['center_x'], tracking_data['center_y'])
