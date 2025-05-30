@@ -1,0 +1,1361 @@
+{
+  "sample_id": "sample_1688_20250530_152809_897",
+  "timestamp": "20250530_152809_897",
+  "sample_count": 1688,
+  "session_start": "2025-05-30T15:22:04.397580",
+  "camera_info": {
+    "width": 640,
+    "height": 480,
+    "depth_scale": 0.0010000000474974513,
+    "origin_x": 320,
+    "origin_y": 240
+  },
+  "files": {
+    "color_image": "sample_1688_20250530_152809_897.jpg",
+    "depth_data": "sample_1688_20250530_152809_897_depth.npy"
+  },
+  "detections": [
+    {
+      "detection_id": 0,
+      "class_id": 1,
+      "confidence": 0.8928021192550659,
+      "bounding_box": {
+        "x1": 621,
+        "y1": 438,
+        "x2": 630,
+        "y2": 450,
+        "center_x": 625,
+        "center_y": 444,
+        "width": 9,
+        "height": 12
+      },
+      "relative_coordinates": {
+        "rel_x": 305.0,
+        "rel_y": 204.0
+      },
+      "depth_information": {
+        "statistics": {
+          "mean_depth": 6.30802807739302,
+          "median_depth": 6.163000292726792,
+          "min_depth": 5.55200026370585,
+          "max_depth": 7.801000370527618,
+          "std_depth": 0.5875768071046313,
+          "valid_pixels": 108,
+          "total_pixels": 108,
+          "fill_ratio": 1.0
+        },
+        "realsense_depth_data": {
+          "center_point": {
+            "pixel_x": 625,
+            "pixel_y": 444,
+            "depth_raw": 5984,
+            "depth_meters": 5.984000284224749
+          },
+          "sample_points": [
+            {
+              "pixel_x": 621,
+              "pixel_y": 438,
+              "depth_raw": 7801,
+              "depth_meters": 7.801000370527618
+            },
+            {
+              "pixel_x": 622,
+              "pixel_y": 438,
+              "depth_raw": 7609,
+              "depth_meters": 7.609000361408107
+            },
+            {
+              "pixel_x": 623,
+              "pixel_y": 438,
+              "depth_raw": 7609,
+              "depth_meters": 7.609000361408107
+            },
+            {
+              "pixel_x": 624,
+              "pixel_y": 438,
+              "depth_raw": 7426,
+              "depth_meters": 7.426000352716073
+            },
+            {
+              "pixel_x": 625,
+              "pixel_y": 438,
+              "depth_raw": 7337,
+              "depth_meters": 7.3370003484888
+            },
+            {
+              "pixel_x": 626,
+              "pixel_y": 438,
+              "depth_raw": 7337,
+              "depth_meters": 7.3370003484888
+            },
+            {
+              "pixel_x": 627,
+              "pixel_y": 438,
+              "depth_raw": 7251,
+              "depth_meters": 7.251000344404019
+            },
+            {
+              "pixel_x": 628,
+              "pixel_y": 438,
+              "depth_raw": 7251,
+              "depth_meters": 7.251000344404019
+            },
+            {
+              "pixel_x": 629,
+              "pixel_y": 438,
+              "depth_raw": 7337,
+              "depth_meters": 7.3370003484888
+            },
+            {
+              "pixel_x": 621,
+              "pixel_y": 439,
+              "depth_raw": 7426,
+              "depth_meters": 7.426000352716073
+            },
+            {
+              "pixel_x": 622,
+              "pixel_y": 439,
+              "depth_raw": 7166,
+              "depth_meters": 7.166000340366736
+            },
+            {
+              "pixel_x": 623,
+              "pixel_y": 439,
+              "depth_raw": 7166,
+              "depth_meters": 7.166000340366736
+            },
+            {
+              "pixel_x": 624,
+              "pixel_y": 439,
+              "depth_raw": 6925,
+              "depth_meters": 6.92500032891985
+            },
+            {
+              "pixel_x": 625,
+              "pixel_y": 439,
+              "depth_raw": 6848,
+              "depth_meters": 6.8480003252625465
+            },
+            {
+              "pixel_x": 626,
+              "pixel_y": 439,
+              "depth_raw": 6848,
+              "depth_meters": 6.8480003252625465
+            },
+            {
+              "pixel_x": 627,
+              "pixel_y": 439,
+              "depth_raw": 6848,
+              "depth_meters": 6.8480003252625465
+            },
+            {
+              "pixel_x": 628,
+              "pixel_y": 439,
+              "depth_raw": 6848,
+              "depth_meters": 6.8480003252625465
+            },
+            {
+              "pixel_x": 629,
+              "pixel_y": 439,
+              "depth_raw": 6925,
+              "depth_meters": 6.92500032891985
+            },
+            {
+              "pixel_x": 621,
+              "pixel_y": 440,
+              "depth_raw": 7426,
+              "depth_meters": 7.426000352716073
+            },
+            {
+              "pixel_x": 622,
+              "pixel_y": 440,
+              "depth_raw": 7166,
+              "depth_meters": 7.166000340366736
+            },
+            {
+              "pixel_x": 623,
+              "pixel_y": 440,
+              "depth_raw": 7166,
+              "depth_meters": 7.166000340366736
+            },
+            {
+              "pixel_x": 624,
+              "pixel_y": 440,
+              "depth_raw": 6925,
+              "depth_meters": 6.92500032891985
+            },
+            {
+              "pixel_x": 625,
+              "pixel_y": 440,
+              "depth_raw": 6848,
+              "depth_meters": 6.8480003252625465
+            },
+            {
+              "pixel_x": 626,
+              "pixel_y": 440,
+              "depth_raw": 6848,
+              "depth_meters": 6.8480003252625465
+            },
+            {
+              "pixel_x": 627,
+              "pixel_y": 440,
+              "depth_raw": 6848,
+              "depth_meters": 6.8480003252625465
+            },
+            {
+              "pixel_x": 628,
+              "pixel_y": 440,
+              "depth_raw": 6848,
+              "depth_meters": 6.8480003252625465
+            },
+            {
+              "pixel_x": 629,
+              "pixel_y": 440,
+              "depth_raw": 6925,
+              "depth_meters": 6.92500032891985
+            },
+            {
+              "pixel_x": 621,
+              "pixel_y": 441,
+              "depth_raw": 7004,
+              "depth_meters": 7.004000332672149
+            },
+            {
+              "pixel_x": 622,
+              "pixel_y": 441,
+              "depth_raw": 6773,
+              "depth_meters": 6.773000321700238
+            },
+            {
+              "pixel_x": 623,
+              "pixel_y": 441,
+              "depth_raw": 6773,
+              "depth_meters": 6.773000321700238
+            },
+            {
+              "pixel_x": 624,
+              "pixel_y": 441,
+              "depth_raw": 6557,
+              "depth_meters": 6.557000311440788
+            },
+            {
+              "pixel_x": 625,
+              "pixel_y": 441,
+              "depth_raw": 6488,
+              "depth_meters": 6.488000308163464
+            },
+            {
+              "pixel_x": 626,
+              "pixel_y": 441,
+              "depth_raw": 6488,
+              "depth_meters": 6.488000308163464
+            },
+            {
+              "pixel_x": 627,
+              "pixel_y": 441,
+              "depth_raw": 6420,
+              "depth_meters": 6.420000304933637
+            },
+            {
+              "pixel_x": 628,
+              "pixel_y": 441,
+              "depth_raw": 6420,
+              "depth_meters": 6.420000304933637
+            },
+            {
+              "pixel_x": 629,
+              "pixel_y": 441,
+              "depth_raw": 6420,
+              "depth_meters": 6.420000304933637
+            },
+            {
+              "pixel_x": 621,
+              "pixel_y": 442,
+              "depth_raw": 6699,
+              "depth_meters": 6.699000318185426
+            },
+            {
+              "pixel_x": 622,
+              "pixel_y": 442,
+              "depth_raw": 6488,
+              "depth_meters": 6.488000308163464
+            },
+            {
+              "pixel_x": 623,
+              "pixel_y": 442,
+              "depth_raw": 6488,
+              "depth_meters": 6.488000308163464
+            },
+            {
+              "pixel_x": 624,
+              "pixel_y": 442,
+              "depth_raw": 6225,
+              "depth_meters": 6.225000295671634
+            },
+            {
+              "pixel_x": 625,
+              "pixel_y": 442,
+              "depth_raw": 6102,
+              "depth_meters": 6.102000289829448
+            },
+            {
+              "pixel_x": 626,
+              "pixel_y": 442,
+              "depth_raw": 6102,
+              "depth_meters": 6.102000289829448
+            },
+            {
+              "pixel_x": 627,
+              "pixel_y": 442,
+              "depth_raw": 6102,
+              "depth_meters": 6.102000289829448
+            },
+            {
+              "pixel_x": 628,
+              "pixel_y": 442,
+              "depth_raw": 6163,
+              "depth_meters": 6.163000292726792
+            },
+            {
+              "pixel_x": 629,
+              "pixel_y": 442,
+              "depth_raw": 6163,
+              "depth_meters": 6.163000292726792
+            },
+            {
+              "pixel_x": 621,
+              "pixel_y": 443,
+              "depth_raw": 6699,
+              "depth_meters": 6.699000318185426
+            },
+            {
+              "pixel_x": 622,
+              "pixel_y": 443,
+              "depth_raw": 6488,
+              "depth_meters": 6.488000308163464
+            },
+            {
+              "pixel_x": 623,
+              "pixel_y": 443,
+              "depth_raw": 6488,
+              "depth_meters": 6.488000308163464
+            },
+            {
+              "pixel_x": 624,
+              "pixel_y": 443,
+              "depth_raw": 6225,
+              "depth_meters": 6.225000295671634
+            },
+            {
+              "pixel_x": 625,
+              "pixel_y": 443,
+              "depth_raw": 6102,
+              "depth_meters": 6.102000289829448
+            },
+            {
+              "pixel_x": 626,
+              "pixel_y": 443,
+              "depth_raw": 6102,
+              "depth_meters": 6.102000289829448
+            },
+            {
+              "pixel_x": 627,
+              "pixel_y": 443,
+              "depth_raw": 6102,
+              "depth_meters": 6.102000289829448
+            },
+            {
+              "pixel_x": 628,
+              "pixel_y": 443,
+              "depth_raw": 6163,
+              "depth_meters": 6.163000292726792
+            },
+            {
+              "pixel_x": 629,
+              "pixel_y": 443,
+              "depth_raw": 6163,
+              "depth_meters": 6.163000292726792
+            },
+            {
+              "pixel_x": 621,
+              "pixel_y": 444,
+              "depth_raw": 6420,
+              "depth_meters": 6.420000304933637
+            },
+            {
+              "pixel_x": 622,
+              "pixel_y": 444,
+              "depth_raw": 6225,
+              "depth_meters": 6.225000295671634
+            },
+            {
+              "pixel_x": 623,
+              "pixel_y": 444,
+              "depth_raw": 6225,
+              "depth_meters": 6.225000295671634
+            },
+            {
+              "pixel_x": 624,
+              "pixel_y": 444,
+              "depth_raw": 5984,
+              "depth_meters": 5.984000284224749
+            },
+            {
+              "pixel_x": 625,
+              "pixel_y": 444,
+              "depth_raw": 5984,
+              "depth_meters": 5.984000284224749
+            },
+            {
+              "pixel_x": 626,
+              "pixel_y": 444,
+              "depth_raw": 5870,
+              "depth_meters": 5.870000278810039
+            },
+            {
+              "pixel_x": 627,
+              "pixel_y": 444,
+              "depth_raw": 5870,
+              "depth_meters": 5.870000278810039
+            },
+            {
+              "pixel_x": 628,
+              "pixel_y": 444,
+              "depth_raw": 5870,
+              "depth_meters": 5.870000278810039
+            },
+            {
+              "pixel_x": 629,
+              "pixel_y": 444,
+              "depth_raw": 5870,
+              "depth_meters": 5.870000278810039
+            },
+            {
+              "pixel_x": 621,
+              "pixel_y": 445,
+              "depth_raw": 6420,
+              "depth_meters": 6.420000304933637
+            },
+            {
+              "pixel_x": 622,
+              "pixel_y": 445,
+              "depth_raw": 6225,
+              "depth_meters": 6.225000295671634
+            },
+            {
+              "pixel_x": 623,
+              "pixel_y": 445,
+              "depth_raw": 6225,
+              "depth_meters": 6.225000295671634
+            },
+            {
+              "pixel_x": 624,
+              "pixel_y": 445,
+              "depth_raw": 5984,
+              "depth_meters": 5.984000284224749
+            },
+            {
+              "pixel_x": 625,
+              "pixel_y": 445,
+              "depth_raw": 5984,
+              "depth_meters": 5.984000284224749
+            },
+            {
+              "pixel_x": 626,
+              "pixel_y": 445,
+              "depth_raw": 5870,
+              "depth_meters": 5.870000278810039
+            },
+            {
+              "pixel_x": 627,
+              "pixel_y": 445,
+              "depth_raw": 5707,
+              "depth_meters": 5.707000271067955
+            },
+            {
+              "pixel_x": 628,
+              "pixel_y": 445,
+              "depth_raw": 5707,
+              "depth_meters": 5.707000271067955
+            },
+            {
+              "pixel_x": 629,
+              "pixel_y": 445,
+              "depth_raw": 5707,
+              "depth_meters": 5.707000271067955
+            },
+            {
+              "pixel_x": 621,
+              "pixel_y": 446,
+              "depth_raw": 6225,
+              "depth_meters": 6.225000295671634
+            },
+            {
+              "pixel_x": 622,
+              "pixel_y": 446,
+              "depth_raw": 6042,
+              "depth_meters": 6.042000286979601
+            },
+            {
+              "pixel_x": 623,
+              "pixel_y": 446,
+              "depth_raw": 6042,
+              "depth_meters": 6.042000286979601
+            },
+            {
+              "pixel_x": 624,
+              "pixel_y": 446,
+              "depth_raw": 5814,
+              "depth_meters": 5.814000276150182
+            },
+            {
+              "pixel_x": 625,
+              "pixel_y": 446,
+              "depth_raw": 5814,
+              "depth_meters": 5.814000276150182
+            },
+            {
+              "pixel_x": 626,
+              "pixel_y": 446,
+              "depth_raw": 5654,
+              "depth_meters": 5.65400026855059
+            },
+            {
+              "pixel_x": 627,
+              "pixel_y": 446,
+              "depth_raw": 5654,
+              "depth_meters": 5.65400026855059
+            },
+            {
+              "pixel_x": 628,
+              "pixel_y": 446,
+              "depth_raw": 5707,
+              "depth_meters": 5.707000271067955
+            },
+            {
+              "pixel_x": 629,
+              "pixel_y": 446,
+              "depth_raw": 5707,
+              "depth_meters": 5.707000271067955
+            },
+            {
+              "pixel_x": 621,
+              "pixel_y": 447,
+              "depth_raw": 6163,
+              "depth_meters": 6.163000292726792
+            },
+            {
+              "pixel_x": 622,
+              "pixel_y": 447,
+              "depth_raw": 5926,
+              "depth_meters": 5.926000281469896
+            },
+            {
+              "pixel_x": 623,
+              "pixel_y": 447,
+              "depth_raw": 5926,
+              "depth_meters": 5.926000281469896
+            },
+            {
+              "pixel_x": 624,
+              "pixel_y": 447,
+              "depth_raw": 5707,
+              "depth_meters": 5.707000271067955
+            },
+            {
+              "pixel_x": 625,
+              "pixel_y": 447,
+              "depth_raw": 5707,
+              "depth_meters": 5.707000271067955
+            },
+            {
+              "pixel_x": 626,
+              "pixel_y": 447,
+              "depth_raw": 5603,
+              "depth_meters": 5.60300026612822
+            },
+            {
+              "pixel_x": 627,
+              "pixel_y": 447,
+              "depth_raw": 5603,
+              "depth_meters": 5.60300026612822
+            },
+            {
+              "pixel_x": 628,
+              "pixel_y": 447,
+              "depth_raw": 5603,
+              "depth_meters": 5.60300026612822
+            },
+            {
+              "pixel_x": 629,
+              "pixel_y": 447,
+              "depth_raw": 5603,
+              "depth_meters": 5.60300026612822
+            },
+            {
+              "pixel_x": 621,
+              "pixel_y": 448,
+              "depth_raw": 6163,
+              "depth_meters": 6.163000292726792
+            },
+            {
+              "pixel_x": 622,
+              "pixel_y": 448,
+              "depth_raw": 5926,
+              "depth_meters": 5.926000281469896
+            },
+            {
+              "pixel_x": 623,
+              "pixel_y": 448,
+              "depth_raw": 5926,
+              "depth_meters": 5.926000281469896
+            },
+            {
+              "pixel_x": 624,
+              "pixel_y": 448,
+              "depth_raw": 5707,
+              "depth_meters": 5.707000271067955
+            },
+            {
+              "pixel_x": 625,
+              "pixel_y": 448,
+              "depth_raw": 5707,
+              "depth_meters": 5.707000271067955
+            },
+            {
+              "pixel_x": 626,
+              "pixel_y": 448,
+              "depth_raw": 5603,
+              "depth_meters": 5.60300026612822
+            },
+            {
+              "pixel_x": 627,
+              "pixel_y": 448,
+              "depth_raw": 5603,
+              "depth_meters": 5.60300026612822
+            },
+            {
+              "pixel_x": 628,
+              "pixel_y": 448,
+              "depth_raw": 5603,
+              "depth_meters": 5.60300026612822
+            },
+            {
+              "pixel_x": 629,
+              "pixel_y": 448,
+              "depth_raw": 5603,
+              "depth_meters": 5.60300026612822
+            },
+            {
+              "pixel_x": 621,
+              "pixel_y": 449,
+              "depth_raw": 6102,
+              "depth_meters": 6.102000289829448
+            },
+            {
+              "pixel_x": 622,
+              "pixel_y": 449,
+              "depth_raw": 5926,
+              "depth_meters": 5.926000281469896
+            },
+            {
+              "pixel_x": 623,
+              "pixel_y": 449,
+              "depth_raw": 5870,
+              "depth_meters": 5.870000278810039
+            },
+            {
+              "pixel_x": 624,
+              "pixel_y": 449,
+              "depth_raw": 5654,
+              "depth_meters": 5.65400026855059
+            },
+            {
+              "pixel_x": 625,
+              "pixel_y": 449,
+              "depth_raw": 5654,
+              "depth_meters": 5.65400026855059
+            },
+            {
+              "pixel_x": 626,
+              "pixel_y": 449,
+              "depth_raw": 5552,
+              "depth_meters": 5.55200026370585
+            },
+            {
+              "pixel_x": 627,
+              "pixel_y": 449,
+              "depth_raw": 5552,
+              "depth_meters": 5.55200026370585
+            },
+            {
+              "pixel_x": 628,
+              "pixel_y": 449,
+              "depth_raw": 5552,
+              "depth_meters": 5.55200026370585
+            },
+            {
+              "pixel_x": 629,
+              "pixel_y": 449,
+              "depth_raw": 5552,
+              "depth_meters": 5.55200026370585
+            }
+          ],
+          "depth_scale_used": 0.0010000000474974513,
+          "bounding_box_depth": {
+            "roi_shape": [
+              12,
+              9
+            ],
+            "mean_raw": 6308.027777777777,
+            "median_raw": 6163.0
+          }
+        }
+      }
+    },
+    {
+      "detection_id": 1,
+      "class_id": 1,
+      "confidence": 0.871614396572113,
+      "bounding_box": {
+        "x1": 448,
+        "y1": 425,
+        "x2": 457,
+        "y2": 436,
+        "center_x": 452,
+        "center_y": 430,
+        "width": 9,
+        "height": 11
+      },
+      "relative_coordinates": {
+        "rel_x": 132.0,
+        "rel_y": 190.0
+      },
+      "depth_information": {
+        "statistics": {
+          "mean_depth": 7.827353907132879,
+          "median_depth": 7.3370003484888,
+          "min_depth": 5.984000284224749,
+          "max_depth": 11.006000522756949,
+          "std_depth": 1.5278462314191468,
+          "valid_pixels": 99,
+          "total_pixels": 99,
+          "fill_ratio": 1.0
+        },
+        "realsense_depth_data": {
+          "center_point": {
+            "pixel_x": 452,
+            "pixel_y": 430,
+            "depth_raw": 7166,
+            "depth_meters": 7.166000340366736
+          },
+          "sample_points": [
+            {
+              "pixel_x": 448,
+              "pixel_y": 425,
+              "depth_raw": 11006,
+              "depth_meters": 11.006000522756949
+            },
+            {
+              "pixel_x": 449,
+              "pixel_y": 425,
+              "depth_raw": 10626,
+              "depth_meters": 10.626000504707918
+            },
+            {
+              "pixel_x": 450,
+              "pixel_y": 425,
+              "depth_raw": 10626,
+              "depth_meters": 10.626000504707918
+            },
+            {
+              "pixel_x": 451,
+              "pixel_y": 425,
+              "depth_raw": 10446,
+              "depth_meters": 10.446000496158376
+            },
+            {
+              "pixel_x": 452,
+              "pixel_y": 425,
+              "depth_raw": 10446,
+              "depth_meters": 10.446000496158376
+            },
+            {
+              "pixel_x": 453,
+              "pixel_y": 425,
+              "depth_raw": 10104,
+              "depth_meters": 10.104000479914248
+            },
+            {
+              "pixel_x": 454,
+              "pixel_y": 425,
+              "depth_raw": 9783,
+              "depth_meters": 9.783000464667566
+            },
+            {
+              "pixel_x": 455,
+              "pixel_y": 425,
+              "depth_raw": 9783,
+              "depth_meters": 9.783000464667566
+            },
+            {
+              "pixel_x": 456,
+              "pixel_y": 425,
+              "depth_raw": 9482,
+              "depth_meters": 9.482000450370833
+            },
+            {
+              "pixel_x": 448,
+              "pixel_y": 426,
+              "depth_raw": 11006,
+              "depth_meters": 11.006000522756949
+            },
+            {
+              "pixel_x": 449,
+              "pixel_y": 426,
+              "depth_raw": 10626,
+              "depth_meters": 10.626000504707918
+            },
+            {
+              "pixel_x": 450,
+              "pixel_y": 426,
+              "depth_raw": 10626,
+              "depth_meters": 10.626000504707918
+            },
+            {
+              "pixel_x": 451,
+              "pixel_y": 426,
+              "depth_raw": 10446,
+              "depth_meters": 10.446000496158376
+            },
+            {
+              "pixel_x": 452,
+              "pixel_y": 426,
+              "depth_raw": 10446,
+              "depth_meters": 10.446000496158376
+            },
+            {
+              "pixel_x": 453,
+              "pixel_y": 426,
+              "depth_raw": 10104,
+              "depth_meters": 10.104000479914248
+            },
+            {
+              "pixel_x": 454,
+              "pixel_y": 426,
+              "depth_raw": 9783,
+              "depth_meters": 9.783000464667566
+            },
+            {
+              "pixel_x": 455,
+              "pixel_y": 426,
+              "depth_raw": 9783,
+              "depth_meters": 9.783000464667566
+            },
+            {
+              "pixel_x": 456,
+              "pixel_y": 426,
+              "depth_raw": 9482,
+              "depth_meters": 9.482000450370833
+            },
+            {
+              "pixel_x": 448,
+              "pixel_y": 427,
+              "depth_raw": 9630,
+              "depth_meters": 9.630000457400456
+            },
+            {
+              "pixel_x": 449,
+              "pixel_y": 427,
+              "depth_raw": 9630,
+              "depth_meters": 9.630000457400456
+            },
+            {
+              "pixel_x": 450,
+              "pixel_y": 427,
+              "depth_raw": 9338,
+              "depth_meters": 9.3380004435312
+            },
+            {
+              "pixel_x": 451,
+              "pixel_y": 427,
+              "depth_raw": 9063,
+              "depth_meters": 9.063000430469401
+            },
+            {
+              "pixel_x": 452,
+              "pixel_y": 427,
+              "depth_raw": 9063,
+              "depth_meters": 9.063000430469401
+            },
+            {
+              "pixel_x": 453,
+              "pixel_y": 427,
+              "depth_raw": 8681,
+              "depth_meters": 8.681000412325375
+            },
+            {
+              "pixel_x": 454,
+              "pixel_y": 427,
+              "depth_raw": 8560,
+              "depth_meters": 8.560000406578183
+            },
+            {
+              "pixel_x": 455,
+              "pixel_y": 427,
+              "depth_raw": 8560,
+              "depth_meters": 8.560000406578183
+            },
+            {
+              "pixel_x": 456,
+              "pixel_y": 427,
+              "depth_raw": 8329,
+              "depth_meters": 8.329000395606272
+            },
+            {
+              "pixel_x": 448,
+              "pixel_y": 428,
+              "depth_raw": 9630,
+              "depth_meters": 9.630000457400456
+            },
+            {
+              "pixel_x": 449,
+              "pixel_y": 428,
+              "depth_raw": 9630,
+              "depth_meters": 9.630000457400456
+            },
+            {
+              "pixel_x": 450,
+              "pixel_y": 428,
+              "depth_raw": 9338,
+              "depth_meters": 9.3380004435312
+            },
+            {
+              "pixel_x": 451,
+              "pixel_y": 428,
+              "depth_raw": 9063,
+              "depth_meters": 9.063000430469401
+            },
+            {
+              "pixel_x": 452,
+              "pixel_y": 428,
+              "depth_raw": 9063,
+              "depth_meters": 9.063000430469401
+            },
+            {
+              "pixel_x": 453,
+              "pixel_y": 428,
+              "depth_raw": 8681,
+              "depth_meters": 8.681000412325375
+            },
+            {
+              "pixel_x": 454,
+              "pixel_y": 428,
+              "depth_raw": 8560,
+              "depth_meters": 8.560000406578183
+            },
+            {
+              "pixel_x": 455,
+              "pixel_y": 428,
+              "depth_raw": 8560,
+              "depth_meters": 8.560000406578183
+            },
+            {
+              "pixel_x": 456,
+              "pixel_y": 428,
+              "depth_raw": 7516,
+              "depth_meters": 7.516000356990844
+            },
+            {
+              "pixel_x": 448,
+              "pixel_y": 429,
+              "depth_raw": 8560,
+              "depth_meters": 8.560000406578183
+            },
+            {
+              "pixel_x": 449,
+              "pixel_y": 429,
+              "depth_raw": 8560,
+              "depth_meters": 8.560000406578183
+            },
+            {
+              "pixel_x": 450,
+              "pixel_y": 429,
+              "depth_raw": 8218,
+              "depth_meters": 8.218000390334055
+            },
+            {
+              "pixel_x": 451,
+              "pixel_y": 429,
+              "depth_raw": 8004,
+              "depth_meters": 8.0040003801696
+            },
+            {
+              "pixel_x": 452,
+              "pixel_y": 429,
+              "depth_raw": 8004,
+              "depth_meters": 8.0040003801696
+            },
+            {
+              "pixel_x": 453,
+              "pixel_y": 429,
+              "depth_raw": 7801,
+              "depth_meters": 7.801000370527618
+            },
+            {
+              "pixel_x": 454,
+              "pixel_y": 429,
+              "depth_raw": 7801,
+              "depth_meters": 7.801000370527618
+            },
+            {
+              "pixel_x": 455,
+              "pixel_y": 429,
+              "depth_raw": 7609,
+              "depth_meters": 7.609000361408107
+            },
+            {
+              "pixel_x": 456,
+              "pixel_y": 429,
+              "depth_raw": 7516,
+              "depth_meters": 7.516000356990844
+            },
+            {
+              "pixel_x": 448,
+              "pixel_y": 430,
+              "depth_raw": 7609,
+              "depth_meters": 7.609000361408107
+            },
+            {
+              "pixel_x": 449,
+              "pixel_y": 430,
+              "depth_raw": 7609,
+              "depth_meters": 7.609000361408107
+            },
+            {
+              "pixel_x": 450,
+              "pixel_y": 430,
+              "depth_raw": 7337,
+              "depth_meters": 7.3370003484888
+            },
+            {
+              "pixel_x": 451,
+              "pixel_y": 430,
+              "depth_raw": 7337,
+              "depth_meters": 7.3370003484888
+            },
+            {
+              "pixel_x": 452,
+              "pixel_y": 430,
+              "depth_raw": 7166,
+              "depth_meters": 7.166000340366736
+            },
+            {
+              "pixel_x": 453,
+              "pixel_y": 430,
+              "depth_raw": 7004,
+              "depth_meters": 7.004000332672149
+            },
+            {
+              "pixel_x": 454,
+              "pixel_y": 430,
+              "depth_raw": 7004,
+              "depth_meters": 7.004000332672149
+            },
+            {
+              "pixel_x": 455,
+              "pixel_y": 430,
+              "depth_raw": 6848,
+              "depth_meters": 6.8480003252625465
+            },
+            {
+              "pixel_x": 456,
+              "pixel_y": 430,
+              "depth_raw": 6848,
+              "depth_meters": 6.8480003252625465
+            },
+            {
+              "pixel_x": 448,
+              "pixel_y": 431,
+              "depth_raw": 7609,
+              "depth_meters": 7.609000361408107
+            },
+            {
+              "pixel_x": 449,
+              "pixel_y": 431,
+              "depth_raw": 7609,
+              "depth_meters": 7.609000361408107
+            },
+            {
+              "pixel_x": 450,
+              "pixel_y": 431,
+              "depth_raw": 7337,
+              "depth_meters": 7.3370003484888
+            },
+            {
+              "pixel_x": 451,
+              "pixel_y": 431,
+              "depth_raw": 7337,
+              "depth_meters": 7.3370003484888
+            },
+            {
+              "pixel_x": 452,
+              "pixel_y": 431,
+              "depth_raw": 7166,
+              "depth_meters": 7.166000340366736
+            },
+            {
+              "pixel_x": 453,
+              "pixel_y": 431,
+              "depth_raw": 7004,
+              "depth_meters": 7.004000332672149
+            },
+            {
+              "pixel_x": 454,
+              "pixel_y": 431,
+              "depth_raw": 7004,
+              "depth_meters": 7.004000332672149
+            },
+            {
+              "pixel_x": 455,
+              "pixel_y": 431,
+              "depth_raw": 6848,
+              "depth_meters": 6.8480003252625465
+            },
+            {
+              "pixel_x": 456,
+              "pixel_y": 431,
+              "depth_raw": 6848,
+              "depth_meters": 6.8480003252625465
+            },
+            {
+              "pixel_x": 448,
+              "pixel_y": 432,
+              "depth_raw": 6925,
+              "depth_meters": 6.92500032891985
+            },
+            {
+              "pixel_x": 449,
+              "pixel_y": 432,
+              "depth_raw": 6925,
+              "depth_meters": 6.92500032891985
+            },
+            {
+              "pixel_x": 450,
+              "pixel_y": 432,
+              "depth_raw": 6699,
+              "depth_meters": 6.699000318185426
+            },
+            {
+              "pixel_x": 451,
+              "pixel_y": 432,
+              "depth_raw": 6699,
+              "depth_meters": 6.699000318185426
+            },
+            {
+              "pixel_x": 452,
+              "pixel_y": 432,
+              "depth_raw": 6557,
+              "depth_meters": 6.557000311440788
+            },
+            {
+              "pixel_x": 453,
+              "pixel_y": 432,
+              "depth_raw": 6488,
+              "depth_meters": 6.488000308163464
+            },
+            {
+              "pixel_x": 454,
+              "pixel_y": 432,
+              "depth_raw": 6488,
+              "depth_meters": 6.488000308163464
+            },
+            {
+              "pixel_x": 455,
+              "pixel_y": 432,
+              "depth_raw": 6420,
+              "depth_meters": 6.420000304933637
+            },
+            {
+              "pixel_x": 456,
+              "pixel_y": 432,
+              "depth_raw": 6420,
+              "depth_meters": 6.420000304933637
+            },
+            {
+              "pixel_x": 448,
+              "pixel_y": 433,
+              "depth_raw": 6699,
+              "depth_meters": 6.699000318185426
+            },
+            {
+              "pixel_x": 449,
+              "pixel_y": 433,
+              "depth_raw": 6488,
+              "depth_meters": 6.488000308163464
+            },
+            {
+              "pixel_x": 450,
+              "pixel_y": 433,
+              "depth_raw": 6354,
+              "depth_meters": 6.354000301798806
+            },
+            {
+              "pixel_x": 451,
+              "pixel_y": 433,
+              "depth_raw": 6354,
+              "depth_meters": 6.354000301798806
+            },
+            {
+              "pixel_x": 452,
+              "pixel_y": 433,
+              "depth_raw": 6225,
+              "depth_meters": 6.225000295671634
+            },
+            {
+              "pixel_x": 453,
+              "pixel_y": 433,
+              "depth_raw": 6163,
+              "depth_meters": 6.163000292726792
+            },
+            {
+              "pixel_x": 454,
+              "pixel_y": 433,
+              "depth_raw": 6163,
+              "depth_meters": 6.163000292726792
+            },
+            {
+              "pixel_x": 455,
+              "pixel_y": 433,
+              "depth_raw": 6102,
+              "depth_meters": 6.102000289829448
+            },
+            {
+              "pixel_x": 456,
+              "pixel_y": 433,
+              "depth_raw": 6102,
+              "depth_meters": 6.102000289829448
+            },
+            {
+              "pixel_x": 448,
+              "pixel_y": 434,
+              "depth_raw": 6699,
+              "depth_meters": 6.699000318185426
+            },
+            {
+              "pixel_x": 449,
+              "pixel_y": 434,
+              "depth_raw": 6488,
+              "depth_meters": 6.488000308163464
+            },
+            {
+              "pixel_x": 450,
+              "pixel_y": 434,
+              "depth_raw": 6354,
+              "depth_meters": 6.354000301798806
+            },
+            {
+              "pixel_x": 451,
+              "pixel_y": 434,
+              "depth_raw": 6354,
+              "depth_meters": 6.354000301798806
+            },
+            {
+              "pixel_x": 452,
+              "pixel_y": 434,
+              "depth_raw": 6225,
+              "depth_meters": 6.225000295671634
+            },
+            {
+              "pixel_x": 453,
+              "pixel_y": 434,
+              "depth_raw": 6163,
+              "depth_meters": 6.163000292726792
+            },
+            {
+              "pixel_x": 454,
+              "pixel_y": 434,
+              "depth_raw": 6163,
+              "depth_meters": 6.163000292726792
+            },
+            {
+              "pixel_x": 455,
+              "pixel_y": 434,
+              "depth_raw": 6102,
+              "depth_meters": 6.102000289829448
+            },
+            {
+              "pixel_x": 456,
+              "pixel_y": 434,
+              "depth_raw": 6102,
+              "depth_meters": 6.102000289829448
+            },
+            {
+              "pixel_x": 448,
+              "pixel_y": 435,
+              "depth_raw": 6420,
+              "depth_meters": 6.420000304933637
+            },
+            {
+              "pixel_x": 449,
+              "pixel_y": 435,
+              "depth_raw": 6289,
+              "depth_meters": 6.289000298711471
+            },
+            {
+              "pixel_x": 450,
+              "pixel_y": 435,
+              "depth_raw": 6102,
+              "depth_meters": 6.102000289829448
+            },
+            {
+              "pixel_x": 451,
+              "pixel_y": 435,
+              "depth_raw": 6102,
+              "depth_meters": 6.102000289829448
+            },
+            {
+              "pixel_x": 452,
+              "pixel_y": 435,
+              "depth_raw": 6042,
+              "depth_meters": 6.042000286979601
+            },
+            {
+              "pixel_x": 453,
+              "pixel_y": 435,
+              "depth_raw": 5984,
+              "depth_meters": 5.984000284224749
+            },
+            {
+              "pixel_x": 454,
+              "pixel_y": 435,
+              "depth_raw": 5984,
+              "depth_meters": 5.984000284224749
+            },
+            {
+              "pixel_x": 455,
+              "pixel_y": 435,
+              "depth_raw": 5984,
+              "depth_meters": 5.984000284224749
+            },
+            {
+              "pixel_x": 456,
+              "pixel_y": 435,
+              "depth_raw": 5984,
+              "depth_meters": 5.984000284224749
+            }
+          ],
+          "depth_scale_used": 0.0010000000474974513,
+          "bounding_box_depth": {
+            "roi_shape": [
+              11,
+              9
+            ],
+            "mean_raw": 7827.353535353535,
+            "median_raw": 7337.0
+          }
+        }
+      }
+    }
+  ]
+}

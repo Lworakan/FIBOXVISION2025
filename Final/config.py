@@ -3,18 +3,18 @@
 
 # --- การตั้งค่าโมเดล ---
 YOLO_MODEL_PATH = (
-    "best_plc.pt"  # ตำแหน่งไฟล์โมเดล YOLO -> สำหรับ Production (แก้ path ให้ชี้ไปที่ root)
+    "./model/best_PLC_1800.pt"  # ตำแหน่งไฟล์โมเดล YOLO -> สำหรับ Production (แก้ path ให้ชี้ไปที่ root)
 )
-DEPTH_MODEL_PATH = "./model/final_PLC.pkl"  # ตำแหน่งไฟล์โมเดล Regression สำหรับ Depth
+DEPTH_MODEL_PATH = "./model/final_PLC"  # ตำแหน่งไฟล์โมเดล Regression สำหรับ Depth
 
 # --- การตั้งค่า YOLO ---
-CONF_THRESHOLD = 0.15  # ค่าความมั่นใจขั้นต่ำในการยอมรับผลการตรวจจับ
+CONF_THRESHOLD = 0.5  # ค่าความมั่นใจขั้นต่ำในการยอมรับผลการตรวจจับ
 TARGET_CLASS_NAME = "basketball_hoop"  # ชื่อคลาสของวัตถุเป้าหมายที่ต้องการตรวจจับ -> สำหรับ Development (ให้เปลี่ยนเป็น basketball_hoop ตอนใช้งานจริง)
 
 # --- การตั้งค่ากล้อง ---
 CAMERA_ID = 0  # หมายเลข ID ของกล้อง (0 คือกล้องหลักของเครื่อง)
 FRAME_WIDTH = 640  # ความกว้างของเฟรมภาพที่ต้องการ
-FRAME_HEIGHT = 480  # ความสูงของเฟรมภาพที่ต้องการ
+FRAME_HEIGHT = 480  # ความสูงของ7ฟรมภาพที่ต้องการ
 FPS = 30  # ค่า FPS ของกล้องที่ต้องการ
 VIDEO_FILE_PATH = "color_output.mp4"  # <<< หากทดสอบเป็น Video (แก้ Path ตามต้องการ)
 

@@ -1,0 +1,15 @@
+{
+  "session_info": {
+    "start_time": "2025-05-30T15:36:11.796821",
+    "end_time": "2025-05-30T15:36:57.903886",
+    "total_samples": 477,
+    "output_directory": "training_data"
+  },
+  "camera_info": {
+    "type": "realsense",
+    "width": 640,
+    "height": 480,
+    "origin_x": 320,
+    "origin_y": 240
+  }
+}

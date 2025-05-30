@@ -21,13 +21,13 @@ except ImportError:
 ArithmeticError
 # --- Configuration ---
 # MODEL_PATH = r"./Callback/yolo11l.pt"  # model path
-MODEL_PATH = "C:\\Users\\User\\FIBOXVISION2025\\best_plc.pt"  # model path
+MODEL_PATH = "./best_plc.pt"  # model path
 # OUTPUT_CSV_FILE = 'camera_trackingHuman_75M.csv'  # output csv file
-OUTPUT_CSV_FILE = 'PLC_tracking_60.csv'  # output csv file
+OUTPUT_CSV_FILE = 'PLC_tracking_45_plc_new.csv'  # output csv file
 # -----------------------------
 
 # YOLO Model Configuration
-CONF_THRESHOLD = 0.001  # Confidence threshold
+CONF_THRESHOLD = 0.3  # Confidence threshold
 # TARGET_CLASS_NAME = 'basketball_hoop'  # Change this to your target class
 TARGET_CLASS_NAME = 'basketball_hoop'  # Change this to your target class
 

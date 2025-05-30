@@ -1,0 +1,18 @@
+{
+  "sample_id": "sample_0166_20250530_153627_816",
+  "timestamp": "20250530_153627_816",
+  "sample_count": 166,
+  "session_start": "2025-05-30T15:36:11.796821",
+  "camera_info": {
+    "width": 640,
+    "height": 480,
+    "depth_scale": 0.0010000000474974513,
+    "origin_x": 320,
+    "origin_y": 240
+  },
+  "files": {
+    "color_image": "sample_0166_20250530_153627_816.jpg",
+    "depth_data": "sample_0166_20250530_153627_816_depth.npy"
+  },
+  "detections": []
+}

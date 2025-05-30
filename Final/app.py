@@ -30,7 +30,7 @@ import os
 
 # for debugging
 # realsense
-pipeline = VisionPipeline(camera_type='webcam', enable_visualization=True, enable_save_video=True)
+pipeline = VisionPipeline(camera_type='realsense', enable_visualization=True, enable_save_video=True)
 
 Out_depth = 0
 angle_Out = 0
